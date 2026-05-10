@@ -12,10 +12,10 @@ The site now has a persistent concept switcher on all concept pages plus two top
 
 ## Current State
 
-- Current visible version: `v71.4`.
-- Versioning follows the PhotosByElie-style date-based SOP: `71` is days since `2026-02-28`; `.4` is the fourth user-visible build for the day.
+- Current visible version: `v71.5`.
+- Versioning follows the PhotosByElie-style date-based SOP: `71` is days since `2026-02-28`; `.5` is the fifth user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42` (private).
-- Local preview: `http://localhost:8042/?v=71.4`.
+- Local preview: `http://localhost:8042/?v=71.5`.
 - Main files:
 - `index.html`: concept selector hub.
 - `concepts/01-cup-of-cold-water.html`: Matthew 10:42-forward direction.
@@ -41,6 +41,6 @@ The site now has a persistent concept switcher on all concept pages plus two top
 ## Important Caveats
 
 - The organization details came from user-provided research notes and must be verified before public launch.
-- Placeholder photos are from Unsplash and should be replaced with real Diez42 images.
+- Current placeholder photos are local AI-generated images and should still be replaced with real Diez42 images when available.
 - Spanish translations are draft-level and should be reviewed by a fluent speaker before launch.
 - No GitHub Pages publishing was enabled because the repo is private and the mock should not be made public without approval.

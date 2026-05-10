@@ -3,7 +3,7 @@
 1. Verify legal identity and registry details directly with Diez42.
 2. Confirm preferred public spelling: `Diez42`, `Diez 42`, or both by context.
 3. Collect official contact details: email, phone, WhatsApp, Instagram, Facebook, and physical-location wording.
-4. Replace Unsplash placeholders with real Diez42 photos and confirm usage permission.
+4. Replace AI-generated placeholders with real Diez42 photos and confirm usage permission.
 5. Choose one of the five homepage directions or identify a hybrid direction.
 6. Have a fluent Spanish speaker review all ES copy.
 7. Decide whether the final V1 should be bilingual by default or default to Spanish for Málaga audiences.
