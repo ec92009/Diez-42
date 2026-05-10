@@ -38,8 +38,8 @@ Repo-level working preferences for `/Users/ecohen/Dev/Diez-42`.
 - Repo root: `/Users/ecohen/Dev/Diez-42`
 - Hub: `index.html`
 - Concepts: `concepts/01-cup-of-cold-water.html` through `concepts/05-open-table.html`
-- Styles and scripts: `assets/styles.css`, `assets/site-version.js`
-- Docs: `README.md`, `docs/sops/`
+- Styles and scripts: `assets/styles.css`, `assets/site-version.js`, `assets/site-controls.js`
+- Docs: `README.md`, `SUMMARY.md`, `TODO.md`, `docs/sops/`
 
 ## Local Preview
 
