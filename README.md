@@ -4,6 +4,8 @@ Static V1 mock selector for the Diez 42 charity website.
 
 The goal of this first pass is intentionally plain: help the client choose a main-page visual direction before real copy, photos, legal language, and future donation/payment work are added.
 
+Working content notes currently describe Diez42 / Diez 42 as `Asociación para el Desarrollo e Integración Diez 42`, a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. These details should be verified against the municipal registry and the organization before public launch.
+
 ## Preview
 
 Run from the repo root:

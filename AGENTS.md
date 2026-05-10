@@ -25,10 +25,12 @@ Repo-level working preferences for `/Users/ecohen/Dev/Diez-42`.
 
 ## Versioning
 
-- Local versioning guidance lives in [`docs/sops/VERSIONING_SOP.md`](./docs/sops/VERSIONING_SOP.md).
-- Apply the versioning SOP when the public mock selector, concept pages, visual direction, or another user-visible surface changes.
+- Canonical procedure lives in `/Users/ecohen/Dev/MailAssist/docs/sops/VERSIONING_SOP.md`.
+- Local copy/adaptation lives in [`docs/sops/VERSIONING_SOP.md`](./docs/sops/VERSIONING_SOP.md).
+- Apply the versioning SOP when the public mock selector, concept pages, visual direction, navigation, copy, or another user-visible surface changes.
 - Do not treat repo-only documentation changes as automatic visible-version bumps by themselves.
-- Update visible version text and cache-bust query strings for every user-visible build.
+- Update the visible version badge for every user-visible build.
+- Also bump CSS and JS cache-bust query strings (`?v=X.Y`) in every HTML file.
 - Keep `VERSION` as the source of the current visible version number without the leading `v`.
 
 ## Workspace Structure
