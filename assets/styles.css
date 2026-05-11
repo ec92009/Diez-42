@@ -337,6 +337,17 @@ img {
   border-color: var(--line);
 }
 
+.social-button {
+  gap: 8px;
+}
+
+.button-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
 .hero {
   min-height: 620px;
   display: grid;
@@ -491,6 +502,40 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.program-cards {
+  margin: 22px 0 12px;
+}
+
+.program-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 8px 24px rgba(25, 38, 33, 0.07);
+}
+
+.program-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.program-card div {
+  padding: 16px;
+}
+
+.program-card p:last-child {
+  margin-bottom: 0;
+}
+
+.ai-note {
+  margin-bottom: 20px;
+}
+
+html[data-theme="night"] .program-card {
+  background: var(--surface);
 }
 
 .list {
@@ -874,7 +919,7 @@ html[lang="en"] .option-table::before {
 
 .foundation-hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(300px, 0.48fr);
+  grid-template-columns: minmax(0, 0.76fr) minmax(360px, 0.9fr);
   gap: 28px;
   align-items: center;
   padding: 48px 0 32px;
@@ -1153,15 +1198,21 @@ body.theme-foundation .button.secondary {
 }
 
 body.theme-foundation .foundation-hero {
-  padding: 70px 0 44px;
+  padding: 34px 0 40px;
   border-bottom: 1px solid var(--line);
 }
 
 body.theme-foundation h1 {
-  max-width: 16ch;
+  max-width: 13ch;
   font-family: "Times New Roman", Georgia, serif;
-  font-size: 4.9rem;
+  font-size: 4.6rem;
   font-weight: 500;
+}
+
+body.theme-foundation .hero-media {
+  min-height: 480px;
+  border-radius: 0 0 92px 0;
+  border: 10px solid #fff;
 }
 
 body.theme-foundation .photo-band {

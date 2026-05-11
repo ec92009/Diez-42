@@ -22,13 +22,13 @@ Matthew 10:42 was added as a small cited note in the archived exploration so the
 
 ## Current State
 
-- Current visible version: `v72.7`.
+- Current visible version: `v72.9`.
 - Default viewer language: Spanish, with English still available through the toggle.
 - Header controls: one flag button for language and one sun/moon button for day/night.
-- The provided Diez42 logo is now used in the global header and active homepage hero.
-- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.7` is the eighth user-visible build for the day.
+- The provided Diez42 logo is now used in the global header, and the active homepage has restored AI-placeholder program photos for warmth while real media is pending.
+- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.9` is the tenth user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=72.7`.
+- Local preview: `http://localhost:8042/?v=72.9`.
 - Main files:
 - `index.html`: active homepage.
 - Contact actions on active homepage: WhatsApp/phone `+34 600 33 97 94`, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.
