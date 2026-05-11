@@ -24,13 +24,13 @@ In the latest session, the user reacted that the active homepage had become too 
 
 ## Current State
 
-- Current visible version: `v72.10`.
+- Current visible version: `v72.11`.
 - Default viewer language: Spanish, with English still available through the toggle.
 - Header controls: one flag button for language and one sun/moon button for day/night.
 - The provided Diez42 logo is now used in the global header, and the active homepage has restored AI-placeholder program photos for warmth while real media is pending.
 - Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.10` is the eleventh user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=72.10`.
+- Local preview: `http://localhost:8042/?v=72.11`.
 - Main files:
 - `index.html`: active homepage.
 - Contact details on active homepage: WhatsApp action, phone number `+34 600 33 97 94` under the mailing address, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.
