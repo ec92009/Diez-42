@@ -8,6 +8,7 @@ Working content notes currently describe Diez42 / Diez 42 as `Asociación para e
 
 Current visible version: `v72.0`.
 Default viewer language: Spanish, with an English toggle retained.
+Current controls use one flag button for language and one sun/moon button for day/night.
 
 Remote repository: `https://github.com/ec92009/Diez-42` (private).
 
@@ -31,7 +32,7 @@ http://localhost:8042/?v=72.0
 - `concepts/` contains five separate homepage mockups.
 - `assets/styles.css` contains all shared styling.
 - `assets/site-version.js` applies the visible version from cache-bust query strings or page labels.
-- `assets/site-controls.js` powers the EN/ES and day/night controls and persists choices in `localStorage`.
+- `assets/site-controls.js` powers the flag language toggle, sun/moon theme toggle, draft translations, and persisted choices in `localStorage`.
 
 ## Concept Options
 
@@ -41,12 +42,15 @@ http://localhost:8042/?v=72.0
 4. Quiet Foundation: institutional, registry-forward, and transparency-focused.
 5. Open Table: welcoming, communal, and centered on belonging.
 
+Concept 1 includes a small Matthew 10:42 note with cited KJV and Reina-Valera 1909 source links.
+
 ## V1 Scope
 
 - Static copy and image placeholders.
 - Bilingual EN/ES switch.
 - Day/night theme switch.
 - Persistent concept switcher on every concept page.
+- Top-first selector hub with wider concept cards.
 - No payments.
 - No backend.
 - No donation form.
