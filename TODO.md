@@ -1,19 +1,16 @@
 # Diez42 Backlog
 
-1. Treat `index.html` as the active V1 homepage and refine from there.
+1. Refine only `index.html` as the active V1 homepage; leave archived concepts untouched unless explicitly requested.
 2. Verify legal identity, CIF, registry wording, scope, and address details directly with Diez42.
-3. Use `Diez42` as the only public-facing spelling.
-4. Collect official contact details: email, phone, WhatsApp, Instagram, Facebook, and physical-location wording.
-5. Replace remaining AI-generated program-photo placeholders with real Diez42 photos and confirm usage permission.
-6. Add a visible mock-stage note that current photos are AI-generated placeholders and do not depict real Diez42 people.
-7. Have a fluent Spanish speaker review all Spanish copy, including any Matthew 10:42 wording reused from the archived concepts.
-8. Decide whether to keep the English toggle for V1 or publish Spanish-only for the first launch.
-9. Replace mock copy with approved organization copy: mission, programs, history, and contact text.
-10. Add verified association/legal details to a transparency or footer section.
-11. Decide whether to include partner references such as Elevāt and how to describe the women's artisan/co-op project.
-12. Add real social links for `diez42malaga` / `Diez42Malaga` if confirmed.
-13. Add SEO metadata, Open Graph tags, page descriptions, and favicon assets.
-14. Decide whether to keep the day/night switch in production or use a single fixed visual theme.
-15. Configure the reserved `diez42.org` domain for GitHub Pages when registrar access is available.
-16. Do a real-device QA pass on mobile and desktop after real photos and copy are inserted.
-17. Defer donation/payment design to V2 until legal, bank, tax-receipt, and Stripe-account ownership questions are settled.
+3. Collect official contact details: email, phone, WhatsApp, Instagram, Facebook, and physical-location wording.
+4. Replace remaining AI-generated program-photo placeholders with real Diez42 photos and confirm usage permission.
+5. Add approved organization copy for mission, programs, history, volunteer/supporter paths, and contact text.
+6. Have a fluent Spanish speaker review all Spanish copy and decide whether English stays in V1.
+7. Add verified association/legal details to a transparency or footer section.
+8. Decide whether to include partner references such as Elevāt and how to describe the women's artisan/co-op project.
+9. Add confirmed social links for `diez42malaga` / `Diez42Malaga`.
+10. Add SEO metadata, Open Graph tags, page descriptions, and favicon assets.
+11. Decide whether the day/night switch belongs in production or whether V1 should use one fixed visual theme.
+12. Configure the reserved `diez42.org` domain for GitHub Pages when registrar access is available.
+13. Do real-device QA on mobile and desktop after final copy and real photos are inserted.
+14. Defer donation/payment design to V2 until legal, bank, tax-receipt, and Stripe-account ownership questions are settled.

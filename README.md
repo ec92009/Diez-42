@@ -2,7 +2,7 @@
 
 Static V1 website draft for the Diez42 charity website.
 
-The goal of this first pass is intentionally plain: build a clean static V1 around the selected visual direction before real copy, photos, legal language, and future donation/payment work are added.
+The goal of this first pass is intentionally plain: build a clean static V1 homepage before real copy, photos, legal language, and future donation/payment work are added.
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
@@ -40,6 +40,10 @@ http://localhost:8042/?v=72.3
 ## Working Direction
 
 The current homepage is institutional, registry-forward, and transparency-focused. The archived concepts remain available only as a reference bank for ideas, fonts, colors, sections, and language.
+
+## Editing Rule
+
+Only `index.html` is the active public page. Do not update `Archive/concepts/` just to keep it current. Use the archive as an idea library only, and pull ideas into the homepage or shared assets when needed.
 
 ## V1 Scope
 
