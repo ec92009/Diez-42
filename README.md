@@ -1,12 +1,12 @@
-# Diez 42
+# Diez42
 
-Static V1 mock selector for the Diez 42 charity website.
+Static V1 website draft for the Diez42 charity website.
 
-The goal of this first pass is intentionally plain: help the client choose a main-page visual direction before real copy, photos, legal language, and future donation/payment work are added.
+The goal of this first pass is intentionally plain: build a clean static V1 around the selected visual direction before real copy, photos, legal language, and future donation/payment work are added.
 
-Working content notes currently describe Diez42 / Diez 42 as `Asociación para el Desarrollo e Integración Diez 42`, a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. These details should be verified against the municipal registry and the organization before public launch.
+Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v72.0`.
+Current visible version: `v72.1`.
 Default viewer language: Spanish, with an English toggle retained.
 Current controls use one flag button for language and one sun/moon button for day/night.
 
@@ -23,34 +23,36 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=72.0
+http://localhost:8042/?v=72.1
 ```
 
 ## Structure
 
-- `index.html` is the concept selector hub.
-- `concepts/` contains five separate homepage mockups.
+- `index.html` is the selected-direction hub.
+- `concepts/04-quiet-foundation.html` is the active working concept.
+- `Archive/concepts/` contains the four earlier concept directions for reference.
 - `assets/styles.css` contains all shared styling.
 - `assets/site-version.js` applies the visible version from cache-bust query strings or page labels.
 - `assets/site-controls.js` powers the flag language toggle, sun/moon theme toggle, draft translations, and persisted choices in `localStorage`.
 
-## Concept Options
+## Selected Direction
+
+Concept 4, Quiet Foundation, is the current working base. It is institutional, registry-forward, and transparency-focused.
+
+Archived reference concepts:
 
 1. Cup of Cold Water: faith-rooted, Matthew 10:42-forward, warm and personal.
 2. Neighbor Hands: practical, local, service-led, and easy to understand quickly.
 3. Field Notes: editorial/photo-led, designed for ongoing program updates.
-4. Quiet Foundation: institutional, registry-forward, and transparency-focused.
 5. Open Table: welcoming, communal, and centered on belonging.
-
-Concept 1 includes a small Matthew 10:42 note with cited KJV and Reina-Valera 1909 source links.
 
 ## V1 Scope
 
 - Static copy and image placeholders.
 - Bilingual EN/ES switch.
 - Day/night theme switch.
-- Persistent concept switcher on every concept page.
-- Top-first selector hub with wider concept cards.
+- Active Concept 4 page plus archived reference concepts.
+- Top-first selected-direction hub with archived concept cards.
 - No payments.
 - No backend.
 - No donation form.

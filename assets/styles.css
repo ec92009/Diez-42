@@ -645,6 +645,33 @@ h3 {
   text-transform: uppercase;
 }
 
+.selected-grid .option-card {
+  border: 2px solid var(--deep);
+}
+
+.option-selected::before {
+  content: "Direccion seleccionada";
+  color: var(--deep);
+}
+
+html[lang="en"] .option-selected::before {
+  content: "Selected direction";
+}
+
+.archive-section {
+  display: grid;
+  gap: 18px;
+  padding-top: 20px;
+}
+
+.archive-grid .option-card {
+  opacity: 0.86;
+}
+
+.archive-grid .option-card:hover {
+  opacity: 1;
+}
+
 .option-water {
   border-color: rgba(198, 95, 60, 0.34);
 }
