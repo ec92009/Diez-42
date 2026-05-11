@@ -191,20 +191,23 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  color: var(--ink);
   text-decoration: none;
   font-weight: 850;
 }
 
-.brand-mark {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  background:
-    linear-gradient(135deg, var(--deep) 0 48%, var(--accent) 48% 55%, var(--accent-2) 55% 100%);
-  display: inline-grid;
-  place-items: center;
-  color: #fff;
-  font-size: 0.85rem;
+.brand-logo {
+  width: 54px;
+  height: 38px;
+  padding: 3px;
+  border: 1px solid rgba(22, 59, 51, 0.16);
+  border-radius: 6px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.brand-name {
+  line-height: 1;
 }
 
 .nav {
@@ -406,7 +409,7 @@ h3 {
 .hero-media img,
 .photo-band img,
 .story-image img,
-.option-shot img {
+.option-shot:not(.option-logo-shot) img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -621,6 +624,19 @@ h3 {
   background: var(--soft);
 }
 
+.option-logo-shot {
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: #fff;
+}
+
+.option-logo-shot img {
+  width: min(100%, 230px);
+  height: auto;
+  object-fit: contain;
+}
+
 .option-body {
   padding: 16px;
 }
@@ -745,6 +761,10 @@ html[lang="en"] .option-foundation::before {
   filter: grayscale(1);
 }
 
+.option-foundation .option-logo-shot {
+  filter: none;
+}
+
 .option-table {
   background: #fff7ed;
   border-color: #e3bb8d;
@@ -853,8 +873,26 @@ html[lang="en"] .option-table::before {
 }
 
 .foundation-hero {
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(300px, 0.48fr);
+  gap: 28px;
+  align-items: center;
   padding: 48px 0 32px;
+}
+
+.foundation-logo-panel {
+  display: grid;
+  place-items: center;
+  min-height: 300px;
+  margin: 0;
+  padding: 30px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.foundation-logo-panel img {
+  width: min(100%, 360px);
+  height: auto;
 }
 
 .foundation-hero h1 {
@@ -1089,7 +1127,6 @@ body.theme-foundation {
   --deep: #142933;
 }
 
-body.theme-foundation .brand-mark,
 body.theme-foundation .button,
 body.theme-foundation .concept-switcher a[aria-current="page"] {
   background: #142933;
@@ -1115,7 +1152,21 @@ body.theme-foundation h1 {
 
 body.theme-foundation .photo-band {
   height: 220px;
-  filter: grayscale(1);
+}
+
+body.theme-foundation .logo-band {
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+  filter: none;
+}
+
+body.theme-foundation .logo-band img {
+  width: min(100%, 420px);
+  height: auto;
+  object-fit: contain;
 }
 
 body.theme-foundation .card,
@@ -1271,6 +1322,10 @@ html[data-theme="night"] body.theme-table .section.alt {
   .span-7,
   .span-8 {
     grid-column: span 12;
+  }
+
+  .foundation-hero {
+    grid-template-columns: 1fr;
   }
 
   .cards,

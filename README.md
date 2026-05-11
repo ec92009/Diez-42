@@ -6,11 +6,11 @@ The goal of this first pass is intentionally plain: build a clean static V1 arou
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v72.1`.
+Current visible version: `v72.2`.
 Default viewer language: Spanish, with an English toggle retained.
 Current controls use one flag button for language and one sun/moon button for day/night.
 
-Remote repository: `https://github.com/ec92009/Diez-42` (private).
+Remote repository: `https://github.com/ec92009/Diez-42`.
 
 ## Preview
 
@@ -23,7 +23,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=72.1
+http://localhost:8042/?v=72.2
 ```
 
 ## Structure
@@ -31,6 +31,8 @@ http://localhost:8042/?v=72.1
 - `index.html` is the selected-direction hub.
 - `concepts/04-quiet-foundation.html` is the active working concept.
 - `Archive/concepts/` contains the four earlier concept directions for reference.
+- `Media/` contains user-provided Diez42 logo source exports.
+- `assets/logo-horizontal.png` and `assets/logo-vertical.png` are cropped web-use logo assets derived from the provided exports.
 - `assets/styles.css` contains all shared styling.
 - `assets/site-version.js` applies the visible version from cache-bust query strings or page labels.
 - `assets/site-controls.js` powers the flag language toggle, sun/moon theme toggle, draft translations, and persisted choices in `localStorage`.
@@ -62,7 +64,7 @@ Archived reference concepts:
 
 - All public-identity details should be verified before launch: formal name, CIF, registered address wording, association scope, statutory aims, and preferred contact channels.
 - Social presence appears to use `diez42malaga` / `Diez42Malaga`, but final links should come from the organization.
-- Current imagery uses local AI-generated placeholders. Replace with provided Diez42 photos before launch.
+- The Diez42 logo is now used in the header and active Concept 4 direction. Remaining program imagery uses local AI-generated placeholders; replace those with real Diez42 photos before launch.
 - Spanish copy is a lightweight mock translation, not final bilingual editorial copy.
 
 ## V2 Notes

@@ -4,7 +4,7 @@
 2. Verify legal identity, CIF, registry wording, scope, and address details directly with Diez42.
 3. Use `Diez42` as the only public-facing spelling.
 4. Collect official contact details: email, phone, WhatsApp, Instagram, Facebook, and physical-location wording.
-5. Replace AI-generated placeholders with real Diez42 photos and confirm usage permission.
+5. Replace remaining AI-generated program-photo placeholders with real Diez42 photos and confirm usage permission.
 6. Add a visible mock-stage note that current photos are AI-generated placeholders and do not depict real Diez42 people.
 7. Have a fluent Spanish speaker review all Spanish copy, including any Matthew 10:42 wording reused from the archived concepts.
 8. Decide whether to keep the English toggle for V1 or publish Spanish-only for the first launch.

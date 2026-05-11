@@ -2,7 +2,7 @@
 
 ## Conversation Summary
 
-The project started as a simple static V1 website for a neighbor's charity, Diez42, intended for GitHub Pages hosting under the private GitHub repo `ec92009/Diez-42`. Payments and donations were explicitly deferred to V2. Early discussion covered Stripe only as future context: the charity should own its own Stripe account and connect its own Spanish bank account when that work begins.
+The project started as a simple static V1 website for a neighbor's charity, Diez42, intended for GitHub Pages hosting under the GitHub repo `ec92009/Diez-42`. Payments and donations were explicitly deferred to V2. Early discussion covered Stripe only as future context: the charity should own its own Stripe account and connect its own Spanish bank account when that work begins.
 
 The requested build started as a five-option homepage mock selector similar to prior concept-board work. The current implementation now uses Concept 4, Quiet Foundation, as the selected working base. The other four concept pages have been moved into `Archive/concepts/` for reference. The site remains shared CSS, static HTML, no build step, and a local preview on port `8042`.
 
@@ -18,12 +18,13 @@ Matthew 10:42 was added as a small cited note on Concept 1 so the verse behind t
 
 ## Current State
 
-- Current visible version: `v72.1`.
+- Current visible version: `v72.2`.
 - Default viewer language: Spanish, with English still available through the toggle.
 - Header controls: one flag button for language and one sun/moon button for day/night.
-- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.1` is the second user-visible build for the day.
-- Repo: `https://github.com/ec92009/Diez-42` (private).
-- Local preview: `http://localhost:8042/?v=72.1`.
+- The provided Diez42 logo is now used in the global header, selector page selected-card visual, and active Concept 4 hero/logo band.
+- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.2` is the third user-visible build for the day.
+- Repo: `https://github.com/ec92009/Diez-42`.
+- Local preview: `http://localhost:8042/?v=72.2`.
 - Main files:
 - `index.html`: selected-direction hub with archived reference links.
 - `concepts/04-quiet-foundation.html`: active formal association / transparency direction.
@@ -31,6 +32,8 @@ Matthew 10:42 was added as a small cited note on Concept 1 so the verse behind t
 - `Archive/concepts/02-neighbor-hands.html`: archived practical local services direction.
 - `Archive/concepts/03-field-notes.html`: archived editorial updates direction.
 - `Archive/concepts/05-open-table.html`: archived belonging and community direction.
+- `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
+- `assets/logo-horizontal.png`, `assets/logo-vertical.png`: cropped web-ready logo assets derived from `Media/`.
 - `assets/styles.css`: layout, responsive behavior, day/night theme.
 - `assets/site-controls.js`: flag language toggle, sun/moon theme toggle, translations, and preference persistence.
 - `assets/site-version.js`: internal link versioning helper.
@@ -51,6 +54,6 @@ Matthew 10:42 was added as a small cited note on Concept 1 so the verse behind t
 ## Important Caveats
 
 - The organization details came from user-provided research notes and must be verified before public launch.
-- Current placeholder photos are local AI-generated images and should still be replaced with real Diez42 images when available.
+- Remaining placeholder program photos are local AI-generated images and should still be replaced with real Diez42 images when available.
 - Spanish translations are draft-level and should be reviewed by a fluent speaker before launch.
 - The mock has been pushed to `main`; confirm GitHub Pages visibility and access expectations before sharing externally.
