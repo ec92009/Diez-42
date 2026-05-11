@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 arou
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v72.2`.
+Current visible version: `v72.3`.
 Default viewer language: Spanish, with an English toggle retained.
 Current controls use one flag button for language and one sun/moon button for day/night.
 
@@ -23,38 +23,31 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=72.2
+http://localhost:8042/?v=72.3
 ```
 
 ## Structure
 
-- `index.html` is the selected-direction hub.
-- `concepts/04-quiet-foundation.html` is the active working concept.
-- `Archive/concepts/` contains the four earlier concept directions for reference.
+- `index.html` is the active V1 homepage.
+- `concepts/04-quiet-foundation.html` redirects old links back to the homepage.
+- `Archive/concepts/` contains earlier concept directions for reference only.
 - `Media/` contains user-provided Diez42 logo source exports.
 - `assets/logo-horizontal.png` and `assets/logo-vertical.png` are cropped web-use logo assets derived from the provided exports.
 - `assets/styles.css` contains all shared styling.
 - `assets/site-version.js` applies the visible version from cache-bust query strings or page labels.
 - `assets/site-controls.js` powers the flag language toggle, sun/moon theme toggle, draft translations, and persisted choices in `localStorage`.
 
-## Selected Direction
+## Working Direction
 
-Concept 4, Quiet Foundation, is the current working base. It is institutional, registry-forward, and transparency-focused.
-
-Archived reference concepts:
-
-1. Cup of Cold Water: faith-rooted, Matthew 10:42-forward, warm and personal.
-2. Neighbor Hands: practical, local, service-led, and easy to understand quickly.
-3. Field Notes: editorial/photo-led, designed for ongoing program updates.
-5. Open Table: welcoming, communal, and centered on belonging.
+The current homepage is institutional, registry-forward, and transparency-focused. The archived concepts remain available only as a reference bank for ideas, fonts, colors, sections, and language.
 
 ## V1 Scope
 
 - Static copy and image placeholders.
 - Bilingual EN/ES switch.
 - Day/night theme switch.
-- Active Concept 4 page plus archived reference concepts.
-- Top-first selected-direction hub with archived concept cards.
+- Active homepage plus archived reference concepts.
+- No public concept chooser on the homepage.
 - No payments.
 - No backend.
 - No donation form.
@@ -64,7 +57,7 @@ Archived reference concepts:
 
 - All public-identity details should be verified before launch: formal name, CIF, registered address wording, association scope, statutory aims, and preferred contact channels.
 - Social presence appears to use `diez42malaga` / `Diez42Malaga`, but final links should come from the organization.
-- The Diez42 logo is now used in the header and active Concept 4 direction. Remaining program imagery uses local AI-generated placeholders; replace those with real Diez42 photos before launch.
+- The Diez42 logo is now used in the header and homepage. Remaining program imagery uses local AI-generated placeholders; replace those with real Diez42 photos before launch.
 - Spanish copy is a lightweight mock translation, not final bilingual editorial copy.
 
 ## V2 Notes

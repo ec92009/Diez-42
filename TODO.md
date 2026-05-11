@@ -1,6 +1,6 @@
 # Diez42 Backlog
 
-1. Treat Concept 4, Quiet Foundation, as the active V1 base and refine from there.
+1. Treat `index.html` as the active V1 homepage and refine from there.
 2. Verify legal identity, CIF, registry wording, scope, and address details directly with Diez42.
 3. Use `Diez42` as the only public-facing spelling.
 4. Collect official contact details: email, phone, WhatsApp, Instagram, Facebook, and physical-location wording.
