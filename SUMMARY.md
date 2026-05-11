@@ -12,10 +12,11 @@ The site now has a persistent concept switcher on all concept pages plus two top
 
 ## Current State
 
-- Current visible version: `v71.5`.
-- Versioning follows the PhotosByElie-style date-based SOP: `71` is days since `2026-02-28`; `.5` is the fifth user-visible build for the day.
+- Current visible version: `v72.0`.
+- Default viewer language: Spanish, with English still available through the toggle.
+- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.0` is the first user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42` (private).
-- Local preview: `http://localhost:8042/?v=71.5`.
+- Local preview: `http://localhost:8042/?v=72.0`.
 - Main files:
 - `index.html`: concept selector hub.
 - `concepts/01-cup-of-cold-water.html`: Matthew 10:42-forward direction.

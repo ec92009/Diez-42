@@ -1,6 +1,26 @@
 (() => {
   const root = document.documentElement;
   const storage = window.localStorage;
+  const defaultLanguage = "es";
+  const defaultLanguageMigrationKey = "diez42-default-lang-v72";
+  const languageLabels = {
+    en: "🇬🇧",
+    es: "🇪🇸"
+  };
+  const themeIcons = {
+    day: "☀",
+    night: "☾"
+  };
+  const themeLabels = {
+    en: {
+      day: "Day",
+      night: "Night"
+    },
+    es: {
+      day: "Dia",
+      night: "Noche"
+    }
+  };
   const translations = {
     "Skip to content": "Saltar al contenido",
     "Mock draft": "Borrador",
@@ -27,8 +47,16 @@
     "Calm and institutional. Best if the site should foreground the formal association identity and transparency.": "Sereno e institucional. Ideal si el sitio debe destacar la identidad formal de la asociacion y la transparencia.",
     "Welcoming and communal. Best if Diez42 should feel like a place of belonging for newcomers in Málaga.": "Acogedor y comunitario. Ideal si Diez42 debe sentirse como un lugar de pertenencia para recien llegados a Malaga.",
     "Málaga": "Malaga",
+    "Warm": "Calido",
+    "Refugee support": "Apoyo a refugiados",
     "Services": "Servicios",
     "Community center": "Centro comunitario",
+    "Story-first": "Historias primero",
+    "Programs": "Programas",
+    "Partners": "Aliados",
+    "Registry": "Registro",
+    "Trust": "Confianza",
+    "Structured": "Estructurado",
     "Welcome": "Acogida",
     "Integration": "Integracion",
     "Belonging": "Pertenencia",
@@ -42,6 +70,11 @@
     "Why Diez 42": "Por que Diez 42",
     "The name points to practical mercy, not spectacle.": "El nombre apunta a misericordia practica, no a espectaculo.",
     "The name points to Matthew 10:42: the cup of cold water given in care. In Málaga, that spirit becomes language classes, job training, food support, children's activities, and steady help for families building a new life.": "El nombre apunta a Mateo 10:42: el vaso de agua fria dado con cuidado. En Malaga, ese espiritu se convierte en clases de idiomas, formacion laboral, apoyo alimentario, actividades infantiles y ayuda constante para familias que construyen una nueva vida.",
+    "The verse behind the name": "El versiculo detras del nombre",
+    "\"And whosoever shall give to drink unto one of these little ones a cup of cold water only in the name of a disciple, verily I say unto you, he shall in no wise lose his reward.\"": "\"Y cualquiera que diere á uno de estos pequeñitos un vaso de agua fría solamente, en nombre de discípulo, de cierto os digo, que no perderá su recompensa.\"",
+    "Matthew 10:42, King James Version. Spanish shown from Reina-Valera 1909.": "Mateo 10:42, Reina-Valera 1909. Ingles disponible desde King James Version.",
+    "KJV source": "Fuente KJV",
+    "RV1909 source": "Fuente RV1909",
     "Welcome newcomers with dignity.": "Acoger a recien llegados con dignidad.",
     "Offer education, training, and activities.": "Ofrecer educacion, formacion y actividades.",
     "Build community around practical care.": "Construir comunidad alrededor del cuidado practico.",
@@ -53,6 +86,7 @@
     "Concept 2 of 5. Adapted around practical support, classes, training, and family activities.": "Concepto 2 de 5. Adaptado al apoyo practico, clases, formacion y actividades familiares.",
     "Social action in Málaga": "Accion social en Malaga",
     "Practical support for starting again.": "Apoyo practico para empezar de nuevo.",
+    "Diez42 helps immigrants, refugees, and other newcomers integrate through language classes, job training, food support, parent and family activities, exercise, art, and community connection.": "Diez42 ayuda a inmigrantes, refugiados y otros recien llegados a integrarse mediante clases de idiomas, formacion laboral, apoyo alimentario, actividades para padres y familias, ejercicio, arte y conexion comunitaria.",
     "See how we help": "Ver como ayudamos",
     "Contact us": "Contactanos",
     "How it works": "Como funciona",
@@ -137,6 +171,18 @@
       const isActive = button.dataset.langControl === next;
       button.setAttribute("aria-pressed", String(isActive));
     });
+    document.querySelectorAll("[data-lang-toggle]").forEach((button) => {
+      button.textContent = languageLabels[next];
+      button.setAttribute("aria-label", next === "es" ? "Idioma: espanol" : "Language: English");
+    });
+    updateThemeToggle(root.dataset.theme || "day", next);
+  };
+
+  const updateThemeToggle = (theme, lang = root.lang === "es" ? "es" : "en") => {
+    document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+      button.textContent = themeIcons[theme];
+      button.setAttribute("aria-label", lang === "es" ? `Tema: ${themeLabels.es[theme].toLowerCase()}` : `Theme: ${themeLabels.en[theme]}`);
+    });
   };
 
   const applyTheme = (theme) => {
@@ -147,10 +193,17 @@
       const isActive = button.dataset.themeControl === next;
       button.setAttribute("aria-pressed", String(isActive));
     });
+    updateThemeToggle(next);
   };
 
   document.addEventListener("click", (event) => {
     const target = event.target instanceof Element ? event.target : null;
+    const langToggle = target?.closest("[data-lang-toggle]");
+    if (langToggle) applyLanguage(root.lang === "es" ? "en" : "es");
+
+    const themeToggle = target?.closest("[data-theme-toggle]");
+    if (themeToggle) applyTheme(root.dataset.theme === "night" ? "day" : "night");
+
     const langButton = target?.closest("[data-lang-control]");
     if (langButton) applyLanguage(langButton.dataset.langControl);
 
@@ -158,6 +211,15 @@
     if (themeButton) applyTheme(themeButton.dataset.themeControl);
   });
 
+  const storedLanguage = storage.getItem("diez42-lang");
+  if (storedLanguage === "en" && !storage.getItem(defaultLanguageMigrationKey)) {
+    storage.removeItem("diez42-lang");
+    storage.setItem(defaultLanguageMigrationKey, "1");
+  }
+  if (!storage.getItem(defaultLanguageMigrationKey)) {
+    storage.setItem(defaultLanguageMigrationKey, "1");
+  }
+
   applyTheme(storage.getItem("diez42-theme") || "day");
-  applyLanguage(storage.getItem("diez42-lang") || "en");
+  applyLanguage(storage.getItem("diez42-lang") || defaultLanguage);
 })();

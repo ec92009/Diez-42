@@ -6,7 +6,8 @@ The goal of this first pass is intentionally plain: help the client choose a mai
 
 Working content notes currently describe Diez42 / Diez 42 as `Asociación para el Desarrollo e Integración Diez 42`, a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. These details should be verified against the municipal registry and the organization before public launch.
 
-Current visible version: `v71.5`.
+Current visible version: `v72.0`.
+Default viewer language: Spanish, with an English toggle retained.
 
 Remote repository: `https://github.com/ec92009/Diez-42` (private).
 
@@ -21,7 +22,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=71.5
+http://localhost:8042/?v=72.0
 ```
 
 ## Structure

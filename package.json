@@ -1,6 +1,6 @@
 {
   "name": "diez-42",
-  "version": "71.5.0",
+  "version": "72.0.0",
   "private": true,
   "description": "Static Diez 42 charity homepage mock selector for GitHub Pages.",
   "type": "commonjs",
