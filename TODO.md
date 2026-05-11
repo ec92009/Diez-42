@@ -13,5 +13,6 @@
 11. Resolve or close Gary's stale/conflicting PR #1 after confirming no new content is needed from it.
 12. Decide whether the day/night switch belongs in production or whether V1 should use one fixed visual theme.
 13. Configure the reserved `diez42.org` domain for GitHub Pages when registrar access is available.
-14. Do real-device QA on mobile and desktop after final copy and real photos are inserted.
-15. Defer donation/payment design to V2 until legal, bank, tax-receipt, and Stripe-account ownership questions are settled.
+14. Add low-cost static QA for the active homepage and old-link redirect: link integrity, language toggle behavior, day/night persistence, version/cache-bust consistency, and a basic accessibility pass.
+15. Do real-device QA on mobile and desktop after final copy and real photos are inserted.
+16. Defer donation/payment design to V2 until legal, bank, tax-receipt, and Stripe-account ownership questions are settled.

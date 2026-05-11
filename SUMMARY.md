@@ -28,7 +28,7 @@ In the latest session, the user reacted that the active homepage had become too 
 - Default viewer language: Spanish, with English still available through the toggle.
 - Header controls: one flag button for language and one sun/moon button for day/night.
 - The provided Diez42 logo is now used in the global header, and the active homepage has restored AI-placeholder program photos for warmth while real media is pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.10` is the eleventh user-visible build for the day.
+- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.11` is the twelfth user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
 - Local preview: `http://localhost:8042/?v=72.11`.
 - Main files:
@@ -55,6 +55,7 @@ In the latest session, the user reacted that the active homepage had become too 
 - The homepage no longer presents itself as a concept chooser.
 - The active homepage has a warmer hero/program-photo layout, social-icon contact buttons, phone number under the address, and no public V1 donation note in the footer.
 - Archived pages are retained for reference only and should not be kept current unless explicitly requested.
+- The 2026-05-11 Codex review was triaged into `TODO.md` and archived at `Archive/reviews/Diez-42 Codex Review 2026-05-11.md`.
 
 ## Important Caveats
 
