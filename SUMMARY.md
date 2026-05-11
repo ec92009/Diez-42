@@ -20,18 +20,20 @@ The user also provided social links for Instagram (`https://www.instagram.com/di
 
 Matthew 10:42 was added as a small cited note in the archived exploration so the verse behind the name is available without dominating the active homepage. The note uses KJV text in English and Reina-Valera 1909 text in Spanish, with source links included in the archived page.
 
+In the latest session, the user reacted that the active homepage had become too sad and had no photos. The homepage was warmed back up with an AI-placeholder hero image, three program photo cards, softer welcome-oriented copy, and an explicit AI-photo disclosure. The contact buttons now include inline icons for WhatsApp, Instagram, and Facebook. The contact section was then tightened so the phone number sits under the physical mailing address instead of as a right-side action button, and the footer's public V1 donation note was removed. GitHub PR #1 from `garyguate` was inspected; it only removed the draft banner and bumped to `v72.4`, which is already superseded by current `main`, and it is now stale/conflicting.
+
 ## Current State
 
-- Current visible version: `v72.9`.
+- Current visible version: `v72.10`.
 - Default viewer language: Spanish, with English still available through the toggle.
 - Header controls: one flag button for language and one sun/moon button for day/night.
 - The provided Diez42 logo is now used in the global header, and the active homepage has restored AI-placeholder program photos for warmth while real media is pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.9` is the tenth user-visible build for the day.
+- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.10` is the eleventh user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=72.9`.
+- Local preview: `http://localhost:8042/?v=72.10`.
 - Main files:
 - `index.html`: active homepage.
-- Contact actions on active homepage: WhatsApp/phone `+34 600 33 97 94`, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.
+- Contact details on active homepage: WhatsApp action, phone number `+34 600 33 97 94` under the mailing address, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.
 - `concepts/04-quiet-foundation.html`: redirect for old direct links.
 - `Archive/concepts/`: old exploratory pages retained for reference only.
 - `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
@@ -39,6 +41,7 @@ Matthew 10:42 was added as a small cited note in the archived exploration so the
 - `assets/styles.css`: layout, responsive behavior, day/night theme.
 - `assets/site-controls.js`: flag language toggle, sun/moon theme toggle, translations, and preference persistence.
 - `assets/site-version.js`: internal link versioning helper.
+- Open PR note: GitHub PR #1 is stale/conflicting and should not be merged as-is unless rebased and updated with new work.
 
 ## Verification Performed
 
@@ -50,6 +53,7 @@ Matthew 10:42 was added as a small cited note in the archived exploration so the
 - Flag language switch works.
 - Sun/moon day-night switch works.
 - The homepage no longer presents itself as a concept chooser.
+- The active homepage has a warmer hero/program-photo layout, social-icon contact buttons, phone number under the address, and no public V1 donation note in the footer.
 - Archived pages are retained for reference only and should not be kept current unless explicitly requested.
 
 ## Important Caveats

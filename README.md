@@ -6,10 +6,10 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v72.9`.
+Current visible version: `v72.10`.
 Default viewer language: Spanish, with an English toggle retained.
 Current controls use one flag button for language and one sun/moon button for day/night.
-Confirmed WhatsApp and phone: `+34 600 33 97 94`.
+Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
 Confirmed social links: Instagram `https://www.instagram.com/diez42malaga?igsh=cXNmanN1dmV6Mndy`; Facebook `https://www.facebook.com/share/1XxCNeBHnF/?mibextid=wwXIfr`.
 Physical mailing address: `Avenida de Andalucía 27, 29006 Málaga`.
 
@@ -26,7 +26,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=72.9
+http://localhost:8042/?v=72.10
 ```
 
 ## Structure
@@ -42,7 +42,7 @@ http://localhost:8042/?v=72.9
 
 ## Working Direction
 
-The current homepage is institutional, registry-forward, and transparency-focused. The archived concepts remain available only as a reference bank for ideas, fonts, colors, sections, and language.
+The current homepage balances warm welcome with practical clarity: a photo-led hero, program cards, confirmed contact actions, and a restrained transparency section. The archived concepts remain available only as a reference bank for ideas, fonts, colors, sections, and language.
 
 ## Editing Rule
 
@@ -51,9 +51,11 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 ## V1 Scope
 
 - Static copy and image placeholders.
-- Confirmed WhatsApp and phone action.
+- Confirmed WhatsApp action and phone number text.
 - Confirmed Instagram/Facebook links and mailing address.
 - Warm hero/program photo placeholders with an explicit AI-photo disclosure.
+- Inline icons for WhatsApp, Instagram, and Facebook contact buttons.
+- Footer kept minimal with no V1 donation note on the page.
 - Bilingual EN/ES switch.
 - Day/night theme switch.
 - Active homepage plus archived reference concepts.

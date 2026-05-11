@@ -31,7 +31,6 @@
     "Concept 3": "Concepto 3",
     "Concept 5": "Concepto 5",
     "All concepts": "Todos los conceptos",
-    "No donation flow in V1": "Sin donaciones en V1",
     "Diez42 concept board": "Panel de conceptos Diez42",
     "Choose the first impression.": "Elige la primera impresion.",
     "Archived concepts": "Conceptos archivados",
