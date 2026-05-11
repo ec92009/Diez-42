@@ -943,7 +943,7 @@ html[lang="en"] .option-table::before {
 
 .contact-band {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, auto);
   gap: 18px;
   align-items: center;
   padding: 24px;
@@ -956,9 +956,23 @@ html[lang="en"] .option-table::before {
   color: rgba(255, 255, 255, 0.82);
 }
 
+.contact-detail {
+  margin-bottom: 0;
+}
+
 .contact-band .button {
   background: #fff;
   color: var(--deep);
+}
+
+.contact-band .action-row {
+  justify-content: flex-end;
+}
+
+.contact-band .button.secondary {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.62);
 }
 
 body.theme-water {
@@ -1184,6 +1198,11 @@ body.theme-foundation .foundation-strip {
 body.theme-foundation .contact-band {
   border-radius: 0;
   background: #142933;
+}
+
+body.theme-foundation .contact-band .button.secondary {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.62);
 }
 
 body.theme-table {

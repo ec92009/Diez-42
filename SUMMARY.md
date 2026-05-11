@@ -14,19 +14,24 @@ In a later working session, the user asked for the five options to feel more var
 
 The user provided Diez42 logo/media assets in `Media/`. Cropped web-ready logo files were created under `assets/`, and the logo is now used on the homepage. After that, the user asked to remove all public references to the active page being an old numbered concept. The homepage no longer uses chooser, selected-direction, or old option-number framing; `concepts/04-quiet-foundation.html` now redirects old links back to the homepage.
 
+The confirmed WhatsApp and phone number is `+34 600 33 97 94`. The active homepage contact section now links to WhatsApp via `https://wa.me/34600339794` and phone via `tel:+34600339794`.
+
+The user also provided social links for Instagram (`https://www.instagram.com/diez42malaga?igsh=cXNmanN1dmV6Mndy`) and Facebook (`https://www.facebook.com/share/1XxCNeBHnF/?mibextid=wwXIfr`). The physical mailing address is `Avenida de Andalucía 27, 29006 Málaga`; postal-code lookup found `29006` for Avenida de Andalucía 27 in Málaga.
+
 Matthew 10:42 was added as a small cited note in the archived exploration so the verse behind the name is available without dominating the active homepage. The note uses KJV text in English and Reina-Valera 1909 text in Spanish, with source links included in the archived page.
 
 ## Current State
 
-- Current visible version: `v72.3`.
+- Current visible version: `v72.7`.
 - Default viewer language: Spanish, with English still available through the toggle.
 - Header controls: one flag button for language and one sun/moon button for day/night.
 - The provided Diez42 logo is now used in the global header and active homepage hero.
-- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.3` is the fourth user-visible build for the day.
+- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.7` is the eighth user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=72.3`.
+- Local preview: `http://localhost:8042/?v=72.7`.
 - Main files:
 - `index.html`: active homepage.
+- Contact actions on active homepage: WhatsApp/phone `+34 600 33 97 94`, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.
 - `concepts/04-quiet-foundation.html`: redirect for old direct links.
 - `Archive/concepts/`: old exploratory pages retained for reference only.
 - `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
