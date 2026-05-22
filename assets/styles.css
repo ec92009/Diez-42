@@ -99,7 +99,8 @@ html[data-theme="night"] .button {
 }
 
 html[data-theme="night"] .button.secondary,
-html[data-theme="night"] .control-button {
+html[data-theme="night"] .control-button,
+html[data-theme="night"] .language-select {
   background: transparent;
   color: #d9f3ec;
   border-color: rgba(217, 243, 236, 0.28);
@@ -257,6 +258,19 @@ img {
   font-weight: 850;
 }
 
+.language-select {
+  min-width: 86px;
+  min-height: 32px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
 .icon-button {
   font-size: 1rem;
   line-height: 1;
@@ -269,6 +283,14 @@ img {
 .control-button[aria-pressed="true"] {
   background: var(--deep);
   color: #fff;
+}
+
+.control-button:focus-visible,
+.language-select:focus-visible,
+.button:focus-visible,
+.nav a:focus-visible {
+  outline: 3px solid var(--accent-2);
+  outline-offset: 2px;
 }
 
 .concept-switcher {

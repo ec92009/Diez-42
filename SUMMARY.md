@@ -8,7 +8,7 @@ The requested build started as a five-option homepage exploration similar to pri
 
 The user later supplied better public context for Diez42: it appears to be formally registered in Málaga as a local social-action association serving immigrants, refugees, and other newcomers. Public notes mention language classes, job training, parent and family activities, exercise, art, practical help, community support, food distribution, children's English activities, Christian/Matthew 10:42 roots, and an Elevāt women's artisan/co-op project. This context was integrated into the mock copy with a verify-before-launch caveat. The user later clarified that the public-facing spelling must always be `Diez42`.
 
-The site now has two compact top-right icon controls: a flag language toggle and a sun/moon day-night toggle. Preferences are saved in `localStorage` so the selected language and theme persist on the homepage.
+The site now has compact top-right controls: a language selector and a sun/moon day-night toggle. Preferences are saved in `localStorage` so the selected language and theme persist on the homepage.
 
 In a later working session, the user asked for the five options to feel more varied, for Spanish to become the default language everywhere, for the controls to collapse to one button per toggle, for the theme toggle to use sun/moon icons, and for the language toggle to use flags. The project then moved from chooser mode into homepage mode: future edits should focus on the active homepage and shared assets, not keeping archived mock pages current.
 
@@ -24,13 +24,13 @@ In the latest session, the user reacted that the active homepage had become too 
 
 ## Current State
 
-- Current visible version: `v72.11`.
-- Default viewer language: Spanish, with English still available through the toggle.
-- Header controls: one flag button for language and one sun/moon button for day/night.
+- Current visible version: `v83.0`.
+- Default viewer language: Spanish, with English, French, Ukrainian, Russian, Lithuanian, Belarusian, Arabic (Morocco), and Arabic (Algeria) available through the selector.
+- Header controls: one compact language selector and one sun/moon button for day/night.
 - The provided Diez42 logo is now used in the global header, and the active homepage has restored AI-placeholder program photos for warmth while real media is pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `72` is days since `2026-02-28`; `.11` is the twelfth user-visible build for the day.
+- Versioning follows the PhotosByElie-style date-based SOP: `83` is days since `2026-02-28`; `.0` is the first user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=72.11`.
+- Local preview: `http://localhost:8042/?v=83.0`.
 - Main files:
 - `index.html`: active homepage.
 - Contact details on active homepage: WhatsApp action, phone number `+34 600 33 97 94` under the mailing address, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.
@@ -39,7 +39,7 @@ In the latest session, the user reacted that the active homepage had become too 
 - `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
 - `assets/logo-horizontal.png`, `assets/logo-vertical.png`: cropped web-ready logo assets derived from `Media/`.
 - `assets/styles.css`: layout, responsive behavior, day/night theme.
-- `assets/site-controls.js`: flag language toggle, sun/moon theme toggle, translations, and preference persistence.
+- `assets/site-controls.js`: language selector, sun/moon theme toggle, translations, right-to-left Arabic rendering, and preference persistence.
 - `assets/site-version.js`: internal link versioning helper.
 - Open PR note: GitHub PR #1 is stale/conflicting and should not be merged as-is unless rebased and updated with new work.
 
@@ -50,7 +50,7 @@ In the latest session, the user reacted that the active homepage had become too 
 - Local pages returned `200` during preview testing.
 - Browser testing confirmed the homepage rendered without the old numbered-concept framing.
 - Active homepage and old direct link behavior work.
-- Flag language switch works.
+- Language selector works.
 - Sun/moon day-night switch works.
 - The homepage no longer presents itself as a concept chooser.
 - The active homepage has a warmer hero/program-photo layout, social-icon contact buttons, phone number under the address, and no public V1 donation note in the footer.
@@ -61,5 +61,5 @@ In the latest session, the user reacted that the active homepage had become too 
 
 - The organization details came from user-provided research notes and must be verified before public launch.
 - Remaining placeholder program photos are local AI-generated images and should still be replaced with real Diez42 images when available.
-- Spanish translations are draft-level and should be reviewed by a fluent speaker before launch.
+- Spanish and additional language translations are draft-level and should be reviewed by fluent speakers before launch.
 - GitHub Pages is serving from `main`; the reserved domain is `diez42.org`, but DNS has not been configured yet.

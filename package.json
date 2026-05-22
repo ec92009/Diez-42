@@ -1,6 +1,6 @@
 {
   "name": "diez-42",
-  "version": "72.11.0",
+  "version": "83.0.0",
   "private": true,
   "description": "Static Diez42 charity homepage for GitHub Pages.",
   "type": "commonjs",
