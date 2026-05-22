@@ -100,11 +100,14 @@ html[data-theme="night"] .button {
 
 html[data-theme="night"] .button.secondary,
 html[data-theme="night"] .control-button,
-html[data-theme="night"] .language-select,
-html[data-theme="night"] .version-pill {
+html[data-theme="night"] .language-select {
   background: transparent;
   color: #d9f3ec;
   border-color: rgba(217, 243, 236, 0.28);
+}
+
+html[data-theme="night"] .version-pill {
+  color: #d9f3ec;
 }
 
 html[data-theme="night"] .media-caption,
@@ -276,9 +279,7 @@ img {
   display: inline-flex;
   align-items: center;
   min-height: 32px;
-  padding: 0 9px;
-  border: 1px solid rgba(20, 41, 51, 0.16);
-  border-radius: 999px;
+  padding: 0 6px;
   color: var(--muted);
   font-size: 0.72rem;
   font-weight: 850;
