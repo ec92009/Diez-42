@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v83.2`.
+Current visible version: `v83.3`.
 Default viewer language: Spanish, with a compact selector for English, French, Ukrainian, Russian, Lithuanian, Belarusian, Arabic (Morocco), and Arabic (Algeria).
 Current controls use one language selector, one sun/moon button for day/night, and a subtle visible version pill.
 Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
@@ -26,7 +26,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=83.2
+http://localhost:8042/?v=83.3
 ```
 
 ## Structure

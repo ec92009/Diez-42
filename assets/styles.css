@@ -1026,7 +1026,7 @@ html[lang="en"] .option-table::before {
 
 .contact-band {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, auto);
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
   gap: 18px;
   align-items: center;
   padding: 24px;
@@ -1050,7 +1050,14 @@ html[lang="en"] .option-table::before {
 }
 
 .contact-band .action-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
   justify-content: flex-end;
+}
+
+.contact-band .social-button {
+  width: 100%;
 }
 
 .contact-band .button.secondary {
