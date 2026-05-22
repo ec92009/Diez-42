@@ -1026,7 +1026,7 @@ html[lang="en"] .option-table::before {
 
 .contact-band {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
+  grid-template-columns: 1fr;
   gap: 18px;
   align-items: center;
   padding: 24px;
@@ -1051,13 +1051,18 @@ html[lang="en"] .option-table::before {
 
 .contact-band .action-row {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   align-items: stretch;
-  justify-content: flex-end;
+  width: 100%;
 }
 
-.contact-band .social-button {
+.contact-band .social-button,
+.contact-band .button.secondary.social-button {
   width: 100%;
+  min-height: 50px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.62);
 }
 
 .contact-band .button.secondary {
@@ -1382,6 +1387,13 @@ html[data-theme="night"] body.theme-foundation .contact-band {
 
 html[data-theme="night"] body.theme-foundation .contact-band p {
   color: rgba(15, 24, 21, 0.76);
+}
+
+html[data-theme="night"] body.theme-foundation .contact-band .social-button,
+html[data-theme="night"] body.theme-foundation .contact-band .button.secondary.social-button {
+  background: #142933;
+  color: #fff;
+  border-color: #142933;
 }
 
 html[data-theme="night"] body.theme-table {
