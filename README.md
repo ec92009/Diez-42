@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v89.1`.
+Current visible version: `v89.2`.
 Default viewer language: Spanish, with a compact selector for English, Brazilian Portuguese, Italian, French, Ukrainian, Russian, Lithuanian, Belarusian, Arabic (Morocco), and Arabic (Algeria).
 Current controls use one language selector with Brazilian Portuguese and Italian available, one sun/moon button for day/night, and a subtle visible version pill.
 Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
@@ -26,12 +26,13 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=89.1
+http://localhost:8042/?v=89.2
 ```
 
 ## Structure
 
 - `index.html` is the active V1 homepage.
+- `privacy.html`, `terms.html`, and `data-deletion.html` provide the public policy pages expected on public-facing websites.
 - `concepts/04-quiet-foundation.html` redirects old links back to the homepage.
 - `Archive/concepts/` contains earlier concept directions for reference only.
 - `Media/` contains user-provided Diez42 logo source exports.
@@ -51,12 +52,13 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 ## V1 Scope
 
 - Static copy and image placeholders.
+- Static privacy policy, terms, and data deletion instruction pages.
 - Confirmed WhatsApp action and phone number text.
 - Confirmed Instagram/Facebook links and mailing address.
 - Warm hero/program photo placeholders with an explicit AI-photo disclosure.
 - Inline icons for WhatsApp, Instagram, and Facebook contact buttons.
 - Footer kept minimal with no V1 donation note on the page.
-- Multilingual selector for ES, EN, FR, UK, RU, LT, BE, AR-MA, and AR-DZ.
+- Multilingual selector for ES, EN, PT-BR, IT, FR, UK, RU, LT, BE, AR-MA, and AR-DZ.
 - Day/night theme switch.
 - Active homepage plus archived reference concepts.
 - No public concept chooser on the homepage.

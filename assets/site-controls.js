@@ -43,6 +43,19 @@
     "ar-MA": "اختيار اللغة",
     "ar-DZ": "اختيار اللغة"
   };
+  const languageDatasetKeys = {
+    en: "en",
+    es: "es",
+    "pt-BR": "ptBr",
+    it: "it",
+    fr: "fr",
+    uk: "uk",
+    ru: "ru",
+    lt: "lt",
+    be: "be",
+    "ar-MA": "arMa",
+    "ar-DZ": "arDz"
+  };
   const pageTitles = {
     en: "Diez42 | Social action in Malaga",
     es: "Diez42 | Accion social en Malaga",
@@ -146,7 +159,18 @@
     "Formal partner intake forms": "استمارات رسمية للشركاء",
     "Clear next step. No clutter.": "خطوة تالية واضحة. بلا ازدحام.",
     "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "العنوان البريدي: Avenida de Andalucía 27, 29006 Málaga",
-    "Phone number: +34 600 33 97 94": "رقم الهاتف: +34 600 33 97 94"
+    "Phone number: +34 600 33 97 94": "رقم الهاتف: +34 600 33 97 94",
+    "Privacy": "الخصوصية",
+    "Privacy Policy": "سياسة الخصوصية",
+    "Diez42 | Privacy Policy": "Diez42 | سياسة الخصوصية",
+    "Home": "الرئيسية",
+    "Terms": "الشروط",
+    "Terms of Service": "شروط الخدمة",
+    "Diez42 | Terms of Service": "Diez42 | شروط الخدمة",
+    "Data deletion": "حذف البيانات",
+    "Data Deletion": "حذف البيانات",
+    "Data Deletion Instructions": "تعليمات حذف البيانات",
+    "Diez42 | Data Deletion": "Diez42 | حذف البيانات"
   };
   const translations = {
     es: {
@@ -303,6 +327,17 @@
       "Mailing address:": "Direccion postal:",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Direccion postal: Avenida de Andalucía 27, 29006 Málaga",
       "Phone number: +34 600 33 97 94": "Numero de telefono: +34 600 33 97 94",
+      "Privacy": "Privacidad",
+      "Privacy Policy": "Politica de privacidad",
+      "Diez42 | Privacy Policy": "Diez42 | Politica de privacidad",
+      "Home": "Inicio",
+      "Terms": "Terminos",
+      "Terms of Service": "Terminos de servicio",
+      "Diez42 | Terms of Service": "Diez42 | Terminos de servicio",
+      "Data deletion": "Eliminacion de datos",
+      "Data Deletion": "Eliminacion de datos",
+      "Data Deletion Instructions": "Instrucciones de eliminacion de datos",
+      "Diez42 | Data Deletion": "Diez42 | Eliminacion de datos",
       "WhatsApp": "WhatsApp",
       "Instagram": "Instagram",
       "Facebook": "Facebook",
@@ -357,7 +392,18 @@
       "Formal partner intake forms": "Formulaires officiels pour partenaires",
       "Clear next step. No clutter.": "Une prochaine étape claire. Sans encombrement.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Adresse postale : Avenida de Andalucía 27, 29006 Málaga",
-      "Phone number: +34 600 33 97 94": "Téléphone : +34 600 33 97 94"
+      "Phone number: +34 600 33 97 94": "Téléphone : +34 600 33 97 94",
+      "Privacy": "Confidentialité",
+      "Privacy Policy": "Politique de confidentialité",
+      "Diez42 | Privacy Policy": "Diez42 | Politique de confidentialité",
+      "Home": "Accueil",
+      "Terms": "Conditions",
+      "Terms of Service": "Conditions d'utilisation",
+      "Diez42 | Terms of Service": "Diez42 | Conditions d'utilisation",
+      "Data deletion": "Suppression des données",
+      "Data Deletion": "Suppression des données",
+      "Data Deletion Instructions": "Instructions de suppression des données",
+      "Diez42 | Data Deletion": "Diez42 | Suppression des données"
     },
     "pt-BR": {
       "Skip to content": "Pular para o conteúdo",
@@ -395,7 +441,18 @@
       "Formal partner intake forms": "Formulários formais para parceiros",
       "Clear next step. No clutter.": "Próximo passo claro. Sem excesso.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Endereço postal: Avenida de Andalucía 27, 29006 Málaga",
-      "Phone number: +34 600 33 97 94": "Telefone: +34 600 33 97 94"
+      "Phone number: +34 600 33 97 94": "Telefone: +34 600 33 97 94",
+      "Privacy": "Privacidade",
+      "Privacy Policy": "Política de privacidade",
+      "Diez42 | Privacy Policy": "Diez42 | Política de privacidade",
+      "Home": "Início",
+      "Terms": "Termos",
+      "Terms of Service": "Termos de serviço",
+      "Diez42 | Terms of Service": "Diez42 | Termos de serviço",
+      "Data deletion": "Exclusão de dados",
+      "Data Deletion": "Exclusão de dados",
+      "Data Deletion Instructions": "Instruções de exclusão de dados",
+      "Diez42 | Data Deletion": "Diez42 | Exclusão de dados"
     },
     it: {
       "Skip to content": "Vai al contenuto",
@@ -433,7 +490,18 @@
       "Formal partner intake forms": "Moduli formali per partner",
       "Clear next step. No clutter.": "Prossimo passo chiaro. Senza confusione.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Indirizzo postale: Avenida de Andalucía 27, 29006 Málaga",
-      "Phone number: +34 600 33 97 94": "Telefono: +34 600 33 97 94"
+      "Phone number: +34 600 33 97 94": "Telefono: +34 600 33 97 94",
+      "Privacy": "Privacy",
+      "Privacy Policy": "Informativa privacy",
+      "Diez42 | Privacy Policy": "Diez42 | Informativa privacy",
+      "Home": "Home",
+      "Terms": "Termini",
+      "Terms of Service": "Termini di servizio",
+      "Diez42 | Terms of Service": "Diez42 | Termini di servizio",
+      "Data deletion": "Eliminazione dati",
+      "Data Deletion": "Eliminazione dati",
+      "Data Deletion Instructions": "Istruzioni per eliminare i dati",
+      "Diez42 | Data Deletion": "Diez42 | Eliminazione dei dati"
     },
     uk: {
       "Skip to content": "Перейти до вмісту",
@@ -471,7 +539,18 @@
       "Formal partner intake forms": "Офіційні форми для партнерів",
       "Clear next step. No clutter.": "Чіткий наступний крок. Без зайвого.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Поштова адреса: Avenida de Andalucía 27, 29006 Málaga",
-      "Phone number: +34 600 33 97 94": "Номер телефону: +34 600 33 97 94"
+      "Phone number: +34 600 33 97 94": "Номер телефону: +34 600 33 97 94",
+      "Privacy": "Приватність",
+      "Privacy Policy": "Політика приватності",
+      "Diez42 | Privacy Policy": "Diez42 | Політика приватності",
+      "Home": "Головна",
+      "Terms": "Умови",
+      "Terms of Service": "Умови користування",
+      "Diez42 | Terms of Service": "Diez42 | Умови користування",
+      "Data deletion": "Видалення даних",
+      "Data Deletion": "Видалення даних",
+      "Data Deletion Instructions": "Інструкції з видалення даних",
+      "Diez42 | Data Deletion": "Diez42 | Видалення даних"
     },
     ru: {
       "Skip to content": "Перейти к содержанию",
@@ -509,7 +588,18 @@
       "Formal partner intake forms": "Официальные формы для партнеров",
       "Clear next step. No clutter.": "Четкий следующий шаг. Без лишнего.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Почтовый адрес: Avenida de Andalucía 27, 29006 Málaga",
-      "Phone number: +34 600 33 97 94": "Номер телефона: +34 600 33 97 94"
+      "Phone number: +34 600 33 97 94": "Номер телефона: +34 600 33 97 94",
+      "Privacy": "Конфиденциальность",
+      "Privacy Policy": "Политика конфиденциальности",
+      "Diez42 | Privacy Policy": "Diez42 | Политика конфиденциальности",
+      "Home": "Главная",
+      "Terms": "Условия",
+      "Terms of Service": "Условия использования",
+      "Diez42 | Terms of Service": "Diez42 | Условия использования",
+      "Data deletion": "Удаление данных",
+      "Data Deletion": "Удаление данных",
+      "Data Deletion Instructions": "Инструкции по удалению данных",
+      "Diez42 | Data Deletion": "Diez42 | Удаление данных"
     },
     lt: {
       "Skip to content": "Pereiti prie turinio",
@@ -547,7 +637,18 @@
       "Formal partner intake forms": "Oficialios partnerių anketos",
       "Clear next step. No clutter.": "Aiškus kitas žingsnis. Be triukšmo.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Pašto adresas: Avenida de Andalucía 27, 29006 Málaga",
-      "Phone number: +34 600 33 97 94": "Telefono numeris: +34 600 33 97 94"
+      "Phone number: +34 600 33 97 94": "Telefono numeris: +34 600 33 97 94",
+      "Privacy": "Privatumas",
+      "Privacy Policy": "Privatumo politika",
+      "Diez42 | Privacy Policy": "Diez42 | Privatumo politika",
+      "Home": "Pradžia",
+      "Terms": "Sąlygos",
+      "Terms of Service": "Naudojimo sąlygos",
+      "Diez42 | Terms of Service": "Diez42 | Naudojimo sąlygos",
+      "Data deletion": "Duomenų ištrynimas",
+      "Data Deletion": "Duomenų ištrynimas",
+      "Data Deletion Instructions": "Duomenų ištrynimo instrukcijos",
+      "Diez42 | Data Deletion": "Diez42 | Duomenų ištrynimas"
     },
     be: {
       "Skip to content": "Перайсці да зместу",
@@ -585,17 +686,43 @@
       "Formal partner intake forms": "Афіцыйныя формы для партнёраў",
       "Clear next step. No clutter.": "Ясны наступны крок. Без лішняга.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Паштовы адрас: Avenida de Andalucía 27, 29006 Málaga",
-      "Phone number: +34 600 33 97 94": "Нумар тэлефона: +34 600 33 97 94"
+      "Phone number: +34 600 33 97 94": "Нумар тэлефона: +34 600 33 97 94",
+      "Privacy": "Прыватнасць",
+      "Privacy Policy": "Палітыка прыватнасці",
+      "Diez42 | Privacy Policy": "Diez42 | Палітыка прыватнасці",
+      "Home": "Галоўная",
+      "Terms": "Умовы",
+      "Terms of Service": "Умовы карыстання",
+      "Diez42 | Terms of Service": "Diez42 | Умовы карыстання",
+      "Data deletion": "Выдаленне даных",
+      "Data Deletion": "Выдаленне даных",
+      "Data Deletion Instructions": "Інструкцыі па выдаленні даных",
+      "Diez42 | Data Deletion": "Diez42 | Выдаленне даных"
     },
     "ar-MA": arabicTranslations,
     "ar-DZ": arabicTranslations
   };
 
   const normalizeLanguage = (lang) => supportedLanguages.includes(lang) ? lang : defaultLanguage;
+  const getDatasetKey = (lang) => languageDatasetKeys[lang] || lang;
+
+  const getDatasetText = (element, lang) => element.dataset[getDatasetKey(lang)];
+
+  const getPageDatasetKey = (prefix, lang) => {
+    const suffix = getDatasetKey(lang);
+    return `${prefix}${suffix.charAt(0).toUpperCase()}${suffix.slice(1)}`;
+  };
 
   const getLanguageText = (element, lang, en) => {
     if (lang === "en") return en;
-    return element.dataset[lang] || translations[lang]?.[en] || en;
+    return getDatasetText(element, lang) || translations[lang]?.[en] || en;
+  };
+
+  const getPageTitle = (lang) => {
+    const en = document.body?.dataset.pageTitleEn;
+    if (!en) return pageTitles[lang] || pageTitles.en;
+    if (lang === "en") return en;
+    return document.body.dataset[getPageDatasetKey("pageTitle", lang)] || translations[lang]?.[en] || en;
   };
 
   const getNextLanguage = (lang) => {
@@ -607,7 +734,7 @@
     const next = normalizeLanguage(lang);
     root.lang = next;
     root.dir = languageDirections[next] || "ltr";
-    document.title = pageTitles[next] || pageTitles.en;
+    document.title = getPageTitle(next);
     storage.setItem("diez42-lang", next);
     document.querySelectorAll("body *").forEach((element) => {
       if (element.matches("script, style, option")) return;
