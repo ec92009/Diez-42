@@ -8,7 +8,7 @@ The requested build started as a five-option homepage exploration similar to pri
 
 The user later supplied better public context for Diez42: it appears to be formally registered in Málaga as a local social-action association serving immigrants, refugees, and other newcomers. Public notes mention language classes, job training, parent and family activities, exercise, art, practical help, community support, food distribution, children's English activities, Christian/Matthew 10:42 roots, and an Elevāt women's artisan/co-op project. This context was integrated into the mock copy with a verify-before-launch caveat. The user later clarified that the public-facing spelling must always be `Diez42`.
 
-The site now has compact top-right controls: a language selector with Brazilian Portuguese available, a sun/moon day-night toggle, and a subtle visible version pill. Preferences are saved in `localStorage` so the selected language and theme persist on the homepage.
+The site now has compact top-right controls: a language selector with Brazilian Portuguese and Italian available, a sun/moon day-night toggle, and a subtle visible version pill. Preferences are saved in `localStorage` so the selected language and theme persist on the homepage.
 
 In a later working session, the user asked for the five options to feel more varied, for Spanish to become the default language everywhere, for the controls to collapse to one button per toggle, for the theme toggle to use sun/moon icons, and for the language toggle to use flags. The project then moved from chooser mode into homepage mode: future edits should focus on the active homepage and shared assets, not keeping archived mock pages current.
 
@@ -24,13 +24,13 @@ In the latest session, the user reacted that the active homepage had become too 
 
 ## Current State
 
-- Current visible version: `v89.0`.
-- Default viewer language: Spanish, with English, Brazilian Portuguese, French, Ukrainian, Russian, Lithuanian, Belarusian, Arabic (Morocco), and Arabic (Algeria) available through the selector.
+- Current visible version: `v89.1`.
+- Default viewer language: Spanish, with English, Brazilian Portuguese, Italian, French, Ukrainian, Russian, Lithuanian, Belarusian, Arabic (Morocco), and Arabic (Algeria) available through the selector.
 - Header controls: one compact language selector, one sun/moon button for day/night, and one visible version pill.
 - The provided Diez42 logo is now used in the global header, and the active homepage has restored AI-placeholder program photos for warmth while real media is pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `89` is days since `2026-02-28`; `.0` is the first user-visible build for the day.
+- Versioning follows the PhotosByElie-style date-based SOP: `89` is days since `2026-02-28`; `.1` is the second user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=89.0`.
+- Local preview: `http://localhost:8042/?v=89.1`.
 - Main files:
 - `index.html`: active homepage.
 - Contact details on active homepage: WhatsApp action, phone number `+34 600 33 97 94` under the mailing address, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.

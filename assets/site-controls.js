@@ -3,11 +3,12 @@
   const storage = window.localStorage;
   const defaultLanguage = "es";
   const defaultLanguageMigrationKey = "diez42-default-lang-v72";
-  const supportedLanguages = ["es", "en", "pt-BR", "fr", "uk", "ru", "lt", "be", "ar-MA", "ar-DZ"];
+  const supportedLanguages = ["es", "en", "pt-BR", "it", "fr", "uk", "ru", "lt", "be", "ar-MA", "ar-DZ"];
   const languageLabels = {
     en: "🇬🇧",
     es: "🇪🇸",
     "pt-BR": "🇧🇷",
+    it: "🇮🇹",
     fr: "🇫🇷",
     uk: "🇺🇦",
     ru: "🇷🇺",
@@ -20,6 +21,7 @@
     en: "English",
     es: "Español",
     "pt-BR": "Português (Brasil)",
+    it: "Italiano",
     fr: "Français",
     uk: "Українська",
     ru: "Русский",
@@ -32,6 +34,7 @@
     en: "Language selector",
     es: "Selector de idioma",
     "pt-BR": "Seletor de idioma",
+    it: "Selettore lingua",
     fr: "Sélecteur de langue",
     uk: "Вибір мови",
     ru: "Выбор языка",
@@ -44,6 +47,7 @@
     en: "Diez42 | Social action in Malaga",
     es: "Diez42 | Accion social en Malaga",
     "pt-BR": "Diez42 | Ação social em Málaga",
+    it: "Diez42 | Azione sociale a Malaga",
     fr: "Diez42 | Action sociale à Malaga",
     uk: "Diez42 | Соціальна дія в Малазі",
     ru: "Diez42 | Социальная помощь в Малаге",
@@ -72,6 +76,10 @@
     "pt-BR": {
       day: "Dia",
       night: "Noite"
+    },
+    it: {
+      day: "Giorno",
+      night: "Notte"
     },
     fr: {
       day: "Jour",
@@ -388,6 +396,44 @@
       "Clear next step. No clutter.": "Próximo passo claro. Sem excesso.",
       "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Endereço postal: Avenida de Andalucía 27, 29006 Málaga",
       "Phone number: +34 600 33 97 94": "Telefone: +34 600 33 97 94"
+    },
+    it: {
+      "Skip to content": "Vai al contenuto",
+      "About": "Chi siamo",
+      "Transparency": "Trasparenza",
+      "Contact": "Contatto",
+      "Welcome and practical help in Málaga.": "Accoglienza e aiuto pratico a Malaga.",
+      "Diez42 walks with immigrants, refugees, and other newcomers through food support, classes, family activities, training, and community connection.": "Diez42 accompagna immigrati, rifugiati e altre persone appena arrivate con sostegno alimentare, corsi, attività per famiglie, formazione e connessione comunitaria.",
+      "Contact Diez42": "Contatta Diez42",
+      "See the work": "Vedi il lavoro",
+      "AI placeholder image for direction only; not real Diez42 people.": "Immagine temporanea generata con IA solo per orientamento visivo; non mostra persone reali di Diez42.",
+      "Support that starts with welcome.": "Sostegno che inizia con l'accoglienza.",
+      "Diez42 serves newcomers in Málaga through practical support, education, training, family activities, food support, and community connection.": "Diez42 serve le persone appena arrivate a Malaga con sostegno pratico, educazione, formazione, attività per famiglie, sostegno alimentare e connessione comunitaria.",
+      "Practical support": "Sostegno pratico",
+      "Food support, orientation, and everyday help for families finding their footing in Málaga.": "Sostegno alimentare, orientamento e aiuto quotidiano per famiglie che stanno trovando stabilità a Malaga.",
+      "Classes and training": "Corsi e formazione",
+      "Language practice, job training, children's activities, and learning paths that open doors.": "Pratica linguistica, formazione professionale, attività per bambini e percorsi di apprendimento che aprono porte.",
+      "Community connection": "Connessione comunitaria",
+      "A local place for relationship, encouragement, family activities, and belonging.": "Uno spazio locale per relazioni, incoraggiamento, attività familiari e appartenenza.",
+      "Current program photos are AI-generated placeholders and do not depict real Diez42 people.": "Le foto attuali dei programmi sono immagini temporanee generate con IA e non raffigurano persone reali di Diez42.",
+      "Formal name": "Nome ufficiale",
+      "Registry notes": "Dati di registrazione",
+      "Registered 27 April 2021, CIF G93613776, Málaga provincial scope.": "Registrata il 27 aprile 2021, CIF G93613776, ambito provinciale di Malaga.",
+      "Public presence": "Presenza pubblica",
+      "Social channels appear under diez42malaga / Diez42Malaga.": "I canali social appaiono come diez42malaga / Diez42Malaga.",
+      "What this site can say now": "Cosa questo sito può dire ora",
+      "Formal association name and CIF": "Nome ufficiale dell'associazione e CIF",
+      "Málaga district and provincial scope": "Distretto di Malaga e ambito provinciale",
+      "Social-action purpose and public aims": "Finalità di azione sociale e obiettivi pubblici",
+      "How newcomers, volunteers, and partners can contact the team": "Come nuovi arrivati, volontari e partner possono contattare il team",
+      "What can wait for V2": "Cosa può aspettare la V2",
+      "Donation flow": "Flusso delle donazioni",
+      "Receipts and tax language": "Ricevute e linguaggio fiscale",
+      "Public reporting": "Rendicontazione pubblica",
+      "Formal partner intake forms": "Moduli formali per partner",
+      "Clear next step. No clutter.": "Prossimo passo chiaro. Senza confusione.",
+      "Mailing address: Avenida de Andalucía 27, 29006 Málaga": "Indirizzo postale: Avenida de Andalucía 27, 29006 Málaga",
+      "Phone number: +34 600 33 97 94": "Telefono: +34 600 33 97 94"
     },
     uk: {
       "Skip to content": "Перейти до вмісту",
