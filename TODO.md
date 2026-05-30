@@ -3,7 +3,7 @@
 1. Refine only `index.html` as the active V1 homepage; leave archived concepts untouched unless explicitly requested.
 2. Verify legal identity, CIF, registry wording, scope, and address details directly with Diez42.
 3. Collect remaining official contact details: email and final physical-location wording. Phone/WhatsApp, Instagram, Facebook, and mailing address are now recorded on the homepage.
-4. Replace remaining AI-generated program-photo placeholders with real Diez42 photos and confirm usage permission.
+4. Confirm web-use permission and consent for the selected Diez42 photos, especially images with identifiable people.
 5. Add approved organization copy for mission, programs, history, volunteer/supporter paths, and contact text.
 6. Have a fluent Spanish speaker review all Spanish copy and decide whether English stays in V1.
 7. Add verified association/legal details to a transparency or footer section.
