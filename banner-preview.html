@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diez42 | Banner Preview</title>
+  <style>
+    :root {
+      --ink: #16312f;
+      --muted: #52615c;
+      --paper: #f7f3e8;
+      --terracotta: #b85f42;
+      --blue: #173d48;
+      --cream: #fffaf0;
+      --bg-x: 60%;
+      --frame-top: 24px;
+      --frame-side: 28px;
+      --frame-bottom: 28px;
+      --logo-y: 0px;
+      --badge-y: 116px;
+      --badge-w: 66%;
+      --message-y: 48px;
+      --headline-size: 2.3rem;
+      --subhead-y: 68px;
+      --body-y: 48px;
+      --cta-y: 0px;
+      --display-font: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+      --body-font: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      align-items: center;
+      justify-items: center;
+      gap: 18px;
+      padding: 24px;
+      background: #222;
+      color: var(--ink);
+      font-family: var(--body-font);
+    }
+
+    .banner {
+      height: min(92vh, 1200px);
+      aspect-ratio: 9 / 16;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background:
+        linear-gradient(180deg, rgba(23, 61, 72, 0.08) 0%, rgba(247, 243, 232, 0.72) 42%, rgba(247, 243, 232, 0.9) 100%),
+        url("assets/generated/community-welcome.png") var(--bg-x) top / cover no-repeat;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: var(--frame-top) var(--frame-side) var(--frame-bottom);
+      border: 2px solid rgba(255, 250, 240, 0.74);
+      pointer-events: none;
+    }
+
+    .copy {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+      padding: 52px 44px 74px;
+      align-items: center;
+    }
+
+    .logo {
+      width: 142px;
+      height: auto;
+      margin-bottom: 0;
+      padding: 8px;
+      background: rgba(255, 255, 255, 0.84);
+      border-radius: 8px;
+      align-self: center;
+      transform: translateY(var(--logo-y));
+    }
+
+    h1 {
+      margin: 0 0 22px;
+      max-width: 10ch;
+      color: var(--blue);
+      font-family: var(--display-font);
+      font-size: clamp(3.5rem, 8vh, 5.8rem);
+      line-height: 0.9;
+      letter-spacing: 0;
+    }
+
+    .message-stack {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(var(--message-y));
+      align-self: stretch;
+    }
+
+    .subhead {
+      max-width: 18ch;
+      margin: 0 0 34px;
+      color: var(--terracotta);
+      font-family: var(--display-font);
+      font-size: clamp(1.7rem, 3.8vh, 2.65rem);
+      font-weight: 850;
+      line-height: 1.04;
+    }
+
+    .body {
+      max-width: 28ch;
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--body-font);
+      font-size: clamp(1.08rem, 2.18vh, 1.48rem);
+      font-weight: 580;
+      line-height: 1.22;
+    }
+
+    .cta {
+      position: relative;
+      left: auto;
+      bottom: auto;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 0;
+      padding: 16px 16px;
+      background: var(--blue);
+      color: var(--cream);
+      border-radius: 6px;
+      font-family: var(--display-font);
+      font-size: clamp(0.9rem, 1.68vh, 1.14rem);
+      font-weight: 900;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .banner::after {
+      content: "Sirviendo con amor y esperanza";
+      position: absolute;
+      left: 44px;
+      top: 188px;
+      max-width: calc(100% - 88px);
+      padding: 12px 16px;
+      background: rgba(255, 250, 240, 0.92);
+      color: var(--blue);
+      border-radius: 6px;
+      font-family: var(--display-font);
+      font-size: clamp(1rem, 1.4vw, 1.35rem);
+      font-weight: 850;
+      line-height: 1.1;
+      text-align: left;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 12px;
+      }
+
+      .copy {
+        padding: 34px 30px 44px;
+        align-items: stretch;
+      }
+
+      .logo {
+        width: 112px;
+        margin-bottom: 0;
+        align-self: center;
+      }
+
+      .banner::after {
+        left: 50%;
+        top: var(--badge-y);
+        width: min(var(--badge-w), 270px);
+        max-width: calc(100% - 60px);
+        font-size: 0.92rem;
+        text-align: center;
+        transform: translateX(-50%);
+      }
+
+      h1 {
+        max-width: 12ch;
+        margin-bottom: 14px;
+        font-size: var(--headline-size);
+      }
+
+      .subhead {
+        margin-top: var(--subhead-y);
+        margin-bottom: 28px;
+        font-size: 1.38rem;
+      }
+
+      .body {
+        font-size: 0.82rem;
+        max-width: 31ch;
+        margin: var(--body-y) auto 0;
+        text-align: center;
+      }
+
+      .cta {
+        margin-top: var(--cta-y);
+      }
+    }
+
+    .controls {
+      width: min(100%, 300px);
+      max-height: calc(100vh - 48px);
+      overflow: auto;
+      padding: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: #111;
+      color: #f5f5f5;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .controls h2 {
+      margin: 0 0 12px;
+      font-size: 1rem;
+    }
+
+    .control {
+      display: grid;
+      gap: 5px;
+      margin-bottom: 12px;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .control span {
+      color: #d7d7d7;
+      font-weight: 650;
+    }
+
+    .control input,
+    .control select {
+      width: 100%;
+    }
+
+    .control select {
+      min-height: 34px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      background: #222;
+      color: #fff;
+      font: inherit;
+    }
+
+    .control-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .reset-button {
+      width: 100%;
+      min-height: 34px;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      border-radius: 6px;
+      background: #1f3f4a;
+      color: #fff;
+      font: inherit;
+      font-size: 0.85rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    @media (max-width: 980px) {
+      body {
+        grid-template-columns: 1fr;
+      }
+
+      .controls {
+        width: min(100%, 560px);
+        max-height: none;
+        order: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="banner" aria-label="Vista previa de banner Diez42">
+    <section class="copy">
+      <img class="logo" src="assets/logo-horizontal.png" alt="Diez42" />
+      <div class="message-stack">
+        <h1>Ayuda, esperanza y comunidad</h1>
+        <p class="subhead">para una nueva vida en Málaga</p>
+        <p class="body">
+          Apoyamos a refugiados e inmigrantes con alimentos, clases de idiomas,
+          orientación, deportes, formación, consejería y acompañamiento cercano.
+        </p>
+      </div>
+      <div class="cta">Dona · Comparte · Haz voluntariado</div>
+    </section>
+  </main>
+  <aside class="controls" aria-label="Controles de diseño">
+    <h2>Layout controls</h2>
+    <label class="control">
+      <div class="control-row">Headline font <span data-value-for="display-font"></span></div>
+      <select data-var="display-font" data-unit="">
+        <option value='"Avenir Next", "Helvetica Neue", Arial, sans-serif'>Avenir / Helvetica</option>
+        <option value='"Gill Sans", "Trebuchet MS", Arial, sans-serif'>Gill Sans</option>
+        <option value='Georgia, "Times New Roman", serif'>Georgia</option>
+        <option value='Impact, "Arial Black", sans-serif'>Impact</option>
+      </select>
+    </label>
+    <label class="control">
+      <div class="control-row">Body font <span data-value-for="body-font"></span></div>
+      <select data-var="body-font" data-unit="">
+        <option value='"Avenir Next", "Helvetica Neue", Arial, sans-serif'>Avenir / Helvetica</option>
+        <option value='"Gill Sans", "Trebuchet MS", Arial, sans-serif'>Gill Sans</option>
+        <option value='Georgia, "Times New Roman", serif'>Georgia</option>
+        <option value='Verdana, Geneva, sans-serif'>Verdana</option>
+      </select>
+    </label>
+    <label class="control">
+      <div class="control-row">Background X <span data-value-for="bg-x"></span></div>
+      <input type="range" min="0" max="100" value="60" data-var="bg-x" data-unit="%" />
+    </label>
+    <label class="control">
+      <div class="control-row">Frame top <span data-value-for="frame-top"></span></div>
+      <input type="range" min="0" max="80" value="24" data-var="frame-top" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">Frame sides <span data-value-for="frame-side"></span></div>
+      <input type="range" min="10" max="70" value="28" data-var="frame-side" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">Frame bottom <span data-value-for="frame-bottom"></span></div>
+      <input type="range" min="0" max="80" value="28" data-var="frame-bottom" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">Logo Y <span data-value-for="logo-y"></span></div>
+      <input type="range" min="-60" max="90" value="0" data-var="logo-y" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">Badge Y <span data-value-for="badge-y"></span></div>
+      <input type="range" min="70" max="210" value="116" data-var="badge-y" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">Badge width <span data-value-for="badge-w"></span></div>
+      <input type="range" min="45" max="92" value="66" data-var="badge-w" data-unit="%" />
+    </label>
+    <label class="control">
+      <div class="control-row">Message Y <span data-value-for="message-y"></span></div>
+      <input type="range" min="-20" max="110" value="48" data-var="message-y" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">Headline size <span data-value-for="headline-size"></span></div>
+      <input type="range" min="1.8" max="3.4" value="2.3" step="0.05" data-var="headline-size" data-unit="rem" />
+    </label>
+    <label class="control">
+      <div class="control-row">Subhead Y <span data-value-for="subhead-y"></span></div>
+      <input type="range" min="0" max="120" value="68" data-var="subhead-y" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">Body Y <span data-value-for="body-y"></span></div>
+      <input type="range" min="0" max="100" value="48" data-var="body-y" data-unit="px" />
+    </label>
+    <label class="control">
+      <div class="control-row">CTA Y <span data-value-for="cta-y"></span></div>
+      <input type="range" min="-40" max="80" value="0" data-var="cta-y" data-unit="px" />
+    </label>
+    <button class="reset-button" type="button" data-reset>Reset</button>
+  </aside>
+  <script>
+    const root = document.documentElement;
+    const controls = [...document.querySelectorAll("[data-var]")];
+    const defaults = Object.fromEntries(controls.map((control) => [control.dataset.var, control.value]));
+
+    const getControlLabel = (control) => {
+      if (control.tagName === "SELECT") {
+        return control.selectedOptions[0].textContent;
+      }
+      return `${control.value}${control.dataset.unit}`;
+    };
+
+    const applyControl = (control) => {
+      const value = `${control.value}${control.dataset.unit}`;
+      root.style.setProperty(`--${control.dataset.var}`, value);
+      document.querySelector(`[data-value-for="${control.dataset.var}"]`).textContent = getControlLabel(control);
+    };
+
+    controls.forEach((control) => {
+      applyControl(control);
+      control.addEventListener("input", () => applyControl(control));
+    });
+
+    document.querySelector("[data-reset]").addEventListener("click", () => {
+      controls.forEach((control) => {
+        control.value = defaults[control.dataset.var];
+        applyControl(control);
+      });
+    });
+  </script>
+</body>
+</html>
