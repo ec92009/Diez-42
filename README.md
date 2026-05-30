@@ -55,11 +55,11 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 
 ## V1 Scope
 
-- Static copy and image placeholders.
+- Static copy and real Diez42 photo placeholders pending final approval.
 - Static privacy policy, terms, and data deletion instruction pages.
 - Confirmed WhatsApp action and phone number text.
 - Confirmed Instagram/Facebook links and mailing address.
-- Warm hero/program photo placeholders with an explicit AI-photo disclosure.
+- Warm hero/program photos selected from the shared Diez42 photo folder.
 - Inline icons for WhatsApp, Instagram, and Facebook contact buttons.
 - Footer kept minimal with no V1 donation note on the page.
 - Multilingual selector for ES, EN, PT-BR, IT, FR, UK, RU, LT, BE, AR-MA, and AR-DZ.
@@ -75,7 +75,7 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 
 - All public-identity details should be verified before launch: formal name, CIF, registered address wording, association scope, statutory aims, and preferred contact channels.
 - Social presence appears to use `diez42malaga` / `Diez42Malaga`, but final links should come from the organization.
-- The Diez42 logo is now used in the header and homepage. Remaining program imagery uses local AI-generated placeholders; replace those with real Diez42 photos before launch.
+- The Diez42 logo is now used in the header and homepage. Current program imagery uses selected Diez42 photos; confirm usage permission before public launch.
 - Spanish and additional language copy are lightweight draft translations, not final multilingual editorial copy.
 
 ## V2 Notes

@@ -20,7 +20,9 @@ The user also provided social links for Instagram (`https://www.instagram.com/di
 
 Matthew 10:42 was added as a small cited note in the archived exploration so the verse behind the name is available without dominating the active homepage. The note uses KJV text in English and Reina-Valera 1909 text in Spanish, with source links included in the archived page.
 
-In the latest session, the user reacted that the active homepage had become too sad and had no photos. The homepage was warmed back up with an AI-placeholder hero image, three program photo cards, softer welcome-oriented copy, and an explicit AI-photo disclosure. The contact buttons now include inline icons for WhatsApp, Instagram, and Facebook. The contact section was then tightened so the phone number sits under the physical mailing address instead of as a right-side action button, and the footer's public V1 donation note was removed. GitHub PR #1 from `garyguate` was inspected; it only removed the draft banner and bumped to `v72.4`, which is already superseded by current `main`, and it is now stale/conflicting.
+In the latest session, the user reacted that the active homepage had become too sad and had no photos. The homepage was warmed back up with a hero image, program photo cards, softer welcome-oriented copy, and inline icons for WhatsApp, Instagram, and Facebook. The contact section was then tightened so the phone number sits under the physical mailing address instead of as a right-side action button, and the footer's public V1 donation note was removed. GitHub PR #1 from `garyguate` was inspected; it only removed the draft banner and bumped to `v72.4`, which is already superseded by current `main`, and it is now stale/conflicting.
+
+The user later shared a SharePoint folder of Diez42 photos. The active homepage now uses selected real Diez42 photos for the hero and program cards: community table gathering, food support, language-class flyers, hospitality table detail, and sewing/artisan work. These should be treated as draft selections until Diez42 confirms web-use permission for identifiable people.
 
 In a follow-up session on May 30, 2026, the custom domain `diez42.org` was successfully set up. We identified that the Let's Encrypt certificate provisioning was stuck at GitHub Pages (returning a certificate mismatch for `*.github.io`). To trigger provisioning, we cleared the CNAME via the Pages API and re-applied `diez42.org`, which successfully kicked off the certificate generation. Once the certificate was approved by Let's Encrypt, we enforced HTTPS. The site is now fully secure and live at `https://diez42.org/` with HTTP-to-HTTPS redirects. We also documented the HTTPS monitoring automation script in the README.
 
@@ -29,7 +31,7 @@ In a follow-up session on May 30, 2026, the custom domain `diez42.org` was succe
 - Current visible version: `v89.2`.
 - Default viewer language: Spanish, with English, Brazilian Portuguese, Italian, French, Ukrainian, Russian, Lithuanian, Belarusian, Arabic (Morocco), and Arabic (Algeria) available through the selector.
 - Header controls: one compact language selector, one sun/moon button for day/night, and one visible version pill.
-- The provided Diez42 logo is now used in the global header, and the active homepage has restored AI-placeholder program photos for warmth while real media is pending.
+- The provided Diez42 logo is now used in the global header, and the active homepage uses selected real Diez42 photos for warmth while final media permissions are pending.
 - Versioning follows the PhotosByElie-style date-based SOP: `89` is days since `2026-02-28`; `.2` is the third user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
 - Local preview: `http://localhost:8042/?v=89.2`.
@@ -59,13 +61,13 @@ In a follow-up session on May 30, 2026, the custom domain `diez42.org` was succe
 - Language selector works.
 - Sun/moon day-night switch works.
 - The homepage no longer presents itself as a concept chooser.
-- The active homepage has a warmer hero/program-photo layout, social-icon contact buttons, phone number under the address, and no public V1 donation note in the footer.
+- The active homepage has a warmer real-photo hero/program-card layout, social-icon contact buttons, phone number under the address, and no public V1 donation note in the footer.
 - Archived pages are retained for reference only and should not be kept current unless explicitly requested.
 - The 2026-05-11 Codex review was triaged into `TODO.md` and archived at `Archive/reviews/Diez-42 Codex Review 2026-05-11.md`.
 
 ## Important Caveats
 
 - The organization details came from user-provided research notes and must be verified before public launch.
-- Remaining placeholder program photos are local AI-generated images and should still be replaced with real Diez42 images when available.
+- Real Diez42 photos are now used as draft website imagery, but web-use permission and consent should be confirmed before public launch.
 - Spanish and additional language translations are draft-level and should be reviewed by fluent speakers before launch.
 - GitHub Pages is serving from `main` at the custom domain `diez42.org` with HTTPS fully enabled and enforced.
