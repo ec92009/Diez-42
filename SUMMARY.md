@@ -22,6 +22,8 @@ Matthew 10:42 was added as a small cited note in the archived exploration so the
 
 In the latest session, the user reacted that the active homepage had become too sad and had no photos. The homepage was warmed back up with an AI-placeholder hero image, three program photo cards, softer welcome-oriented copy, and an explicit AI-photo disclosure. The contact buttons now include inline icons for WhatsApp, Instagram, and Facebook. The contact section was then tightened so the phone number sits under the physical mailing address instead of as a right-side action button, and the footer's public V1 donation note was removed. GitHub PR #1 from `garyguate` was inspected; it only removed the draft banner and bumped to `v72.4`, which is already superseded by current `main`, and it is now stale/conflicting.
 
+In a follow-up session on May 30, 2026, the custom domain `diez42.org` was successfully set up. We identified that the Let's Encrypt certificate provisioning was stuck at GitHub Pages (returning a certificate mismatch for `*.github.io`). To trigger provisioning, we cleared the CNAME via the Pages API and re-applied `diez42.org`, which successfully kicked off the certificate generation. Once the certificate was approved by Let's Encrypt, we enforced HTTPS. The site is now fully secure and live at `https://diez42.org/` with HTTP-to-HTTPS redirects. We also documented the HTTPS monitoring automation script in the README.
+
 ## Current State
 
 - Current visible version: `v89.2`.
@@ -46,6 +48,9 @@ In the latest session, the user reacted that the active homepage had become too 
 
 ## Verification Performed
 
+- Verified SSL certificate validity and HTTP-to-HTTPS redirect rules via `curl -Iv`.
+- Verified Pages API status (`status=built`, `https_enforced=true`).
+- Verified monitor script `scripts/monitor_https_certificate.sh` outputs `status=ready`, `blocker=none`.
 - `npm run check` passed.
 - `git diff --check` passed.
 - Local pages returned `200` during preview testing.
@@ -63,4 +68,4 @@ In the latest session, the user reacted that the active homepage had become too 
 - The organization details came from user-provided research notes and must be verified before public launch.
 - Remaining placeholder program photos are local AI-generated images and should still be replaced with real Diez42 images when available.
 - Spanish and additional language translations are draft-level and should be reviewed by fluent speakers before launch.
-- GitHub Pages is serving from `main`; the reserved domain is `diez42.org`, but DNS has not been configured yet.
+- GitHub Pages is serving from `main` at the custom domain `diez42.org` with HTTPS fully enabled and enforced.
