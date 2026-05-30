@@ -8,7 +8,7 @@ The requested build started as a five-option homepage exploration similar to pri
 
 The user later supplied better public context for Diez42: it appears to be formally registered in Málaga as a local social-action association serving immigrants, refugees, and other newcomers. Public notes mention language classes, job training, parent and family activities, exercise, art, practical help, community support, food distribution, children's English activities, Christian/Matthew 10:42 roots, and an Elevāt women's artisan/co-op project. This context was integrated into the mock copy with a verify-before-launch caveat. The user later clarified that the public-facing spelling must always be `Diez42`.
 
-The site now has compact top-right controls: a language selector with Brazilian Portuguese and Italian available, a sun/moon day-night toggle, and a subtle visible version pill. Preferences are saved in `localStorage` so the selected language and theme persist on the homepage. Static privacy policy, terms, and data deletion instruction pages are linked from the footer as a baseline for public-facing websites.
+The site now has compact top-right controls: a language selector for Spanish, English, and Brazilian Portuguese; a sun/moon day-night toggle; and a subtle visible version pill. Preferences are saved in `localStorage` so the selected language and theme persist on the homepage. Static privacy policy, terms, and data deletion instruction pages are linked from the footer as a baseline for public-facing websites.
 
 In a later working session, the user asked for the five options to feel more varied, for Spanish to become the default language everywhere, for the controls to collapse to one button per toggle, for the theme toggle to use sun/moon icons, and for the language toggle to use flags. The project then moved from chooser mode into homepage mode: future edits should focus on the active homepage and shared assets, not keeping archived mock pages current.
 
@@ -24,17 +24,19 @@ In the latest session, the user reacted that the active homepage had become too 
 
 The user later shared a SharePoint folder of Diez42 photos. The active homepage now uses selected real Diez42 photos for the hero and program cards: community table gathering, food support, language-class flyers, hospitality table detail, and sewing/artisan work. These should be treated as draft selections until Diez42 confirms web-use permission for identifiable people.
 
-In a follow-up session on May 30, 2026, the custom domain `diez42.org` was successfully set up. We identified that the Let's Encrypt certificate provisioning was stuck at GitHub Pages (returning a certificate mismatch for `*.github.io`). To trigger provisioning, we cleared the CNAME via the Pages API and re-applied `diez42.org`, which successfully kicked off the certificate generation. Once the certificate was approved by Let's Encrypt, we enforced HTTPS. The site is now fully secure and live at `https://diez42.org/` with HTTP-to-HTTPS redirects. We also documented the HTTPS monitoring automation script in the README.
+In a follow-up session on May 30, 2026, the custom domain `diez42.org` was successfully set up. We identified that the Let's Encrypt certificate provisioning was stuck at GitHub Pages (returning a certificate mismatch for `*.github.io`). To trigger provisioning, we cleared the CNAME via the Pages API and re-applied `diez42.org`, which successfully kicked off the certificate generation. Once the certificate was approved by Let's Encrypt, we enforced HTTPS. The site is now fully secure and live at `https://diez42.org/` with HTTP-to-HTTPS redirects. After HTTPS was confirmed, the temporary certificate monitor automation and repo script were removed.
+
+GitHub PR #2 from `garyguate` was merged locally into `main`; it replaces the homepage AI placeholder images with selected real Diez42 photos and adds the skills/artisan work program card. The language selector was then reduced to Spanish, English, and Brazilian Portuguese.
 
 ## Current State
 
-- Current visible version: `v89.2`.
-- Default viewer language: Spanish, with English, Brazilian Portuguese, Italian, French, Ukrainian, Russian, Lithuanian, Belarusian, Arabic (Morocco), and Arabic (Algeria) available through the selector.
+- Current visible version: `v89.3`.
+- Default viewer language: Spanish, with English and Brazilian Portuguese available through the selector.
 - Header controls: one compact language selector, one sun/moon button for day/night, and one visible version pill.
 - The provided Diez42 logo is now used in the global header, and the active homepage uses selected real Diez42 photos for warmth while final media permissions are pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `89` is days since `2026-02-28`; `.2` is the third user-visible build for the day.
+- Versioning follows the PhotosByElie-style date-based SOP: `89` is days since `2026-02-28`; `.3` is the fourth user-visible build for the day.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=89.2`.
+- Local preview: `http://localhost:8042/?v=89.3`.
 - Main files:
 - `index.html`: active homepage.
 - `privacy.html`, `terms.html`, `data-deletion.html`: static public policy pages.
@@ -44,15 +46,14 @@ In a follow-up session on May 30, 2026, the custom domain `diez42.org` was succe
 - `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
 - `assets/logo-horizontal.png`, `assets/logo-vertical.png`: cropped web-ready logo assets derived from `Media/`.
 - `assets/styles.css`: layout, responsive behavior, day/night theme.
-- `assets/site-controls.js`: language selector, sun/moon theme toggle, translations, right-to-left Arabic rendering, and preference persistence.
+- `assets/site-controls.js`: Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, translations, and preference persistence.
 - `assets/site-version.js`: internal link versioning helper.
-- Open PR note: GitHub PR #1 is stale/conflicting and should not be merged as-is unless rebased and updated with new work.
+- Open PR note: GitHub PR #1 is stale/conflicting and should not be merged as-is unless rebased and updated with new work. GitHub PR #2 has been incorporated into local `main`.
 
 ## Verification Performed
 
 - Verified SSL certificate validity and HTTP-to-HTTPS redirect rules via `curl -Iv`.
 - Verified Pages API status (`status=built`, `https_enforced=true`).
-- Verified monitor script `scripts/monitor_https_certificate.sh` outputs `status=ready`, `blocker=none`.
 - `npm run check` passed.
 - `git diff --check` passed.
 - Local pages returned `200` during preview testing.
@@ -69,5 +70,5 @@ In a follow-up session on May 30, 2026, the custom domain `diez42.org` was succe
 
 - The organization details came from user-provided research notes and must be verified before public launch.
 - Real Diez42 photos are now used as draft website imagery, but web-use permission and consent should be confirmed before public launch.
-- Spanish and additional language translations are draft-level and should be reviewed by fluent speakers before launch.
+- Spanish, English, and Brazilian Portuguese translations are draft-level and should be reviewed by fluent speakers before launch.
 - GitHub Pages is serving from `main` at the custom domain `diez42.org` with HTTPS fully enabled and enforced.
