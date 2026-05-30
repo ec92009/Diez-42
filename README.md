@@ -29,6 +29,10 @@ Open:
 http://localhost:8042/?v=89.2
 ```
 
+## Automation
+
+The repo includes a hardened HTTPS monitor at [`scripts/monitor_https_certificate.sh`](/Users/ecohen/Dev/Diez-42/scripts/monitor_https_certificate.sh). It checks the GitHub Pages API, validates `http://diez42.org/` and `https://diez42.org/`, attempts to enable HTTPS when GitHub allows it, and stores its state under `${CODEX_HOME:-$HOME/.codex}/automations/monitor-diez-42-https-certificate/`.
+
 ## Structure
 
 - `index.html` is the active V1 homepage.
