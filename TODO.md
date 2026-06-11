@@ -9,9 +9,8 @@
 7. Add verified association/legal details to a transparency or footer section.
 8. Decide whether to include partner references such as Elevāt and how to describe the women's artisan/co-op project.
 9. Confirm whether the provided Instagram/Facebook URLs are the preferred public profile links or should be replaced with cleaner canonical profile URLs.
-10. Add SEO metadata, Open Graph tags, page descriptions, and favicon assets.
-11. Resolve or close Gary's stale/conflicting PR #1 after confirming no new content is needed from it.
-12. Decide whether the day/night switch belongs in production or whether V1 should use one fixed visual theme.
-13. Add low-cost static QA for the active homepage and old-link redirect: link integrity, language selector behavior for ES/EN/PT-BR, day/night persistence, version/cache-bust consistency, and a basic accessibility pass.
-14. Do real-device QA on mobile and desktop after final copy and real photos are inserted.
-15. Defer donation/payment design to V2 until legal, bank, tax-receipt, and Stripe-account ownership questions are settled.
+10. Resolve or close Gary's stale/conflicting PR #1 after confirming no new content is needed from it.
+11. Decide whether the day/night switch belongs in production or whether V1 should use one fixed visual theme.
+12. Add low-cost static QA for the active homepage and old-link redirect: link integrity, language selector behavior for ES/EN/PT-BR, day/night persistence, version/cache-bust consistency, and a basic accessibility pass.
+13. Do real-device QA on mobile and desktop after final copy and real photos are inserted.
+14. Defer donation/payment design to V2 until legal, bank, tax-receipt, and Stripe-account ownership questions are settled.

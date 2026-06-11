@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v89.3`.
+Current visible version: `v103.0`.
 Default viewer language: Spanish, with a compact selector for English and Brazilian Portuguese.
 Current controls use one language selector, one sun/moon button for day/night, and a subtle visible version pill.
 Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
@@ -26,7 +26,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=89.3
+http://localhost:8042/?v=103.0
 ```
 
 ## Structure
@@ -37,6 +37,7 @@ http://localhost:8042/?v=89.3
 - `Archive/concepts/` contains earlier concept directions for reference only.
 - `Media/` contains user-provided Diez42 logo source exports.
 - `assets/logo-horizontal.png` and `assets/logo-vertical.png` are cropped web-use logo assets derived from the provided exports.
+- `assets/social-preview.png`, favicon PNGs, `assets/favicon.ico`, and `site.webmanifest` provide static SEO/social preview and browser icon assets.
 - `assets/styles.css` contains all shared styling.
 - `assets/site-version.js` applies the visible version from cache-bust query strings or page labels.
 - `assets/site-controls.js` powers the Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, draft translations, and persisted choices in `localStorage`.
@@ -58,6 +59,7 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 - Warm hero/program photos selected from the shared Diez42 photo folder.
 - Inline icons for WhatsApp, Instagram, and Facebook contact buttons.
 - Footer kept minimal with no V1 donation note on the page.
+- Static titles, descriptions, canonical URLs, homepage Open Graph/Twitter preview metadata, and favicon references.
 - Multilingual selector for ES, EN, and PT-BR.
 - Day/night theme switch.
 - Active homepage plus archived reference concepts.

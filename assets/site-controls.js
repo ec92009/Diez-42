@@ -25,9 +25,9 @@
     "pt-BR": "ptBr"
   };
   const pageTitles = {
-    en: "Diez42 | Social action in Malaga",
-    es: "Diez42 | Accion social en Malaga",
-    "pt-BR": "Diez42 | Ação social em Málaga"
+    en: "Diez42 | Welcome and practical help in Malaga",
+    es: "Diez42 | Acogida y ayuda práctica en Málaga",
+    "pt-BR": "Diez42 | Acolhimento e ajuda prática em Málaga"
   };
   const languageDirections = {};
   const themeIcons = {

@@ -28,15 +28,17 @@ In a follow-up session on May 30, 2026, the custom domain `diez42.org` was succe
 
 GitHub PR #2 from `garyguate` was merged locally into `main`; it replaces the homepage AI placeholder images with selected real Diez42 photos and adds the skills/artisan work program card. The language selector was then reduced to Spanish, English, and Brazilian Portuguese.
 
+In the latest session, ticket `DIEZ42-20260611-META` added static SEO metadata to the active public pages, homepage Open Graph/Twitter preview tags, and favicon/touch/manifest assets derived from the approved Diez42 logo export. The visible version was bumped from `v89.3` to `v103.0` because the metadata/favicon work changes the external public surface on June 11, 2026.
+
 ## Current State
 
-- Current visible version: `v89.3`.
+- Current visible version: `v103.0`.
 - Default viewer language: Spanish, with English and Brazilian Portuguese available through the selector.
 - Header controls: one compact language selector, one sun/moon button for day/night, and one visible version pill.
 - The provided Diez42 logo is now used in the global header, and the active homepage uses selected real Diez42 photos for warmth while final media permissions are pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `89` is days since `2026-02-28`; `.3` is the fourth user-visible build for the day.
+- Versioning follows the PhotosByElie-style date-based SOP: `103` is days since `2026-02-28`; `.0` is the first user-visible build for June 11, 2026.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=89.3`.
+- Local preview: `http://localhost:8042/?v=103.0`.
 - Main files:
 - `index.html`: active homepage.
 - `privacy.html`, `terms.html`, `data-deletion.html`: static public policy pages.
@@ -45,6 +47,7 @@ GitHub PR #2 from `garyguate` was merged locally into `main`; it replaces the ho
 - `Archive/concepts/`: old exploratory pages retained for reference only.
 - `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
 - `assets/logo-horizontal.png`, `assets/logo-vertical.png`: cropped web-ready logo assets derived from `Media/`.
+- `assets/social-preview.png`, favicon PNGs, `assets/favicon.ico`, and `site.webmanifest`: metadata and icon assets derived from the approved logo export.
 - `assets/styles.css`: layout, responsive behavior, day/night theme.
 - `assets/site-controls.js`: Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, translations, and preference persistence.
 - `assets/site-version.js`: internal link versioning helper.
