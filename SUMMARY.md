@@ -28,17 +28,20 @@ In a follow-up session on May 30, 2026, the custom domain `diez42.org` was succe
 
 GitHub PR #2 from `garyguate` was merged locally into `main`; it replaces the homepage AI placeholder images with selected real Diez42 photos and adds the skills/artisan work program card. The language selector was then reduced to Spanish, English, and Brazilian Portuguese.
 
-In the latest session, ticket `DIEZ42-20260611-META` added static SEO metadata to the active public pages, homepage Open Graph/Twitter preview tags, and favicon/touch/manifest assets derived from the approved Diez42 logo export. The visible version was bumped from `v89.3` to `v103.0` because the metadata/favicon work changes the external public surface on June 11, 2026.
+On June 11, 2026, ticket `DIEZ42-20260611-META` added static SEO metadata to the active public pages, homepage Open Graph/Twitter preview tags, and favicon/touch/manifest assets derived from the approved Diez42 logo export. The visible version was bumped from `v89.3` to `v103.0` because the metadata/favicon work changed the external public surface.
+
+On June 16, 2026, a temporary noindex review route was added at `review/elies-website/` using the Elie's Websites liquid-glass review pattern. The route keeps the production homepage intact while adding a frosted header, sequential program-card reveals, hover/tap polish, mobile sticky WhatsApp CTA, and a gear settings modal for About/version, English, Spanish (SP), Portuguese (BR), day/night theme, transparency, and translucency. The visible version was bumped to `v108.0` for this viewer-facing review build.
 
 ## Current State
 
-- Current visible version: `v103.0`.
+- Current visible version: `v108.0`.
 - Default viewer language: Spanish, with English and Brazilian Portuguese available through the selector.
 - Header controls: one compact language selector, one sun/moon button for day/night, and one visible version pill.
 - The provided Diez42 logo is now used in the global header, and the active homepage uses selected real Diez42 photos for warmth while final media permissions are pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `103` is days since `2026-02-28`; `.0` is the first user-visible build for June 11, 2026.
+- Versioning follows the PhotosByElie-style date-based SOP: `108` is days since `2026-02-28`; `.0` is the first user-visible build for June 16, 2026.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=103.0`.
+- Local preview: `http://localhost:8042/?v=108.0`.
+- Temporary review preview: `http://localhost:8042/review/elies-website/`.
 - Main files:
 - `index.html`: active homepage.
 - `privacy.html`, `terms.html`, `data-deletion.html`: static public policy pages.
@@ -51,6 +54,7 @@ In the latest session, ticket `DIEZ42-20260611-META` added static SEO metadata t
 - `assets/styles.css`: layout, responsive behavior, day/night theme.
 - `assets/site-controls.js`: Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, translations, and preference persistence.
 - `assets/site-version.js`: internal link versioning helper.
+- `review/elies-website/`: temporary noindex liquid-glass review route with scoped CSS and JS.
 - Open PR note: GitHub PR #1 is stale/conflicting and should not be merged as-is unless rebased and updated with new work. GitHub PR #2 has been incorporated into local `main`.
 
 ## Verification Performed

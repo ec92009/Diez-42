@@ -6,9 +6,10 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v103.0`.
+Current visible version: `v108.0`.
 Default viewer language: Spanish, with a compact selector for English and Brazilian Portuguese.
 Current controls use one language selector, one sun/moon button for day/night, and a subtle visible version pill.
+Temporary review route: `review/elies-website/`, built as a noindex Elie's Websites liquid-glass review version with English, Spanish (SP), and Portuguese (BR) settings.
 Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
 Confirmed social links: Instagram `https://www.instagram.com/diez42malaga?igsh=cXNmanN1dmV6Mndy`; Facebook `https://www.facebook.com/share/1XxCNeBHnF/?mibextid=wwXIfr`.
 Physical mailing address: `Avenida de Andalucía 27, 29006 Málaga`.
@@ -26,7 +27,13 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=103.0
+http://localhost:8042/?v=108.0
+```
+
+Temporary review route:
+
+```text
+http://localhost:8042/review/elies-website/
 ```
 
 ## Structure
@@ -41,6 +48,7 @@ http://localhost:8042/?v=103.0
 - `assets/styles.css` contains all shared styling.
 - `assets/site-version.js` applies the visible version from cache-bust query strings or page labels.
 - `assets/site-controls.js` powers the Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, draft translations, and persisted choices in `localStorage`.
+- `review/elies-website/` contains the temporary noindex review version and its scoped liquid-glass CSS/JS.
 
 ## Working Direction
 

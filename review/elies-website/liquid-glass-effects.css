@@ -1,0 +1,97 @@
+[data-glass-surface] {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-glass-surface]::after {
+  content: "";
+  position: absolute;
+  inset: -40% -80%;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 36%, rgba(255, 255, 255, 0.34) 50%, transparent 64%);
+  transform: translateX(-42%) rotate(4deg);
+  opacity: 0;
+}
+
+[data-glass-surface]:hover::after,
+[data-glass-surface].is-visible::after {
+  animation: glass-sheen 950ms ease forwards;
+}
+
+.reveal {
+  transform: translateY(18px);
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+  transition:
+    opacity 560ms ease,
+    transform 560ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.program-card,
+.button,
+.settings-toggle,
+.sticky-cta {
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    opacity 220ms ease,
+    transform 220ms ease;
+}
+
+.program-card:hover,
+.button:hover,
+.settings-toggle:hover {
+  transform: translateY(-3px);
+}
+
+.button:active,
+.settings-toggle:active,
+.sticky-cta:active,
+.segmented-control button:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.sticky-cta {
+  transition:
+    opacity 240ms ease,
+    transform 240ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@keyframes glass-sheen {
+  0% {
+    opacity: 0;
+    transform: translateX(-42%) rotate(4deg);
+  }
+  26% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(42%) rotate(4deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+
+  .reveal {
+    transform: none;
+    opacity: 1;
+  }
+}
