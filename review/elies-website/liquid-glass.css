@@ -414,6 +414,10 @@ h3 {
   margin: 0 auto;
 }
 
+.section-shell.trust-single {
+  width: min(820px, calc(100% - 32px));
+}
+
 .intro-section,
 .program-section,
 .trust-section,
@@ -545,6 +549,10 @@ h3 {
 .review-footer a {
   text-decoration: none;
   font-weight: 760;
+}
+
+.review-footer .site-credit {
+  font-weight: 680;
 }
 
 .sticky-cta {

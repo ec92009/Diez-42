@@ -32,16 +32,20 @@ On June 11, 2026, ticket `DIEZ42-20260611-META` added static SEO metadata to the
 
 On June 16, 2026, a temporary noindex review route was added at `review/elies-website/` using the Elie's Websites liquid-glass review pattern. The route keeps the production homepage intact while adding a frosted header, sequential program-card reveals, hover/tap polish, mobile sticky WhatsApp CTA, and a gear settings modal for About/version, English, Spanish (SP), Portuguese (BR), day/night theme, transparency, and translucency. The visible version was bumped to `v108.0` for this viewer-facing review build.
 
+On June 26, 2026, the public and review footers were updated to credit Web-By-Elie.com for site creation and maintenance. The visible version was bumped to `v118.0` for this viewer-facing footer update.
+
+Later on June 26, 2026, the user approved the noindex Elie's Websites liquid-glass review version for publication, with one adjustment: the "Before final launch" panel was removed. The liquid-glass layout was promoted to `index.html`, the old review URL was kept as a noindex mirror, and the visible version was bumped to `v118.1`.
+
 ## Current State
 
-- Current visible version: `v108.0`.
-- Default viewer language: Spanish, with English and Brazilian Portuguese available through the selector.
-- Header controls: one compact language selector, one sun/moon button for day/night, and one visible version pill.
-- The provided Diez42 logo is now used in the global header, and the active homepage uses selected real Diez42 photos for warmth while final media permissions are pending.
-- Versioning follows the PhotosByElie-style date-based SOP: `108` is days since `2026-02-28`; `.0` is the first user-visible build for June 16, 2026.
+- Current visible version: `v118.1`.
+- Default homepage viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
+- Header controls: frosted navigation with a gear settings modal for language, day/night theme, transparency, translucency, and version.
+- The provided Diez42 logo is now used in the global header, and the active homepage uses selected real Diez42 photos for warmth.
+- Versioning follows the shared date-based SOP: `118` is days since `2026-02-28`; `.1` is the second user-visible build for June 26, 2026.
 - Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=108.0`.
-- Temporary review preview: `http://localhost:8042/review/elies-website/`.
+- Local preview: `http://localhost:8042/?v=118.1`.
+- Noindex review mirror: `http://localhost:8042/review/elies-website/`.
 - Main files:
 - `index.html`: active homepage.
 - `privacy.html`, `terms.html`, `data-deletion.html`: static public policy pages.
@@ -51,10 +55,10 @@ On June 16, 2026, a temporary noindex review route was added at `review/elies-we
 - `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
 - `assets/logo-horizontal.png`, `assets/logo-vertical.png`: cropped web-ready logo assets derived from `Media/`.
 - `assets/social-preview.png`, favicon PNGs, `assets/favicon.ico`, and `site.webmanifest`: metadata and icon assets derived from the approved logo export.
-- `assets/styles.css`: layout, responsive behavior, day/night theme.
-- `assets/site-controls.js`: Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, translations, and preference persistence.
+- `assets/styles.css`: policy-page layout, responsive behavior, day/night theme, and older static surfaces.
+- `assets/site-controls.js`: policy-page Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, translations, and preference persistence.
 - `assets/site-version.js`: internal link versioning helper.
-- `review/elies-website/`: temporary noindex liquid-glass review route with scoped CSS and JS.
+- `review/elies-website/`: noindex liquid-glass mirror route and scoped CSS/JS used by the public homepage.
 - Open PR note: GitHub PR #1 is stale/conflicting and should not be merged as-is unless rebased and updated with new work. GitHub PR #2 has been incorporated into local `main`.
 
 ## Verification Performed
