@@ -567,6 +567,27 @@ h3 {
   pointer-events: none;
 }
 
+.version-pill {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 5px 9px;
+  border: 1px solid var(--glass-border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--glass-bg);
+  box-shadow: 0 10px 26px rgba(16, 35, 31, 0.16);
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.2);
+  font-size: 0.76rem;
+  font-weight: 780;
+  line-height: 1;
+  pointer-events: none;
+}
+
 body.show-sticky-cta .sticky-cta {
   transform: translateY(0);
   opacity: 1;
@@ -634,6 +655,11 @@ body.show-sticky-cta .sticky-cta {
     align-items: flex-start;
     flex-direction: column;
     padding: 22px 0 84px;
+  }
+
+  .version-pill {
+    right: 16px;
+    bottom: 72px;
   }
 }
 

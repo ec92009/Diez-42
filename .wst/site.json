@@ -1,0 +1,123 @@
+{
+  "manifest_version": "wst.site.v1",
+  "site_id": "diez42",
+  "name": "Diez42",
+  "production_url": "https://diez42.org/",
+  "ownership_verified": true,
+  "approval_status": "awaiting",
+  "beacon_verified": false,
+  "operational_state": "partial",
+  "monitorability": {
+    "contract_version": "wst.monitorable.v1",
+    "owner_role": "Diez42 organization/site owner",
+    "approval_ref": null,
+    "route_scope": ["/"],
+    "surfaces": [
+      {
+        "environment": "development",
+        "url": "http://localhost:8042/",
+        "version": "118.1",
+        "version_url": "http://localhost:8042/VERSION",
+        "note": "Configured local static preview; the server need not be running."
+      },
+      {
+        "environment": "preview",
+        "url": "https://diez42.org/review/elies-website/",
+        "version": "118.1",
+        "version_url": "https://diez42.org/VERSION",
+        "note": "Public noindex review route with the contract-ready CTA and version-pill treatment; excluded from production counts."
+      },
+      {
+        "environment": "production",
+        "url": "https://diez42.org/",
+        "version": "118.1",
+        "version_url": "https://diez42.org/VERSION",
+        "note": "GitHub Pages custom-domain homepage; instrumentation remains disabled pending organization approval and privacy review."
+      }
+    ],
+    "capabilities": {
+      "browser_traffic": {
+        "state": "planned",
+        "source": null,
+        "freshness_hours": null,
+        "next_action": "Obtain Diez42 organization approval and privacy review, then connect privacy-safe production page views while excluding the review route."
+      },
+      "edge_traffic": {
+        "state": "planned",
+        "source": null,
+        "freshness_hours": null,
+        "next_action": "Declare a read-only provider aggregate source, or explain why it is unavailable."
+      },
+      "cta": {
+        "state": "planned",
+        "source": "Stable data-wst-cta attributes are present in the review route; promote the same IDs to an approved production release before collection.",
+        "freshness_hours": null,
+        "next_action": "Review the six stable intent IDs, then carry them into the approved production release before enabling CTA events."
+      },
+      "conversions": {
+        "state": "not_applicable",
+        "source": null,
+        "freshness_hours": null,
+        "next_action": "Report No receipt; WhatsApp, Instagram, and Facebook navigation is intent only until an authoritative acceptance source exists."
+      },
+      "health": {
+        "state": "implemented",
+        "source": "WST read-only HTTP health probe",
+        "freshness_hours": 24,
+        "next_action": "Repeat a safe GET check after releases and record status/content evidence separately."
+      },
+      "field_vitals": {
+        "state": "planned",
+        "source": null,
+        "freshness_hours": null,
+        "next_action": "Connect privacy-safe field vitals when sufficient desktop and mobile samples exist, or retain insufficient-data status."
+      },
+      "lab_performance": {
+        "state": "planned",
+        "source": "Chrome DevTools",
+        "freshness_hours": 168,
+        "next_action": "Run the shared responsive and performance matrix against the review route before claiming aligned standards."
+      }
+    },
+    "cta_ids": [
+      "hero_whatsapp",
+      "hero_programs",
+      "contact_whatsapp",
+      "contact_instagram",
+      "contact_facebook",
+      "sticky_whatsapp"
+    ],
+    "conversion_receipts": [],
+    "privacy_profile": "wst.event.v1",
+    "consent_authority": "disabled",
+    "collector_url": null,
+    "performance_profile": "wst.responsive-performance.v1",
+    "standards_profile": "elies-websites",
+    "standards_profile_version": "elies-websites.v1",
+    "standards_status": "partial",
+    "standards_evidence": [
+      "The noindex review route preserves Diez42 content, policy links, existing contact destinations, and the canonical v118.1 source marker.",
+      "The review treatment adds stable CTA IDs and a fixed bottom-right version pill without adding tracking or changing the production root.",
+      "Existing responsive navigation, reduced-motion handling, focus-visible controls, and mobile sticky CTA behavior remain in the reviewed surface; the full viewport and performance matrix is still pending."
+    ],
+    "standards_next_action": "Run the 320/375/390/768/1280 plus landscape, 200% zoom, keyboard, reduced-motion, fixed-control, and Chrome DevTools performance matrix; then obtain organization/privacy approval before promoting the review changes to production.",
+    "disable_tracking": "No tracker is installed. If later enabled, remove the WST beacon or set data-wst-enabled to false; collection must stop without affecting navigation or forms.",
+    "exceptions": [
+      {
+        "requirement": "organization approval and privacy review",
+        "reason": "Diez42 is owner-controlled in the source checkout, but written organization approval and privacy-policy review for production measurement are not recorded.",
+        "next_action": "Obtain the approval and policy review before enabling browser traffic or CTA collection."
+      },
+      {
+        "requirement": "production contract surface",
+        "reason": "Stable CTA IDs and the version pill are prepared in the noindex review route only; the production root remains unchanged.",
+        "next_action": "Promote the reviewed attributes and version pill to the production release after approval."
+      },
+      {
+        "requirement": "responsive and performance evidence",
+        "reason": "The review route has baseline responsive and accessibility controls, but the shared acceptance matrix is not yet recorded.",
+        "next_action": "Run and record the shared responsive-performance matrix before claiming aligned standards."
+      }
+    ]
+  }
+}
