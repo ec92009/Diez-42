@@ -546,6 +546,13 @@ h3 {
   gap: 14px;
 }
 
+.review-footer .measurement-notice {
+  flex-basis: 100%;
+  max-width: 74ch;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 .review-footer a {
   text-decoration: none;
   font-weight: 760;
