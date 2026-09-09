@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v118.1`.
+Current visible version: `v249.0`.
 Default viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
 Current controls use a compact settings panel for language, day/night theme, glass transparency, glass blur, and the visible version.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=118.1
+http://localhost:8042/?v=249.0
 ```
 
 Noindex review mirror:
@@ -74,7 +74,7 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 - No payments.
 - No backend.
 - No donation form.
-- No analytics.
+- Privacy-safe sessionless WST aggregate page views and CTA presses; no visitor identifiers or form contents.
 
 ## Content Caveats
 

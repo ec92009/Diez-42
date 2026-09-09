@@ -40,7 +40,7 @@
         "state": "implemented",
         "source": "WST sessionless aggregate beacon on the approved production homepage",
         "freshness_hours": 24,
-        "next_action": "Verify a labelled live page_view receipt; sessionless events do not create Visits or session attribution."
+        "next_action": "Retain labelled live and synthetic receipts in private WST observations; sessionless events do not create Visits or session attribution."
       },
       "edge_traffic": {
         "state": "planned",
@@ -52,7 +52,7 @@
         "state": "implemented",
         "source": "Six stable data-wst-cta attributes on the approved production homepage",
         "freshness_hours": 24,
-        "next_action": "Verify one labelled production CTA receipt and preserve IDs when copy or placement changes."
+        "next_action": "Retain labelled CTA receipts in private WST observations and preserve IDs when copy or placement changes."
       },
       "conversions": {
         "state": "not_applicable",
@@ -76,7 +76,7 @@
         "state": "planned",
         "source": "Chrome DevTools",
         "freshness_hours": 168,
-        "next_action": "Run the shared responsive and performance matrix against the review route before claiming aligned standards."
+        "next_action": "Retain the recorded live matrix; complete native browser 200% zoom, live reduced-motion, and field-vitals evidence before claiming aligned standards."
       }
     },
     "cta_ids": [
@@ -99,15 +99,18 @@
       "The approved production source preserves Diez42 content, policy links, existing contact destinations, and the canonical v249.0 source marker.",
       "The production homepage has six stable CTA IDs, a fixed bottom-right version pill, and an aggregate measurement notice; the noindex review route remains excluded.",
       "WST instrumentation is sessionless, origin-pinned, non-blocking, query-normalizing, and suppressed by Global Privacy Control or Do Not Track.",
-      "Existing responsive navigation, reduced-motion handling, focus-visible controls, and mobile sticky CTA behavior remain in the approved surface; the full viewport and performance matrix is still pending."
+      "The 2026-09-09 live matrix covered 320/375/390/768/1280 and 844x390 landscape with no horizontal overflow; the mobile sticky CTA and version pill retained a measured 10px clearance when visible.",
+      "Chrome DevTools traces recorded LCP 100ms at 1280x900 on Fast 4G/1x CPU and LCP 163ms at 390x844 on Fast 3G/4x CPU, with CLS 0.00 in both; field data is unavailable.",
+      "Keyboard focus reached the skip link, navigation, settings, CTAs, and policy links; Lighthouse mobile and desktop audits scored 100 for accessibility, best practices, SEO, and agentic browsing with no failed audits.",
+      "Native browser 200% zoom and live reduced-motion emulation remain unverified; the source includes a reduced-motion rule, and field vitals remain unavailable."
     ],
-    "standards_next_action": "Run and record the 320/375/390/768/1280 plus landscape, 200% zoom, keyboard, reduced-motion, fixed-control, and Chrome DevTools performance matrix after production activation.",
+    "standards_next_action": "Complete native browser 200% zoom, live reduced-motion, and field-vitals evidence before claiming aligned standards; authoritative WhatsApp/Instagram/Facebook outcomes remain unavailable.",
     "disable_tracking": "Remove the WST beacon tag or set data-wst-enabled to false; collection stops without affecting navigation or external contact links.",
     "exceptions": [
       {
         "requirement": "responsive and performance evidence",
-        "reason": "The review route has baseline responsive and accessibility controls, but the shared acceptance matrix is not yet recorded.",
-        "next_action": "Run and record the shared responsive-performance matrix before claiming aligned standards."
+        "reason": "The live matrix, keyboard path, accessibility audits, and lab traces are recorded; native browser zoom, live reduced-motion emulation, and field-vitals evidence remain unavailable.",
+        "next_action": "Complete native 200% zoom, live reduced-motion, and sufficient field-vitals sampling before claiming aligned standards."
       }
     ]
   }
