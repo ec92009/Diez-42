@@ -804,6 +804,19 @@ body.show-sticky-cta .sticky-cta {
 .hero-slides { position: absolute; inset: 0; }
 .hero .hero-slide { object-position: center top; opacity: 0; transition: opacity 1.2s ease-in-out; }
 .hero .hero-slide.is-active { opacity: 1; }
+/* Trim the empty left wall on desktop while retaining the top/right of each scene. */
+@media (min-width: 821px) {
+  .hero-copy {
+    width: min(1120px, calc(100% - 32px));
+    margin-left: 16px;
+    margin-right: auto;
+  }
+  .hero .hero-slide {
+    left: -25%;
+    width: 125%;
+    object-position: right top;
+  }
+}
 .hero-photo-controls {
   position: absolute;
   z-index: 3;
