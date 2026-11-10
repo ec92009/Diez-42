@@ -28,15 +28,16 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <title>Diez42 | Welcome and practical help in Málaga</title>
-  <link rel="stylesheet" href="review/elies-website/liquid-glass.css?v=314.7" />
-  <link rel="stylesheet" href="review/elies-website/liquid-glass-effects.css?v=314.7" />
-  <script defer src="assets/wst-beacon.js?v=314.7" data-wst-enabled="true" data-wst-endpoint="https://web-signals-collector.ec92009.workers.dev/v1/events" data-wst-site="diez42" data-wst-environment="production" data-wst-consent="not_required" data-wst-sessionless="true" data-wst-origin="https://diez42.org"></script>
+  <link rel="stylesheet" href="review/elies-website/liquid-glass.css?v=314.9" />
+  <link rel="stylesheet" href="review/elies-website/liquid-glass-effects.css?v=314.9" />
+  <link rel="stylesheet" href="assets/program-carousel.css?v=314.9" />
+  <script defer src="assets/wst-beacon.js?v=314.9" data-wst-enabled="true" data-wst-endpoint="https://web-signals-collector.ec92009.workers.dev/v1/events" data-wst-site="diez42" data-wst-environment="production" data-wst-consent="not_required" data-wst-sessionless="true" data-wst-origin="https://diez42.org"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content" data-text-en="Skip to content" data-text-es="Saltar al contenido" data-text-pt-br="Pular para o conteúdo" data-text-de="Zum Inhalt springen">Skip to content</a>
 
   <header class="glass-nav" data-glass-surface>
-    <a class="brand" href="index.html?v=314.7" aria-label="Diez42 home">
+    <a class="brand" href="index.html?v=314.9" aria-label="Diez42 home">
       <img src="assets/logo-horizontal.png" alt="" />
     </a>
     <nav class="site-nav" aria-label="Primary">
@@ -59,7 +60,7 @@
       </div>
       <div class="setting-row">
         <span data-text-en="About" data-text-es="Acerca de" data-text-pt-br="Sobre" data-text-de="Über uns">About</span>
-        <strong>v314.7</strong>
+        <strong>v314.9</strong>
       </div>
       <fieldset>
         <legend data-text-en="Language" data-text-es="Idioma" data-text-pt-br="Idioma" data-text-de="Sprache">Language</legend>
@@ -130,7 +131,12 @@
           <p class="eyebrow" data-text-es="Programas" data-text-en="Programs" data-text-pt-br="Programas" data-text-de="Programme">Programas</p>
           <h2 data-text-es="Cuidado práctico, visible y cercano." data-text-en="Practical care, visible and close." data-text-pt-br="Cuidado prático, visível e próximo." data-text-de="Praktische Hilfe, persönlich und nah.">Cuidado práctico, visible y cercano.</h2>
         </div>
-        <div class="program-grid">
+        <div class="program-carousel-controls" data-program-controls hidden>
+          <button type="button" data-program-previous aria-controls="program-carousel" aria-label="Previous programs" data-aria-en="Previous programs" data-aria-es="Programas anteriores" data-aria-pt-br="Programas anteriores" data-aria-de="Vorherige Programme" disabled><span aria-hidden="true">←</span></button>
+          <span class="program-carousel-status" data-program-status aria-live="polite" aria-atomic="true">1–3 / 11</span>
+          <button type="button" data-program-next aria-controls="program-carousel" aria-label="Next programs" data-aria-en="Next programs" data-aria-es="Siguientes programas" data-aria-pt-br="Próximos programas" data-aria-de="Nächste Programme"><span aria-hidden="true">→</span></button>
+        </div>
+        <div class="program-grid" id="program-carousel" data-program-carousel role="region" tabindex="0" aria-label="Programs" data-aria-en="Programs" data-aria-es="Programas" data-aria-pt-br="Programas" data-aria-de="Programme">
           <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
             <div class="program-artwork">
               <img data-src-en="assets/programs/en/futbol.jpg" data-src-pt-br="assets/programs/pt-br/futbol.jpg" data-src-de="assets/programs/de/futbol.jpg" data-src-es="assets/programs/futbol.jpg" src="assets/programs/futbol.jpg" alt="Fútbol con Propósito — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
@@ -262,7 +268,7 @@
       <div class="section-shell contact-panel reveal" data-glass-surface>
         <div>
           <p class="eyebrow" data-text-en="Contact" data-text-es="Contacto" data-text-pt-br="Contato" data-text-de="Kontakt">Contact</p>
-          <h2 data-text-en="Clear next step. No clutter." data-text-es="Siguiente paso claro. Sin ruido." data-text-pt-br="Próximo passo claro. Sem ruído." data-text-de="Der nächste Schritt ist einfach.">Clear next step. No clutter.</h2>
+          <h2 data-text-en="Contact us" data-text-es="Contacta con nosotros" data-text-pt-br="Entre em contato" data-text-de="Kontaktieren Sie uns">Contact us</h2>
           <p data-text-en="Use WhatsApp for the quickest confirmed path, or follow Diez42 on Instagram and Facebook." data-text-es="Usa WhatsApp como el camino confirmado más rápido, o sigue a Diez42 en Instagram y Facebook." data-text-pt-br="Use o WhatsApp como o caminho confirmado mais rápido, ou acompanhe a Diez42 no Instagram e Facebook." data-text-de="Kontaktiere uns am besten über WhatsApp oder folge Diez42 auf Instagram und Facebook.">Use WhatsApp for the quickest confirmed path, or follow Diez42 on Instagram and Facebook.</p>
           <p class="contact-detail">Avenida de Andalucía 27, 29006 Málaga · +34 600 33 97 94</p>
         </div>
@@ -287,9 +293,10 @@
   </footer>
 
   <a class="sticky-cta" href="https://wa.me/34600339794" data-sticky-cta data-wst-cta="sticky_whatsapp" data-text-en="WhatsApp Diez42" data-text-es="WhatsApp Diez42" data-text-pt-br="WhatsApp Diez42" data-text-de="WhatsApp Diez42">WhatsApp Diez42</a>
-  <span class="version-pill" data-version aria-label="Version v314.7">v314.7</span>
+  <span class="version-pill" data-version aria-label="Version v314.9">v314.9</span>
 
-  <script src="review/elies-website/liquid-glass.js?v=314.7"></script>
-  <script src="assets/site-version.js?v=314.7"></script>
+  <script src="review/elies-website/liquid-glass.js?v=314.9"></script>
+  <script src="assets/site-version.js?v=314.9"></script>
+  <script src="assets/program-carousel.js?v=314.9"></script>
 </body>
 </html>

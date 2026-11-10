@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v314.7`.
+Current visible version: `v314.9`.
 Default viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
 Current controls use a compact settings panel for language, day/night theme, glass transparency, glass blur, and the visible version.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=314.7
+http://localhost:8042/?v=314.9
 ```
 
 Noindex review mirror:
@@ -89,7 +89,7 @@ Payments should be revisited only after the legal entity, Spanish bank details, 
 
 The homepage Programs section contains all 11 Diez42 programs in Spanish, English, Portuguese, and German, with language-specific optimized full-length posters in `assets/programs/`. Original source artwork remains in pCloud.
 
-Program posters display their original localized embedded headings in the shared 9:16 web layout. Lower card panels use logo blue with white copy. Card titles and spacing remain aligned across the responsive three/two/one-column grid; source image files are preserved.
+Program posters display their original localized embedded headings in the shared 9:16 web layout. Lower card panels use logo blue with white copy. Cards use a manual carousel showing three at a time on desktop, two on tablets, and one on phones; source image files are preserved.
 
 The homepage hero alternates three AI-generated scenes inspired by the real Diez42 rooms (food distribution, adult education, and social support) every seven seconds with a 1.2-second crossfade. Text stays stationary. Visitors can pause or advance photos; reduced-motion preferences start the hero paused, and hidden tabs suspend the timer. Optimized JPEG copies are stored in `assets/photos/hero-food-distribution.jpg` `assets/photos/hero-adult-education.jpg`, and `assets/photos/hero-social-support-notes.jpg`.
 
@@ -100,3 +100,5 @@ The food-distribution photograph anchors to the top right; education and social-
 The interface uses the logo blue `#3F77B9` with `#355E8D` and pale blue surfaces. Header logo dimensions are 96 × 68px, without a separate Diez42 text label; the mobile settings gear stays in the header’s top-right corner.
 
 The footer uses the same logo-blue background with white text and links.
+
+The program carousel supports previous/next controls, touch swiping, and Arrow/Home/End keys when focused. There is no automatic advance. All 11 localized cards remain in the static HTML; without JavaScript they use the original grid.
