@@ -116,6 +116,37 @@
     items.forEach((item) => observer.observe(item));
   };
 
+
+  const initHeroPhotos = () => {
+    const slides = Array.from(document.querySelectorAll(".hero-slide"));
+    const controls = document.querySelector("[data-hero-controls]");
+    const pauseButton = document.querySelector("[data-hero-pause]");
+    const nextButton = document.querySelector("[data-hero-next]");
+    if (slides.length < 2 || !controls || !pauseButton || !nextButton) return;
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let active = 0;
+    let paused = motion.matches;
+    let timer;
+    const showNext = () => {
+      const next = (active + 1) % slides.length;
+      if (!slides[next].complete || !slides[next].naturalWidth) return;
+      slides[active].classList.remove("is-active");
+      slides[next].classList.add("is-active");
+      active = next;
+    };
+    const schedule = () => {
+      window.clearInterval(timer);
+      pauseButton.setAttribute("aria-pressed", String(paused));
+      if (!paused && !document.hidden) timer = window.setInterval(showNext, 7000);
+    };
+    pauseButton.addEventListener("click", () => { paused = !paused; schedule(); });
+    nextButton.addEventListener("click", () => { showNext(); schedule(); });
+    document.addEventListener("visibilitychange", schedule);
+    motion.addEventListener("change", () => { paused = motion.matches; schedule(); });
+    controls.hidden = false;
+    schedule();
+  };
+
   settingsToggle?.addEventListener("click", openSettings);
   settingsClose?.addEventListener("click", closeSettings);
   settingsPanel?.addEventListener("click", (event) => {
@@ -141,6 +172,7 @@
   applyGlass();
   applyTheme(getStored("theme", "day"));
   applyLanguage(getStored("language", "en"));
+  initHeroPhotos();
   initReveal();
   updateStickyCta();
 })();

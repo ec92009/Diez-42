@@ -797,3 +797,38 @@ body.show-sticky-cta .sticky-cta {
   }
   .program-poster .card-copy { min-height: 220px; }
 }
+
+/* Homepage photographs crossfade beneath the stationary welcome text. */
+.hero-slides { position: absolute; inset: 0; }
+.hero .hero-slide { opacity: 0; transition: opacity 1.2s ease-in-out; }
+.hero .hero-slide.is-active { opacity: 1; }
+.hero-photo-controls {
+  position: absolute;
+  z-index: 3;
+  right: max(16px, calc((100% - 1120px) / 2));
+  bottom: 16px;
+  display: flex;
+  gap: 8px;
+}
+.hero-photo-controls[hidden] { display: none; }
+.hero-photo-controls button {
+  padding: 9px 12px;
+  min-height: 44px;
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: 8px;
+  background: rgba(5,15,15,.75);
+  color: #fff;
+  font: inherit;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.hero-photo-controls button[aria-pressed="true"] { background: #184a4b; }
+.hero-photo-controls button:focus-visible { outline: 3px solid #ffd278; outline-offset: 3px; }
+.hero:has(.hero-slides) .hero-copy { padding-bottom: 88px; }
+@media (max-width: 820px) {
+  .hero .hero-slide { object-position: 70% center; }
+  .hero-photo-controls { left: 16px; right: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero .hero-slide { transition: none; }
+}
