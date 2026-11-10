@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v253.0`.
+Current visible version: `v254.0`.
 Default viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
 Current controls use a compact settings panel for language, day/night theme, glass transparency, glass blur, and the visible version.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=253.0
+http://localhost:8042/?v=254.0
 ```
 
 Noindex review mirror:
@@ -91,4 +91,6 @@ The homepage Programs section contains all 11 Diez42 programs in Spanish, Englis
 
 Program posters use a shared 9:16 web layout with a solid localized title panel covering the original embedded heading. Poster type scales are 8% of card width for Spanish, 8.2% for English, 7.6% for Portuguese, and 6.6% for German; titles within each language share the same size. Card text and spacing are aligned across a responsive three/two/one-column grid. Source image files are preserved.
 
-The homepage hero alternates two AI-generated scenes inspired by the real Diez42 rooms (food distribution and adult education) every seven seconds with a 1.2-second crossfade. Text stays stationary. Visitors can pause or advance photos; reduced-motion preferences start the hero paused, and hidden tabs suspend the timer. Optimized JPEG copies are stored in `assets/photos/hero-food-distribution.jpg` and `assets/photos/hero-adult-education.jpg`.
+The homepage hero alternates three AI-generated scenes inspired by the real Diez42 rooms (food distribution, adult education, and social support) every seven seconds with a 1.2-second crossfade. Text stays stationary. Visitors can pause or advance photos; reduced-motion preferences start the hero paused, and hidden tabs suspend the timer. Optimized JPEG copies are stored in `assets/photos/hero-food-distribution.jpg` `assets/photos/hero-adult-education.jpg`, and `assets/photos/hero-social-support.jpg`.
+
+On phones, the complete wide hero scene appears above the welcome copy so participants remain visible.
