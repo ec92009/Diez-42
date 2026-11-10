@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /Archive/
+Disallow: /docs/
+
+Sitemap: https://diez42.org/sitemap.xml

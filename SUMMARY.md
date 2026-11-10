@@ -38,28 +38,19 @@ Later on June 26, 2026, the user approved the noindex Elie's Websites liquid-gla
 
 ## Current State
 
-- Current visible version: `v118.1`.
-- Default homepage viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
-- Header controls: frosted navigation with a gear settings modal for language, day/night theme, transparency, translucency, and version.
-- The provided Diez42 logo is now used in the global header, and the active homepage uses selected real Diez42 photos for warmth.
-- Versioning follows the shared date-based SOP: `118` is days since `2026-02-28`; `.1` is the second user-visible build for June 26, 2026.
-- Repo: `https://github.com/ec92009/Diez-42`.
-- Local preview: `http://localhost:8042/?v=118.1`.
-- Noindex review mirror: `http://localhost:8042/review/elies-website/`.
-- Main files:
-- `index.html`: active homepage.
-- `privacy.html`, `terms.html`, `data-deletion.html`: static public policy pages.
-- Contact details on active homepage: WhatsApp action, phone number `+34 600 33 97 94` under the mailing address, Instagram, Facebook, and mailing address `Avenida de Andalucía 27, 29006 Málaga`.
-- `concepts/04-quiet-foundation.html`: redirect for old direct links.
-- `Archive/concepts/`: old exploratory pages retained for reference only.
-- `Media/`: user-provided horizontal and vertical Diez42 PNG/MP4 logo exports.
-- `assets/logo-horizontal.png`, `assets/logo-vertical.png`: cropped web-ready logo assets derived from `Media/`.
-- `assets/social-preview.png`, favicon PNGs, `assets/favicon.ico`, and `site.webmanifest`: metadata and icon assets derived from the approved logo export.
-- `assets/styles.css`: policy-page layout, responsive behavior, day/night theme, and older static surfaces.
-- `assets/site-controls.js`: policy-page Spanish, English, and Brazilian Portuguese language selector, sun/moon theme toggle, translations, and preference persistence.
-- `assets/site-version.js`: internal link versioning helper.
-- `review/elies-website/`: noindex liquid-glass mirror route and scoped CSS/JS used by the public homepage.
-- Open PR note: GitHub PR #1 is stale/conflicting and should not be merged as-is unless rebased and updated with new work. GitHub PR #2 has been incorporated into local `main`.
+- Approved official release: `v314.11`, authorized by the user on November 10, 2026.
+- Production: https://diez42.org/, served by GitHub Pages from `main` at `/`; `www` redirects to the canonical domain.
+- The logo-blue interface uses `#3F77B9` and `#355E8D`, a 96 × 68px header logo, blue card panels/footer, and white text.
+- The hero cycles three AI-generated illustrative scenes, including the edited social-support scene with the gentleman taking notes. Food distribution anchors top right; the other scenes are centered.
+- The 11 original program posters preserve their embedded titles in English, Spanish, Brazilian Portuguese and German.
+- The program carousel shows three cards on desktop, two on tablets and one on phones. It advances every six seconds while visible, offers pause/play, translated direct selection, arrows, swipe and keyboard navigation, and respects interaction and reduced-motion preferences.
+- Contact heading: “Contact us” with matching translations. Existing confirmed contact destinations are preserved.
+- Settings: language, System/Day/Night, constrained glass controls and the current version. Existing saved preferences persist.
+- Public Privacy, Terms and Data Deletion pages have current factual wording; `robots.txt` and `sitemap.xml` cover the official public routes.
+- Repeatable release checks run through `npm run check`; versioning follows the canonical shared SOP.
+- No payments, donations, visitor accounts or contact forms were introduced.
+- Release review: https://github.com/ec92009/Diez-42/pull/6.
+- The original main checkout retains its pre-existing local commit and untracked `GAMEPLAN.md`; release work uses an isolated worktree.
 
 ## Verification Performed
 
@@ -80,6 +71,6 @@ Later on June 26, 2026, the user approved the noindex Elie's Websites liquid-gla
 ## Important Caveats
 
 - The organization details came from user-provided research notes and must be verified before public launch.
-- Real Diez42 photos are now used as draft website imagery, but web-use permission and consent should be confirmed before public launch.
-- Spanish, English, and Brazilian Portuguese translations are draft-level and should be reviewed by fluent speakers before launch.
+- Current hero scenes are AI-generated illustrations; previously selected real photographs remain in the repository as historical assets. Image rights remain part of ongoing site stewardship.
+- Ongoing editorial review of the four homepage languages remains appropriate as programs and contact details change.
 - GitHub Pages is serving from `main` at the custom domain `diez42.org` with HTTPS fully enabled and enforced.

@@ -1,11 +1,11 @@
 {
   "name": "diez-42",
-  "version": "314.10.0",
+  "version": "314.11.0",
   "private": true,
   "description": "Static Diez42 charity homepage for GitHub Pages.",
   "type": "commonjs",
   "scripts": {
     "serve": "python3 -m http.server 8042",
-    "check": "node --check assets/site-version.js && node --check assets/site-controls.js && node --check review/elies-website/liquid-glass.js && node --check assets/program-carousel.js"
+    "check": "node --check assets/site-version.js && node --check assets/site-controls.js && node --check review/elies-website/liquid-glass.js && node --check assets/program-carousel.js && python3 scripts/check_release.py"
   }
 }

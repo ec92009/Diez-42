@@ -19,7 +19,8 @@
   const datasetSuffix = (lang) => lang.toLowerCase();
 
   const normalizeLanguage = (lang) => supportedLanguages.includes(lang) ? lang : "en";
-  const normalizeTheme = (theme) => theme === "night" ? "night" : "day";
+  const colorScheme = window.matchMedia("(prefers-color-scheme: dark)");
+  const normalizeTheme = (theme) => ["system", "day", "night"].includes(theme) ? theme : "day";
 
   const setPressed = (buttons, attribute, activeValue) => {
     buttons.forEach((button) => {
@@ -60,10 +61,11 @@
   };
 
   const applyTheme = (theme) => {
-    const next = normalizeTheme(theme);
+    const preference = normalizeTheme(theme);
+    const next = preference === "system" ? (colorScheme.matches ? "night" : "day") : preference;
     root.dataset.reviewTheme = next;
-    setPressed(themeOptions, "themeOption", next);
-    setStored("theme", next);
+    setPressed(themeOptions, "themeOption", preference);
+    setStored("theme", preference);
   };
 
   const applyGlass = () => {
@@ -146,6 +148,10 @@
     controls.hidden = false;
     schedule();
   };
+
+  colorScheme.addEventListener("change", () => {
+    if (getStored("theme", "day") === "system") applyTheme("system");
+  });
 
   settingsToggle?.addEventListener("click", openSettings);
   settingsClose?.addEventListener("click", closeSettings);

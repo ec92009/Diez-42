@@ -1,14 +1,14 @@
 # Diez42
 
-Static V1 website draft for the Diez42 charity website.
+Official static website for Diez42, published at https://diez42.org/.
 
-The goal of this first pass is intentionally plain: build a clean static V1 homepage before real copy, photos, legal language, and future donation/payment work are added.
+The current release contains the approved logo-blue design, three illustrative hero scenes, and 11 localized program posters in a responsive carousel. Donation and payment features remain deferred to V2.
 
-Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
+Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be maintained against the municipal record and the organization; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v314.10`.
-Default viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
-Current controls use a compact settings panel for language, day/night theme, glass transparency, glass blur, and the visible version.
+Current visible version: `v314.11`.
+Default viewer language: English, with Spanish, Brazilian Portuguese, and German available in the settings panel.
+Current controls use a compact settings panel for language, System/Day/Night themes, glass transparency, glass blur, and the visible version.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
 Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
 Confirmed social links: Instagram `https://www.instagram.com/diez42malaga?igsh=cXNmanN1dmV6Mndy`; Facebook `https://www.facebook.com/share/1XxCNeBHnF/?mibextid=wwXIfr`.
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=314.10
+http://localhost:8042/?v=314.11
 ```
 
 Noindex review mirror:
@@ -60,7 +60,7 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 
 ## V1 Scope
 
-- Static copy and real Diez42 photo placeholders pending final approval.
+- Approved public copy, illustrative hero scenes, and original localized program posters.
 - Static privacy policy, terms, and data deletion instruction pages.
 - Confirmed WhatsApp action and phone number text.
 - Confirmed Instagram/Facebook links and mailing address.
@@ -78,10 +78,10 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 
 ## Content Caveats
 
-- All public-identity details should be verified before launch: formal name, CIF, registered address wording, association scope, statutory aims, and preferred contact channels.
+- Maintain public-identity details with Diez42: formal name, CIF, registered address wording, association scope, statutory aims, and preferred contact channels.
 - Social presence appears to use `diez42malaga` / `Diez42Malaga`, but final links should come from the organization.
-- The Diez42 logo is now used in the header and homepage. Current program imagery uses selected Diez42 photos; confirm usage permissions as part of ongoing site stewardship.
-- Spanish, English, and Brazilian Portuguese copy are lightweight draft translations, not final multilingual editorial copy.
+- The provided logo and original program posters are used on the site; the three hero scenes are AI-generated illustrations. Maintain image-rights records as part of ongoing site stewardship.
+- Spanish, English, Brazilian Portuguese, and German homepage copy share the same program content; ongoing editorial review remains part of site maintenance.
 
 ## V2 Notes
 
