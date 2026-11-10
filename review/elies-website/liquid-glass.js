@@ -11,7 +11,7 @@
   const themeOptions = Array.from(document.querySelectorAll("[data-theme-option]"));
   const translatable = Array.from(document.querySelectorAll("[data-text-en]"));
   const ariaLabels = Array.from(document.querySelectorAll("[data-aria-en]"));
-  const supportedLanguages = ["en", "es", "pt-BR"];
+  const supportedLanguages = ["en", "es", "pt-BR", "de"];
   const storagePrefix = "diez42-review";
 
   const getStored = (key, fallback) => storage.getItem(`${storagePrefix}-${key}`) || fallback;
@@ -34,6 +34,13 @@
   const applyLanguage = (lang) => {
     const next = normalizeLanguage(lang);
     root.lang = next;
+    document.querySelectorAll("[data-program-card]").forEach((card) => {
+      card.lang = next;
+      const image = card.querySelector("img");
+      const source = readText(image, "data-src", next);
+      if (source && image.getAttribute("src") !== source) image.src = source;
+      image.alt = readText(card.querySelector("h3"), "data-text", next) + " — Diez42";
+    });
     translatable.forEach((element) => {
       element.textContent = readText(element, "data-text", next);
     });
@@ -42,11 +49,11 @@
     });
     settingsToggle?.setAttribute(
       "aria-label",
-      next === "es" ? "Abrir ajustes" : next === "pt-BR" ? "Abrir ajustes" : "Open settings"
+      next === "de" ? "Einstellungen öffnen" : next === "es" ? "Abrir ajustes" : next === "pt-BR" ? "Abrir ajustes" : "Open settings"
     );
     settingsClose?.setAttribute(
       "aria-label",
-      next === "es" ? "Cerrar ajustes" : next === "pt-BR" ? "Fechar ajustes" : "Close settings"
+      next === "de" ? "Einstellungen schließen" : next === "es" ? "Cerrar ajustes" : next === "pt-BR" ? "Fechar ajustes" : "Close settings"
     );
     setPressed(languageOptions, "languageOption", next);
     setStored("language", next);
