@@ -53,7 +53,7 @@ body {
   min-width: 320px;
 }
 
-main, .review-footer { background: var(--page); }
+main { background: var(--page); }
 
 body.settings-open {
   overflow: hidden;
@@ -474,6 +474,15 @@ h3 {
   overflow: hidden;
 }
 
+.program-card .card-copy {
+  background: var(--brand-blue);
+  color: #fff;
+}
+
+.program-card .card-index,
+.program-card .card-copy h3,
+.program-card .card-copy p { color: #fff; }
+
 .program-card img {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -543,8 +552,9 @@ h3 {
   align-items: center;
   gap: 16px;
   margin: 0 auto;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
+  color: #fff;
+  background: var(--brand-blue);
+  border-top: 1px solid rgba(255, 255, 255, .25);
 }
 
 .review-footer div {
@@ -561,9 +571,13 @@ h3 {
 }
 
 .review-footer a {
+  color: #fff;
   text-decoration: none;
   font-weight: 760;
 }
+
+.review-footer a:hover { text-decoration: underline; }
+.review-footer a:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
 
 .review-footer .site-credit {
   font-weight: 680;
@@ -711,7 +725,7 @@ body.show-sticky-cta .sticky-cta {
   }
 }
 
-/* Shared poster layout: one consistent title scale per language. */
+/* Original localized posters retain their embedded titles. */
 #programs .program-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
@@ -719,7 +733,6 @@ body.show-sticky-cta .sticky-cta {
 }
 
 .program-poster {
-  --poster-font-size: 8cqi;
   --card-title-size: 1.125rem;
   container-type: inline-size;
   display: flex;
@@ -727,17 +740,14 @@ body.show-sticky-cta .sticky-cta {
 }
 
 .program-poster:lang(en) {
-  --poster-font-size: 8.2cqi;
   --card-title-size: 1.125rem;
 }
 
 .program-poster:lang(pt-BR) {
-  --poster-font-size: 7.6cqi;
   --card-title-size: 1.1rem;
 }
 
 .program-poster:lang(de) {
-  --poster-font-size: 6.6cqi;
   --card-title-size: 1.0625rem;
 }
 
@@ -755,25 +765,6 @@ body.show-sticky-cta .sticky-cta {
   height: 100%;
   aspect-ratio: 9 / 16;
   object-fit: cover;
-}
-
-/* Cover the baked-in headings with a uniformly sized, localized title panel. */
-.program-poster-heading {
-  position: absolute;
-  inset: 0 0 auto;
-  height: 32%;
-  display: grid;
-  place-items: center;
-  padding: 6%;
-  background: #3f77b9;
-  color: #fff;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: var(--poster-font-size);
-  font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.015em;
-  text-wrap: balance;
 }
 
 .program-poster .card-copy {

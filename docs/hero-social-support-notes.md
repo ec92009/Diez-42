@@ -1,6 +1,6 @@
 # Social-support hero edit
 
-Generated with the built-in imagegen tool on 2026-11-10 for website preview v314.6.
+Generated with the built-in imagegen tool on 2026-11-10 for website preview v314.7.
 
 Source: `assets/photos/hero-social-support.jpg` (preserved).
 Website asset: `assets/photos/hero-social-support-notes.jpg` (optimized JPEG).
