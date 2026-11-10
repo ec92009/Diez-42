@@ -799,8 +799,10 @@ body.show-sticky-cta .sticky-cta {
 }
 
 /* Homepage photographs crossfade beneath the stationary welcome text. */
+/* Leave room for the navigation's visual offset before showing faces. */
+.hero:has(.hero-slides) { margin-top: 32px; }
 .hero-slides { position: absolute; inset: 0; }
-.hero .hero-slide { opacity: 0; transition: opacity 1.2s ease-in-out; }
+.hero .hero-slide { object-position: center top; opacity: 0; transition: opacity 1.2s ease-in-out; }
 .hero .hero-slide.is-active { opacity: 1; }
 .hero-photo-controls {
   position: absolute;
@@ -826,7 +828,7 @@ body.show-sticky-cta .sticky-cta {
 .hero-photo-controls button:focus-visible { outline: 3px solid #ffd278; outline-offset: 3px; }
 .hero:has(.hero-slides) .hero-copy { padding-bottom: 88px; }
 @media (max-width: 820px) {
-  .hero .hero-slide { object-position: 70% center; }
+  .hero .hero-slide { object-position: 70% top; }
   .hero-photo-controls { left: 16px; right: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
