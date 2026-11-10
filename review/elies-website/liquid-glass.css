@@ -696,3 +696,11 @@ body.show-sticky-cta .sticky-cta {
     width: 100%;
   }
 }
+
+/* Preserve the complete program posters, including their titles and logos. */
+.program-poster img {
+  display: block;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
