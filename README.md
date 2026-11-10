@@ -6,7 +6,7 @@ The goal of this first pass is intentionally plain: build a clean static V1 home
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v314.4`.
+Current visible version: `v314.6`.
 Default viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
 Current controls use a compact settings panel for language, day/night theme, glass transparency, glass blur, and the visible version.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=314.4
+http://localhost:8042/?v=314.6
 ```
 
 Noindex review mirror:
@@ -96,3 +96,5 @@ The homepage hero alternates three AI-generated scenes inspired by the real Diez
 On phones, the complete wide hero scene appears above the welcome copy so participants remain visible.
 
 The food-distribution photograph anchors to the top right; education and social-support photographs stay centered as the browser resizes. The desktop hero follows the photographs’ original proportions. Hero text stays 16px from the browser’s left edge; phones retain the complete scene above the copy.
+
+The interface uses the logo blue `#3F77B9` with `#355E8D` and pale blue surfaces. Header logo dimensions are 96 × 68px, without a separate Diez42 text label; the mobile settings gear stays in the header’s top-right corner.
