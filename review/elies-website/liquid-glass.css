@@ -800,21 +800,19 @@ body.show-sticky-cta .sticky-cta {
 
 /* Homepage photographs crossfade beneath the stationary welcome text. */
 /* Leave room for the navigation's visual offset before showing faces. */
-.hero:has(.hero-slides) { margin-top: 32px; }
+.hero:has(.hero-slides) { margin-top: 32px; min-height: 0; aspect-ratio: 1672 / 941; }
 .hero-slides { position: absolute; inset: 0; }
-.hero .hero-slide { object-position: center top; opacity: 0; transition: opacity 1.2s ease-in-out; }
+.hero .hero-slide { object-position: center; opacity: 0; transition: opacity 1.2s ease-in-out; }
+.hero .hero-slide.hero-slide--food { object-position: right top; }
 .hero .hero-slide.is-active { opacity: 1; }
-/* Trim the empty left wall on desktop while retaining the top/right of each scene. */
+/* Keep desktop copy aligned to the browser independently of photo framing. */
 @media (min-width: 821px) {
   .hero-copy {
     width: min(1120px, calc(100% - 32px));
     margin-left: 16px;
     margin-right: auto;
-  }
-  .hero .hero-slide {
-    left: -25%;
-    width: 125%;
-    object-position: right top;
+    align-self: center;
+    padding-top: 48px;
   }
 }
 .hero-photo-controls {
@@ -841,7 +839,7 @@ body.show-sticky-cta .sticky-cta {
 .hero-photo-controls button:focus-visible { outline: 3px solid #ffd278; outline-offset: 3px; }
 .hero:has(.hero-slides) .hero-copy { padding-bottom: 88px; }
 @media (max-width: 820px) {
-  .hero .hero-slide { object-position: 70% top; }
+  .hero .hero-slide { object-position: center; }
   .hero-photo-controls { left: 16px; right: auto; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -853,6 +851,7 @@ body.show-sticky-cta .sticky-cta {
   .hero:has(.hero-slides) {
     display: block;
     min-height: 0;
+    aspect-ratio: auto;
     padding-top: 0;
     background: #173d3e;
   }
