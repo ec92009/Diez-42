@@ -1,14 +1,14 @@
 # Diez42
 
-Static V1 website draft for the Diez42 charity website.
+Official static website for Diez42, published at https://diez42.org/.
 
-The goal of this first pass is intentionally plain: build a clean static V1 homepage before real copy, photos, legal language, and future donation/payment work are added.
+The current release contains the approved logo-blue design, three illustrative hero scenes, and 11 localized program posters in a responsive carousel. Donation and payment features remain deferred to V2.
 
-Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be verified against the municipal record and the organization before public launch; the public-facing spelling should remain `Diez42`.
+Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be maintained against the municipal record and the organization; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v254.0`.
-Default viewer language: English, with Spanish and Brazilian Portuguese available in the settings panel.
-Current controls use a compact settings panel for language, day/night theme, glass transparency, glass blur, and the visible version.
+Current visible version: `v314.11`.
+Default viewer language: English, with Spanish, Brazilian Portuguese, and German available in the settings panel.
+Current controls use a compact settings panel for language, System/Day/Night themes, glass transparency, glass blur, and the visible version.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
 Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
 Confirmed social links: Instagram `https://www.instagram.com/diez42malaga?igsh=cXNmanN1dmV6Mndy`; Facebook `https://www.facebook.com/share/1XxCNeBHnF/?mibextid=wwXIfr`.
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=254.0
+http://localhost:8042/?v=314.11
 ```
 
 Noindex review mirror:
@@ -60,7 +60,7 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 
 ## V1 Scope
 
-- Static copy and real Diez42 photo placeholders pending final approval.
+- Approved public copy, illustrative hero scenes, and original localized program posters.
 - Static privacy policy, terms, and data deletion instruction pages.
 - Confirmed WhatsApp action and phone number text.
 - Confirmed Instagram/Facebook links and mailing address.
@@ -78,10 +78,10 @@ Only `index.html` is the active public page. Do not update `Archive/concepts/` j
 
 ## Content Caveats
 
-- All public-identity details should be verified before launch: formal name, CIF, registered address wording, association scope, statutory aims, and preferred contact channels.
+- Maintain public-identity details with Diez42: formal name, CIF, registered address wording, association scope, statutory aims, and preferred contact channels.
 - Social presence appears to use `diez42malaga` / `Diez42Malaga`, but final links should come from the organization.
-- The Diez42 logo is now used in the header and homepage. Current program imagery uses selected Diez42 photos; confirm usage permissions as part of ongoing site stewardship.
-- Spanish, English, and Brazilian Portuguese copy are lightweight draft translations, not final multilingual editorial copy.
+- The provided logo and original program posters are used on the site; the three hero scenes are AI-generated illustrations. Maintain image-rights records as part of ongoing site stewardship.
+- Spanish, English, Brazilian Portuguese, and German homepage copy share the same program content; ongoing editorial review remains part of site maintenance.
 
 ## V2 Notes
 
@@ -89,8 +89,16 @@ Payments should be revisited only after the legal entity, Spanish bank details, 
 
 The homepage Programs section contains all 11 Diez42 programs in Spanish, English, Portuguese, and German, with language-specific optimized full-length posters in `assets/programs/`. Original source artwork remains in pCloud.
 
-Program posters use a shared 9:16 web layout with a solid localized title panel covering the original embedded heading. Poster type scales are 8% of card width for Spanish, 8.2% for English, 7.6% for Portuguese, and 6.6% for German; titles within each language share the same size. Card text and spacing are aligned across a responsive three/two/one-column grid. Source image files are preserved.
+Program posters display their original localized embedded headings in the shared 9:16 web layout. Lower card panels use logo blue with white copy. Cards use an automatic carousel showing three at a time on desktop, two on tablets, and one on phones; source image files are preserved.
 
-The homepage hero alternates three AI-generated scenes inspired by the real Diez42 rooms (food distribution, adult education, and social support) every seven seconds with a 1.2-second crossfade. Text stays stationary. Visitors can pause or advance photos; reduced-motion preferences start the hero paused, and hidden tabs suspend the timer. Optimized JPEG copies are stored in `assets/photos/hero-food-distribution.jpg` `assets/photos/hero-adult-education.jpg`, and `assets/photos/hero-social-support.jpg`.
+The homepage hero alternates three AI-generated scenes inspired by the real Diez42 rooms (food distribution, adult education, and social support) every seven seconds with a 1.2-second crossfade. Text stays stationary. Visitors can pause or advance photos; reduced-motion preferences start the hero paused, and hidden tabs suspend the timer. Optimized JPEG copies are stored in `assets/photos/hero-food-distribution.jpg` `assets/photos/hero-adult-education.jpg`, and `assets/photos/hero-social-support-notes.jpg`.
 
 On phones, the complete wide hero scene appears above the welcome copy so participants remain visible.
+
+The food-distribution photograph anchors to the top right; education and social-support photographs stay centered as the browser resizes. The desktop hero follows the photographs’ original proportions. Hero text stays 16px from the browser’s left edge; phones retain the complete scene above the copy.
+
+The interface uses the logo blue `#3F77B9` with `#355E8D` and pale blue surfaces. Header logo dimensions are 96 × 68px, without a separate Diez42 text label; the mobile settings gear stays in the header’s top-right corner.
+
+The footer uses the same logo-blue background with white text and links.
+
+The program carousel supports previous/next controls, touch swiping, and Arrow/Home/End keys when focused. Cards advance left by one every six seconds while visible, with a pause/play button and a direct-access program menu. Autoplay pauses on hover, keyboard focus, touch interaction, and hidden tabs; reduced-motion preferences start playback paused. The last group resets to the first without animating backward. All 11 localized cards remain in the static HTML; without JavaScript they use the original grid.
