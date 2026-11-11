@@ -869,3 +869,118 @@ body.show-sticky-cta .sticky-cta {
   .hero:has(.hero-slides) .hero-shade { display: none; }
   .hero:has(.hero-slides) .hero-copy { padding: 28px 0 88px; }
 }
+
+/* Limit the homepage photography to half the viewport height. */
+@media (min-width: 601px) {
+  .hero:has(.hero-slides) { height: 50svh; aspect-ratio: auto; }
+  .hero:has(.hero-slides) .hero-copy { padding: 20px 0 72px; }
+  .hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); }
+  .hero-line { font-size: clamp(1.25rem, 2.3vw, 2rem); }
+  .hero-summary { font-size: 1rem; margin-bottom: 16px; }
+}
+/* Let copy flow below the image when vertical space is limited. */
+@media (max-height: 760px), (max-width: 600px) {
+  .hero:has(.hero-slides) {
+    display: block;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    background: #355e8d;
+  }
+  .hero-slides { position: relative; width: 100%; height: min(50svh, 56.28vw); aspect-ratio: auto; }
+  .hero:has(.hero-slides) .hero-shade { display: none; }
+  .hero:has(.hero-slides) .hero-copy { padding: 28px 0 88px; }
+}
+
+/* Keep both button groups on a shared row, with photo controls at the right. */
+.hero:has(.hero-slides) .hero-copy {
+  width: calc(100% - 32px);
+  margin-inline: 16px;
+  padding-bottom: 28px;
+}
+.hero-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: stretch;
+  gap: 16px;
+}
+.hero-action-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-actions .hero-photo-controls {
+  position: static;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.hero-actions .hero-photo-controls[hidden] { display: none; }
+@media (max-width: 600px) {
+  .hero-actions { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+  .hero-action-links, .hero-actions .hero-photo-controls { flex-direction: column; }
+  .hero-actions .hero-photo-controls { width: 100%; }
+  .hero-actions .button, .hero-photo-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px 8px;
+    font-size: .8rem;
+  }
+}
+
+/* Only the primary homepage actions remain visible. */
+.hero-actions { display: flex; }
+.hero-action-links { width: 100%; }
+
+.about-video { margin-top: 32px; }
+.about-video video { display: block; width: 100%; max-width: 960px; height: auto; margin-inline: auto; border-radius: 12px; background: #10263e; }
+
+/* Arabic and Ukrainian use readable system fonts and logical text alignment. */
+html:lang(ar) { font-family: Tahoma, Arial, sans-serif; }
+html:lang(ar) h1, html:lang(ar) h2, html:lang(ar) h3 { font-family: Tahoma, Arial, sans-serif; line-height: 1.4; }
+html:lang(uk) h2, html:lang(uk) h3 { overflow-wrap: anywhere; }
+html[dir="rtl"] .hero-copy { text-align: right; }
+html[dir="rtl"] .card-copy { text-align: right; }
+html[dir="rtl"] [data-program-carousel] { direction: ltr; }
+html[dir="rtl"] [data-program-card] { direction: rtl; }
+html[dir="rtl"] .hero-actions { direction: rtl; }
+
+/* Content-sized language menu with a viewport-safe height. */
+.settings-card {
+  width: max-content;
+  min-width: min(160px, calc(100vw - 32px));
+  max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 140px);
+  overflow-y: auto;
+  gap: 6px;
+  padding: 10px;
+}
+.settings-card .settings-head { gap: 8px; margin: 0; }
+.settings-card .settings-head h2 { font-size: .95rem; line-height: 1.3; }
+.settings-card fieldset { gap: 4px; margin: 0; min-width: 0; }
+.settings-card legend { font-size: .75rem; }
+.settings-card .segmented-control { grid-template-columns: 1fr; gap: 4px; }
+.settings-card .segmented-control button {
+  min-height: 34px;
+  padding: 5px 9px;
+  font-size: .82rem;
+  line-height: 1.3;
+}
+.settings-card .settings-close { min-width: 30px; min-height: 30px; padding: 2px; }
+@media (pointer: coarse) {
+  .settings-card .segmented-control button { min-height: 44px; }
+}
+.settings-card::after { display: none; }
+
+.contact-panel .association-name { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.18; text-align: start; }
+.contact-map { display: block; width: 100%; height: clamp(240px, 35vw, 360px); border: 0; border-radius: 8px; margin: 20px 0 10px; background: #e2e9ee; }
+
+.contact-social { align-self: center; min-width: 0; }
+.contact-social .contact-actions { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+.contact-social .button { color: #fff; border: 1px solid rgba(255,255,255,.65); }
+.contact-social .social-whatsapp { background: #176b46; }
+.contact-social .social-instagram { background: linear-gradient(120deg, #762d91, #b52959); }
+.contact-social .social-facebook { background: #1456b8; }
+.contact-social p { margin-bottom: 16px; }
+
+.contact-panel .contact-heading { grid-column: 1 / -1; width: 100%; }
+.contact-panel .contact-heading .association-name { max-width: none; margin-bottom: 0; }

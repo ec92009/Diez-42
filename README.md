@@ -6,7 +6,7 @@ The current release contains the approved logo-blue design, three illustrative h
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be maintained against the municipal record and the organization; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v314.11`.
+Current visible version: `v314.24`.
 Default viewer language: English, with Spanish, Brazilian Portuguese, and German available in the settings panel.
 Current controls use a compact settings panel for language, System/Day/Night themes, glass transparency, glass blur, and the visible version.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=314.11
+http://localhost:8042/?v=314.24
 ```
 
 Noindex review mirror:
@@ -102,3 +102,23 @@ The interface uses the logo blue `#3F77B9` with `#355E8D` and pale blue surfaces
 The footer uses the same logo-blue background with white text and links.
 
 The program carousel supports previous/next controls, touch swiping, and Arrow/Home/End keys when focused. Cards advance left by one every six seconds while visible, with a pause/play button and a direct-access program menu. Autoplay pauses on hover, keyboard focus, touch interaction, and hidden tabs; reduced-motion preferences start playback paused. The last group resets to the first without animating backward. All 11 localized cards remain in the static HTML; without JavaScript they use the original grid.
+
+Restored the site to the About Us video milestone (v314.24). Homepage photos remain capped at half the viewport height, rotate automatically without controls, and the About section includes the supplied introduction video. Later content expansion remains available in Git history.
+
+Arabic and Ukrainian translations cover the homepage, program descriptions, settings, privacy, terms and data-deletion pages. Arabic uses RTL text; the program rail retains LTR scroll geometry for consistent navigation. Artwork remains in its existing languages.
+
+The compact settings panel now contains language options only. System theme is always used, with fixed glass opacity 82% and blur 18px.
+
+Settings uses a 210px language-only panel without an About/version row.
+
+The language menu sizes to its text, with compact spacing, viewport height limits and larger touch targets on touch devices.
+
+Removed the homepage Known facts panel and navigation links to it.
+
+The contact heading uses the full association name, with the supplied address Avenida de Andalucía 27, local 7A, 29010 Málaga, an embedded Google map and a direct Maps link.
+
+Contact copy and address appear below individually styled WhatsApp, Instagram and Facebook buttons, beside the map.
+
+The contact association heading is justified to both edges of its column.
+
+The association name spans the full contact panel above the map and social column.

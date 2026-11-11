@@ -3,7 +3,7 @@
   const storage = window.localStorage;
   const defaultLanguage = "es";
   const defaultLanguageMigrationKey = "diez42-default-lang-v72";
-  const supportedLanguages = ["es", "en", "pt-BR"];
+  const supportedLanguages = ["es", "en", "pt-BR", "ar", "uk"];
   const languageLabels = {
     en: "🇬🇧",
     es: "🇪🇸",
@@ -283,6 +283,13 @@
     }
   };
 
+  Object.assign(themeLabels, { ar: { day: "نهاري", night: "ليلي" }, uk: { day: "Світла", night: "Темна" } });
+  Object.assign(languageLabels, { ar: "AR", uk: "UA" });
+  Object.assign(languageNames, { ar: "العربية", uk: "Українська" });
+  Object.assign(languageSelectLabels, { ar: "اختيار اللغة", uk: "Вибір мови" });
+  Object.assign(languageDirections, { ar: "rtl", uk: "ltr" });
+  Object.assign(pageTitles, { ar: "Diez42 | ترحيب ومساعدة في مالقة", uk: "Diez42 | Вітаємо в Малазі" });
+
   const normalizeLanguage = (lang) => supportedLanguages.includes(lang) ? lang : defaultLanguage;
   const getDatasetKey = (lang) => languageDatasetKeys[lang] || lang;
 
@@ -299,6 +306,7 @@
   };
 
   const getPageTitle = (lang) => {
+    if (lang === "ar" || lang === "uk") return "Diez42 | " + (document.querySelector("h1")?.getAttribute("data-" + lang) || pageTitles[lang]);
     const en = document.body?.dataset.pageTitleEn;
     if (!en) return pageTitles[lang] || pageTitles.en;
     if (lang === "en") return en;
@@ -313,6 +321,7 @@
   const applyLanguage = (lang) => {
     const next = normalizeLanguage(lang);
     root.lang = next;
+    storage.setItem("diez42-review-language", next);
     root.dir = languageDirections[next] || "ltr";
     document.title = getPageTitle(next);
     storage.setItem("diez42-lang", next);

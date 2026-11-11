@@ -1,0 +1,394 @@
+{
+  "About": {
+    "ar": "عنّا",
+    "uk": "Про нас"
+  },
+  "Programs": {
+    "ar": "البرامج",
+    "uk": "Програми"
+  },
+  "Contact": {
+    "ar": "تواصل معنا",
+    "uk": "Контакти"
+  },
+  "Contact us": {
+    "ar": "تواصل معنا",
+    "uk": "Зв’яжіться з нами"
+  },
+  "Settings": {
+    "ar": "الإعدادات",
+    "uk": "Налаштування"
+  },
+  "Language": {
+    "ar": "اللغة",
+    "uk": "Мова"
+  },
+  "Theme": {
+    "ar": "المظهر",
+    "uk": "Тема"
+  },
+  "System": {
+    "ar": "حسب إعداد الجهاز",
+    "uk": "Системна"
+  },
+  "Day": {
+    "ar": "نهاري",
+    "uk": "Світла"
+  },
+  "Night": {
+    "ar": "ليلي",
+    "uk": "Темна"
+  },
+  "Transparency": {
+    "ar": "الشفافية",
+    "uk": "Прозорість"
+  },
+  "Translucency": {
+    "ar": "تأثير الزجاج",
+    "uk": "Ефект скла"
+  },
+  "Skip to content": {
+    "ar": "انتقل إلى المحتوى",
+    "uk": "Перейти до вмісту"
+  },
+  "See the work": {
+    "ar": "تعرّف على عملنا",
+    "uk": "Дізнатися про нашу роботу"
+  },
+  "WhatsApp Diez42": {
+    "ar": "واتساب Diez42",
+    "uk": "WhatsApp Diez42"
+  },
+  "Welcome and practical help in Málaga.": {
+    "ar": "ترحيب ومساعدة عملية في مالقة.",
+    "uk": "Ласкаво просимо! Практична допомога в Малазі."
+  },
+  "Support that starts with welcome.": {
+    "ar": "دعم يبدأ بالترحيب.",
+    "uk": "Підтримка починається з гостинності."
+  },
+  "Practical care, visible and close.": {
+    "ar": "رعاية عملية وقريبة منك.",
+    "uk": "Практична допомога поруч із вами."
+  },
+  "Known facts": {
+    "ar": "معلومات مؤكدة",
+    "uk": "Підтверджена інформація"
+  },
+  "Soccer with Purpose": {
+    "ar": "كرة القدم بهدف يجمعنا",
+    "uk": "Футбол із метою"
+  },
+  "Game Afternoon": {
+    "ar": "أمسية ألعاب",
+    "uk": "Ігровий вечір"
+  },
+  "Craft Afternoon": {
+    "ar": "أمسية أعمال يدوية",
+    "uk": "Творчий вечір"
+  },
+  "Spanish Classes": {
+    "ar": "دروس اللغة الإسبانية",
+    "uk": "Уроки іспанської"
+  },
+  "English Classes": {
+    "ar": "دروس اللغة الإنجليزية",
+    "uk": "Уроки англійської"
+  },
+  "Job Readiness": {
+    "ar": "الاستعداد للعمل",
+    "uk": "Підготовка до роботи"
+  },
+  "Listening and Support": {
+    "ar": "الاستماع والدعم",
+    "uk": "Розмова та підтримка"
+  },
+  "Bible Study": {
+    "ar": "دراسة الكتاب المقدس",
+    "uk": "Вивчення Біблії"
+  },
+  "Food Baskets": {
+    "ar": "سلال غذائية",
+    "uk": "Продуктові набори"
+  },
+  "Volunteering and Mentoring": {
+    "ar": "التطوع والإرشاد",
+    "uk": "Волонтерство та наставництво"
+  },
+  "Hospitality": {
+    "ar": "الضيافة",
+    "uk": "Гостинність"
+  },
+  "Go to program": {
+    "ar": "اختر برنامجًا",
+    "uk": "Вибрати програму"
+  },
+  "Pause": {
+    "ar": "إيقاف مؤقت",
+    "uk": "Пауза"
+  },
+  "Play": {
+    "ar": "تشغيل",
+    "uk": "Відтворити"
+  },
+  "Previous programs": {
+    "ar": "البرامج السابقة",
+    "uk": "Попередні програми"
+  },
+  "Next programs": {
+    "ar": "البرامج التالية",
+    "uk": "Наступні програми"
+  },
+  "Privacy": {
+    "ar": "الخصوصية",
+    "uk": "Конфіденційність"
+  },
+  "Terms": {
+    "ar": "شروط الاستخدام",
+    "uk": "Умови користування"
+  },
+  "Data deletion": {
+    "ar": "حذف البيانات",
+    "uk": "Видалення даних"
+  },
+  "Home": {
+    "ar": "الرئيسية",
+    "uk": "Головна"
+  },
+  "Asociación para el Desarrollo e Integración Diez42": {
+    "ar": "Asociación para el Desarrollo e Integración Diez42",
+    "uk": "Asociación para el Desarrollo e Integración Diez42"
+  },
+  "Site creation and maintenance by Web-By-Elie.com": {
+    "ar": "إنشاء الموقع وصيانته: Web-By-Elie.com",
+    "uk": "Створення та підтримка сайту: Web-By-Elie.com"
+  },
+  "A local place for newcomers, families, volunteers, and neighbors to find food support, classes, training, and community connection.": {
+    "ar": "مكان قريب للقادمين الجدد والعائلات والمتطوعين والجيران، يقدم الدعم الغذائي والدروس والتدريب والتواصل مع المجتمع.",
+    "uk": "Місце для новоприбулих, сімей, волонтерів і сусідів: продуктова допомога, заняття, навчання та спілкування."
+  },
+  "Diez42 serves immigrants, refugees, and other newcomers in Málaga through practical support, education, training, family activities, food support, and steady community presence.": {
+    "ar": "تساند Diez42 المهاجرين واللاجئين والقادمين الجدد في مالقة، من خلال المساعدة العملية والتعليم والتدريب والأنشطة العائلية والدعم الغذائي والتواصل المستمر مع المجتمع.",
+    "uk": "Diez42 допомагає мігрантам, біженцям та іншим новоприбулим у Малазі: практична підтримка, освіта, навчання, сімейні заходи, продуктова допомога та постійний зв’язок із громадою."
+  },
+  "Sport, teamwork, and friendship to connect with the community.": {
+    "ar": "رياضة وعمل جماعي وصداقة للتواصل مع المجتمع.",
+    "uk": "Спорт, командна гра та дружба для спілкування з громадою."
+  },
+  "Share games, get to know each other, and enjoy time together.": {
+    "ar": "نلعب معًا ونتعارف ونقضي وقتًا ممتعًا.",
+    "uk": "Граємо разом, знайомимося та приємно проводимо час."
+  },
+  "Creative activities to learn, share ideas, and make things together.": {
+    "ar": "أنشطة إبداعية للتعلّم وتبادل الأفكار والعمل معًا.",
+    "uk": "Творчі заняття, щоб навчатися, ділитися ідеями та творити разом."
+  },
+  "Learn and practice Spanish for everyday life.": {
+    "ar": "تعلّم الإسبانية وممارستها في الحياة اليومية.",
+    "uk": "Вивчайте іспанську та практикуйте її в повсякденному житті."
+  },
+  "A space to learn English and practice conversation.": {
+    "ar": "مساحة لتعلّم الإنجليزية وممارسة المحادثة.",
+    "uk": "Місце для вивчення англійської та розмовної практики."
+  },
+  "Support with résumés, interviews, and next steps toward employment.": {
+    "ar": "مساعدة في كتابة السيرة الذاتية والاستعداد للمقابلات والخطوات التالية نحو العمل.",
+    "uk": "Допомога з резюме, співбесідами та наступними кроками до працевлаштування."
+  },
+  "A welcoming space for listening, guidance, and personal support.": {
+    "ar": "مساحة ترحيبية للاستماع والتوجيه والدعم الشخصي.",
+    "uk": "Затишне місце, де вас вислухають, зорієнтують і підтримають."
+  },
+  "Read the Bible, share questions, and reflect together.": {
+    "ar": "نقرأ الكتاب المقدس ونطرح الأسئلة ونتأمل معًا.",
+    "uk": "Читаємо Біблію, ділимося запитаннями та розмірковуємо разом."
+  },
+  "Food support to help families meet everyday needs.": {
+    "ar": "دعم غذائي لمساعدة العائلات على تلبية احتياجاتها اليومية.",
+    "uk": "Продуктова допомога для щоденних потреб сімей."
+  },
+  "Opportunities to serve, share experience, and support others.": {
+    "ar": "فرص للخدمة وتبادل الخبرات ومساندة الآخرين.",
+    "uk": "Можливості допомагати, ділитися досвідом і підтримувати інших."
+  },
+  "A welcoming place to talk, share, and feel part of the community.": {
+    "ar": "مكان ترحيبي للحديث والمشاركة والشعور بالانتماء إلى المجتمع.",
+    "uk": "Гостинне місце для розмов, спілкування та відчуття належності до громади."
+  },
+  "Formal association name and CIF are recorded.": {
+    "ar": "الاسم القانوني للجمعية ورقمها الضريبي CIF مسجلان.",
+    "uk": "Офіційна назва асоціації та податковий номер CIF зареєстровані."
+  },
+  "Public phone and WhatsApp use +34 600 33 97 94.": {
+    "ar": "رقم الهاتف وواتساب: ‎+34 600 33 97 94.",
+    "uk": "Телефон і WhatsApp: +34 600 33 97 94."
+  },
+  "Mailing address is Avenida de Andalucía 27, 29006 Málaga.": {
+    "ar": "العنوان البريدي: Avenida de Andalucía 27, 29006 Málaga.",
+    "uk": "Поштова адреса: Avenida de Andalucía 27, 29006 Málaga."
+  },
+  "Use WhatsApp for the quickest confirmed path, or follow Diez42 on Instagram and Facebook.": {
+    "ar": "تواصل معنا عبر واتساب، أو تابع Diez42 على إنستغرام وفيسبوك.",
+    "uk": "Найшвидше зв’язатися з нами через WhatsApp. Також стежте за Diez42 в Instagram і Facebook."
+  },
+  "We count aggregate page views and button presses to improve and optimize this site. No form contents or visitor identifiers are collected.": {
+    "ar": "نحسب إجمالي مشاهدات الصفحات والنقرات لتحسين الموقع. لا نجمع محتوى النماذج أو معرّفات الزوار.",
+    "uk": "Ми підраховуємо загальну кількість переглядів і натискань для покращення сайту. Дані форм та ідентифікатори відвідувачів не збираються."
+  },
+  "Privacy Policy": {
+    "ar": "سياسة الخصوصية",
+    "uk": "Політика конфіденційності"
+  },
+  "Terms of Service": {
+    "ar": "شروط الخدمة",
+    "uk": "Умови користування"
+  },
+  "Data": {
+    "ar": "البيانات",
+    "uk": "Дані"
+  },
+  "Data Deletion Instructions": {
+    "ar": "تعليمات حذف البيانات",
+    "uk": "Інструкції з видалення даних"
+  },
+  "Summary": {
+    "ar": "ملخص",
+    "uk": "Коротко"
+  },
+  "Site measurement": {
+    "ar": "قياس استخدام الموقع",
+    "uk": "Статистика сайту"
+  },
+  "Information we store": {
+    "ar": "المعلومات التي نحفظها",
+    "uk": "Інформація, яку ми зберігаємо"
+  },
+  "Hosting and technical logs": {
+    "ar": "الاستضافة والسجلات التقنية",
+    "uk": "Хостинг і технічні журнали"
+  },
+  "External links": {
+    "ar": "روابط خارجية",
+    "uk": "Зовнішні посилання"
+  },
+  "Website imagery": {
+    "ar": "صور الموقع",
+    "uk": "Зображення на сайті"
+  },
+  "Use of the site": {
+    "ar": "استخدام الموقع",
+    "uk": "Користування сайтом"
+  },
+  "Information on this site": {
+    "ar": "معلومات الموقع",
+    "uk": "Інформація на сайті"
+  },
+  "No accounts or payments": {
+    "ar": "لا حسابات أو مدفوعات",
+    "uk": "Без облікових записів і платежів"
+  },
+  "Changes": {
+    "ar": "التغييرات",
+    "uk": "Зміни"
+  },
+  "Current status": {
+    "ar": "الوضع الحالي",
+    "uk": "Поточний стан"
+  },
+  "How to request deletion": {
+    "ar": "كيفية طلب الحذف",
+    "uk": "Як подати запит на видалення"
+  },
+  "Data controlled by external services": {
+    "ar": "بيانات تديرها خدمات خارجية",
+    "uk": "Дані під контролем зовнішніх сервісів"
+  },
+  "Future changes": {
+    "ar": "تغييرات مستقبلية",
+    "uk": "Майбутні зміни"
+  },
+  "Last updated: November 10, 2026": {
+    "ar": "آخر تحديث: 10 نوفمبر 2026",
+    "uk": "Останнє оновлення: 10 листопада 2026 року"
+  },
+  "This page explains how the Diez42 website handles visitor information.": {
+    "ar": "تشرح هذه الصفحة كيفية تعامل موقع Diez42 مع معلومات الزوار.",
+    "uk": "На цій сторінці пояснюється, як сайт Diez42 обробляє інформацію відвідувачів."
+  },
+  "This site does not have accounts, contact forms, payments, donations, or its own backend. It counts aggregate page views and button presses to improve and optimize the site, and directs visitors to confirmed contact channels.": {
+    "ar": "لا يوفّر هذا الموقع حسابات أو نماذج تواصل أو مدفوعات أو تبرعات أو خادمًا خاصًا. يحسب إجمالي مشاهدات الصفحات والنقرات لتحسين الموقع، ويوجّه الزوار إلى قنوات التواصل المؤكدة.",
+    "uk": "Сайт не має облікових записів, контактних форм, платежів, пожертв чи власної серверної частини. Він підраховує загальну кількість переглядів і натискань для покращення роботи та спрямовує до підтверджених каналів зв’язку."
+  },
+  "Web Signals Tracker receives aggregate page-view and call-to-action press events. Measurement creates no visitor or session identifier, collects no form contents, and is suppressed when the browser signals Global Privacy Control or Do Not Track.": {
+    "ar": "تستقبل خدمة Web Signals Tracker إحصاءات إجمالية عن مشاهدات الصفحات والنقرات. لا تنشئ معرّفًا للزائر أو الجلسة ولا تجمع محتوى النماذج، وتتوقف عندما يرسل المتصفح إشارة Global Privacy Control أو Do Not Track.",
+    "uk": "Web Signals Tracker отримує загальні події переглядів і натискань. Ідентифікатори відвідувачів чи сеансів не створюються, дані форм не збираються. Облік вимикається, коли браузер надсилає сигнал Global Privacy Control або Do Not Track."
+  },
+  "The site stores your language and theme preferences in your browser's local storage. That information stays on your device and is used only to remember your selection on future visits.": {
+    "ar": "يحفظ الموقع تفضيلات اللغة والمظهر في التخزين المحلي للمتصفح. تبقى هذه المعلومات على جهازك وتُستخدم فقط لتذكّر اختيارك في الزيارات القادمة.",
+    "uk": "Сайт зберігає вибрану мову й тему в локальному сховищі браузера. Ця інформація залишається на вашому пристрої та використовується лише для збереження вибору під час наступних відвідувань."
+  },
+  "The site is published through GitHub Pages. Like any web hosting service, GitHub may process technical data such as IP address, browser type, requested page, and access time to deliver the site and protect the service.": {
+    "ar": "يُستضاف الموقع على GitHub Pages. وكأي خدمة استضافة، قد تعالج GitHub بيانات تقنية مثل عنوان IP ونوع المتصفح والصفحة المطلوبة ووقت الوصول، لعرض الموقع وحماية الخدمة.",
+    "uk": "Сайт розміщено на GitHub Pages. Як і інші хостинги, GitHub може обробляти технічні дані: IP-адресу, тип браузера, запитану сторінку й час доступу для роботи та захисту сервісу."
+  },
+  "Links to WhatsApp, Instagram, and Facebook open external services. If you choose to use them, those services may process your data under their own privacy policies.": {
+    "ar": "تفتح روابط واتساب وإنستغرام وفيسبوك خدمات خارجية. إذا استخدمتها، فقد تعالج هذه الخدمات بياناتك وفقًا لسياسات الخصوصية الخاصة بها.",
+    "uk": "Посилання на WhatsApp, Instagram і Facebook відкривають зовнішні сервіси. Якщо ви ними користуєтеся, вони можуть обробляти ваші дані за власними політиками конфіденційності."
+  },
+  "Hero scenes are AI-generated illustrations inspired by Diez42 activities. They illustrate the work and are not records of specific people or events. For questions about imagery, contact Diez42.": {
+    "ar": "صور الصفحة الرئيسية مولّدة بالذكاء الاصطناعي ومستوحاة من أنشطة Diez42. توضح العمل ولا توثق أشخاصًا أو أحداثًا محددة. لأي استفسار عن الصور، تواصل مع Diez42.",
+    "uk": "Зображення на головній сторінці створено ШІ за мотивами діяльності Diez42. Вони ілюструють роботу, а не документують конкретних людей чи події. Із запитаннями щодо зображень звертайтеся до Diez42."
+  },
+  "For privacy questions or to contact Diez42, use the published channels on the homepage: WhatsApp, phone, or the listed mailing address.": {
+    "ar": "للأسئلة المتعلقة بالخصوصية أو للتواصل مع Diez42، استخدم قنوات الصفحة الرئيسية: واتساب أو الهاتف أو العنوان البريدي المنشور.",
+    "uk": "Із питань конфіденційності або для зв’язку з Diez42 використовуйте канали на головній сторінці: WhatsApp, телефон чи зазначену поштову адресу."
+  },
+  "These terms describe use of the Diez42 website.": {
+    "ar": "توضح هذه الشروط كيفية استخدام موقع Diez42.",
+    "uk": "Ці умови описують користування сайтом Diez42."
+  },
+  "This site provides public information about Diez42 and its contact channels. You may read it and share links to the site for informational purposes.": {
+    "ar": "يوفّر الموقع معلومات عامة عن Diez42 وقنوات التواصل معها. يمكنك قراءتها ومشاركة روابط الموقع لأغراض إعلامية.",
+    "uk": "Сайт містить відкриту інформацію про Diez42 та канали зв’язку. Ви можете читати її й ділитися посиланнями з інформаційною метою."
+  },
+  "Program descriptions and contact details are provided for information. Please contact Diez42 to confirm current program availability and arrangements.": {
+    "ar": "أوصاف البرامج وبيانات التواصل لأغراض إعلامية. يرجى التواصل مع Diez42 لتأكيد توافر البرامج وترتيباتها الحالية.",
+    "uk": "Описи програм і контакти наведено для ознайомлення. Зверніться до Diez42, щоб уточнити доступність програм та актуальні умови участі."
+  },
+  "This site does not provide accounts, payments, donations, public forms, or transactional services. Any donation or formal process should be handled through channels confirmed by the organization.": {
+    "ar": "لا يوفّر الموقع حسابات أو مدفوعات أو تبرعات أو نماذج عامة أو خدمات معاملات. يجب إجراء أي تبرع أو إجراء رسمي عبر القنوات التي تؤكدها الجمعية.",
+    "uk": "Сайт не надає облікових записів, платежів, пожертв, публічних форм чи транзакційних послуг. Пожертви й офіційні процедури слід здійснювати через канали, підтверджені організацією."
+  },
+  "The site links to external services such as WhatsApp, Instagram, and Facebook. Diez42 does not control those services or their terms.": {
+    "ar": "يتضمن الموقع روابط لخدمات خارجية مثل واتساب وإنستغرام وفيسبوك. لا تتحكم Diez42 في تلك الخدمات أو شروطها.",
+    "uk": "Сайт містить посилання на зовнішні сервіси, зокрема WhatsApp, Instagram і Facebook. Diez42 не контролює ці сервіси та їхні умови."
+  },
+  "These terms may be updated when the website or its services change.": {
+    "ar": "قد تُحدَّث هذه الشروط عند تغيير الموقع أو خدماته.",
+    "uk": "Ці умови можуть оновлюватися зі змінами сайту чи його послуг."
+  },
+  "This page provides a public URL for data deletion requests related to the website and the published contact channels.": {
+    "ar": "توفّر هذه الصفحة رابطًا عامًا لطلبات حذف البيانات المرتبطة بالموقع وقنوات التواصل المنشورة.",
+    "uk": "Ця сторінка надає публічну адресу для запитів на видалення даних, пов’язаних із сайтом і зазначеними каналами зв’язку."
+  },
+  "This site does not have accounts, login, its own database, forms, or backend. Because of that, the site does not store visitor profile data.": {
+    "ar": "لا يوفّر الموقع حسابات أو تسجيل دخول أو قاعدة بيانات خاصة أو نماذج أو خادمًا خاصًا. لذلك لا يحفظ بيانات ملفات الزوار الشخصية.",
+    "uk": "Сайт не має облікових записів, входу, власної бази даних, форм чи серверної частини. Тому він не зберігає профілі відвідувачів."
+  },
+  "If you have contacted Diez42 through Facebook, Instagram, WhatsApp, or another external channel and want to request deletion of data Diez42 may hold, contact Diez42 using the published channels on the homepage.": {
+    "ar": "إذا تواصلت مع Diez42 عبر فيسبوك أو إنستغرام أو واتساب أو قناة خارجية أخرى، وتريد حذف بيانات قد تحتفظ بها الجمعية، فتواصل معها عبر القنوات المنشورة في الصفحة الرئيسية.",
+    "uk": "Якщо ви зверталися до Diez42 через Facebook, Instagram, WhatsApp чи інший зовнішній канал і хочете видалити дані, які може мати Diez42, скористайтеся каналами зв’язку на головній сторінці."
+  },
+  "Include the channel you used, the approximate date of contact, and the information you want deleted. Do not send unnecessary sensitive data.": {
+    "ar": "اذكر القناة التي استخدمتها والتاريخ التقريبي للتواصل والمعلومات التي تريد حذفها. لا ترسل بيانات حساسة غير ضرورية.",
+    "uk": "Укажіть канал зв’язку, приблизну дату звернення та інформацію, яку хочете видалити. Не надсилайте зайвих чутливих даних."
+  },
+  "If you want to delete data from an external account, such as Facebook, Instagram, or WhatsApp, use the account and privacy tools provided by that service. Diez42 does not control data stored directly by external services.": {
+    "ar": "لحذف بيانات من حساب خارجي، مثل فيسبوك أو إنستغرام أو واتساب، استخدم أدوات الحساب والخصوصية التي توفّرها تلك الخدمة. لا تتحكم Diez42 في البيانات المحفوظة مباشرة لدى الخدمات الخارجية.",
+    "uk": "Щоб видалити дані зовнішнього облікового запису, наприклад Facebook, Instagram чи WhatsApp, скористайтеся інструментами облікового запису та конфіденційності відповідного сервісу. Diez42 не контролює дані, які зберігають зовнішні сервіси."
+  },
+  "If a future version adds login, forms, donations, or an external integration that stores data, this page should be updated with more specific instructions or a deletion callback if appropriate.": {
+    "ar": "إذا أُضيف تسجيل دخول أو نماذج أو تبرعات أو تكامل خارجي يحفظ البيانات في إصدار لاحق، فيجب تحديث هذه الصفحة بتعليمات أدق أو آلية حذف مناسبة.",
+    "uk": "Якщо майбутня версія додасть вхід, форми, пожертви чи зовнішню інтеграцію зі збереженням даних, цю сторінку слід оновити точнішими інструкціями або механізмом видалення, якщо потрібно."
+  }
+}
