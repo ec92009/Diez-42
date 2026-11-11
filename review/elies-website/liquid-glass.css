@@ -943,3 +943,12 @@ html[dir="rtl"] .card-copy { text-align: right; }
 html[dir="rtl"] [data-program-carousel] { direction: ltr; }
 html[dir="rtl"] [data-program-card] { direction: rtl; }
 html[dir="rtl"] .hero-actions { direction: rtl; }
+
+/* Compact language-only settings; system theme and glass defaults are fixed. */
+.settings-card { width: min(420px, calc(100vw - 24px)); padding: 16px; }
+.settings-head { margin-bottom: 12px; }
+.settings-card .setting-row { margin-bottom: 12px; }
+.settings-card fieldset { margin: 0; }
+.settings-card .segmented-control { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.settings-card .segmented-control button { min-height: 44px; padding: 8px; font-size: .9rem; }
+.settings-card h2 { font-size: 1.35rem; }

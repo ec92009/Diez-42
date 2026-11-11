@@ -174,7 +174,7 @@
   if (transparencyRange) transparencyRange.value = getStored("transparency", "82");
   if (blurRange) blurRange.value = getStored("blur", "18");
   applyGlass();
-  applyTheme(getStored("theme", "day"));
+  applyTheme("system");
   applyLanguage(storage.getItem("diez42-lang") || getStored("language", "en"));
   initHeroPhotos();
   initReveal();
