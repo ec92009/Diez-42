@@ -6,7 +6,7 @@ The current working release expands the existing site with 14 program pages, an 
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be maintained against the municipal record and the organization; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v315.1`.
+Current visible version: `v315.2`.
 Default viewer language: Spanish, with an ES/EN toggle on each public page.
 Public navigation uses a compact menu and visible ES/EN buttons. The archived design review retains its earlier controls.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
@@ -118,3 +118,5 @@ Spanish-first ES/EN public site with 14 programs, detail pages, weekly print sch
 Build content with `python3 scripts/build_content.py`; check with `python3 scripts/check_release.py`. The homepage template is `templates/home.html`; program data is `data/programs.json`.
 
 Hospitality video: `quienes-somos.html#hospitalidad`; food distribution video: `programa-alimentos.html`. Both use native controls, muted playback by default and no autoplay. Poster frames are extracted from the supplied videos.
+
+The Tarde de Juegos detail page includes the user-supplied game-night video, with a frame poster, native controls, muted by default and no autoplay.

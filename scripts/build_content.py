@@ -3,7 +3,7 @@ from pathlib import Path
 import json, html, re
 from urllib.parse import quote
 ROOT=Path(__file__).resolve().parents[1]
-V='315.1'
+V='315.2'
 programs=json.loads((ROOT/'data/programs.json').read_text())
 WA='https://wa.me/34600339794'
 ADDRESS='Avenida de Andalucía 27, local 7A, 29010 Málaga'
@@ -55,6 +55,7 @@ for p in programs:
  else:
   message={'co-op':'Hola, quiero más información sobre el Co-op','apoyo-psicologico':'Hola, quiero pedir una cita con la consejera o psicóloga'}.get(p['id'],'Hola, quiero más información sobre '+p['title_es'])
   content+=link(msg(message),'Pide tu cita por WhatsApp' if p['id']=='apoyo-psicologico' else 'Escríbenos por WhatsApp para más información','Request an appointment on WhatsApp' if p['id']=='apoyo-psicologico' else 'Message us on WhatsApp for more information','button whatsapp-join')
+ if p['id']=='juegos':content+=t('Una tarde para compartir','An afternoon together','h2')+community_video('tarde-juegos')
  if p['id']=='alimentos':content+=t('El reparto de alimentos','Food distribution','h2')+community_video('reparto-alimentos')
  if p['id']=='futbol':content+=t('Nuestra comunidad juega junta','Our community plays together','h2')+video()
  content+=link('horario.html','Ver horario semanal','View weekly schedule','text-link')
