@@ -1616,3 +1616,6 @@ html[data-theme="night"] body.theme-table .section.alt {
     min-height: 360px;
   }
 }
+
+html:lang(ar) { font-family: Tahoma, Arial, sans-serif; }
+html:lang(ar) h1, html:lang(ar) h2, html:lang(ar) h3 { font-family: Tahoma, Arial, sans-serif; line-height: 1.4; }

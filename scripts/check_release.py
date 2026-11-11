@@ -60,7 +60,7 @@ def check():
                 if tag in ('script', 'link') and 'v' in parse_qs(url.query):
                     assert parse_qs(url.query)['v'] == [version], f'{name}: stale asset identity'
     home = page(ROOT / 'index.html').nodes
-    assert {a['data-language-option'] for _, a in home if 'data-language-option' in a} == {'en', 'es', 'pt-BR', 'de'}
+    assert {a['data-language-option'] for _, a in home if 'data-language-option' in a} == {'en', 'es', 'pt-BR', 'de', 'ar', 'uk'}
     assert {a['data-theme-option'] for _, a in home if 'data-theme-option' in a} == {'system', 'day', 'night'}
     assert sum('data-settings-toggle' in a for _, a in home) == 1
     posters = [a for tag, a in home if tag == 'img' and 'data-src-es' in a]

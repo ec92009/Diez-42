@@ -11,7 +11,7 @@
   const themeOptions = Array.from(document.querySelectorAll("[data-theme-option]"));
   const translatable = Array.from(document.querySelectorAll("[data-text-en]"));
   const ariaLabels = Array.from(document.querySelectorAll("[data-aria-en]"));
-  const supportedLanguages = ["en", "es", "pt-BR", "de"];
+  const supportedLanguages = ["en", "es", "pt-BR", "de", "ar", "uk"];
   const storagePrefix = "diez42-review";
 
   const getStored = (key, fallback) => storage.getItem(`${storagePrefix}-${key}`) || fallback;
@@ -35,6 +35,11 @@
   const applyLanguage = (lang) => {
     const next = normalizeLanguage(lang);
     root.lang = next;
+    root.dir = next === "ar" ? "rtl" : "ltr";
+    if (next === "ar") document.title = "Diez42 | ترحيب ومساعدة عملية في مالقة";
+    else if (next === "uk") document.title = "Diez42 | Практична допомога в Малазі";
+    else document.title = "Diez42 | Welcome and practical help in Málaga";
+    storage.setItem("diez42-lang", next);
     document.querySelectorAll("[data-program-card]").forEach((card) => {
       card.lang = next;
       const image = card.querySelector("img");
@@ -50,11 +55,11 @@
     });
     settingsToggle?.setAttribute(
       "aria-label",
-      next === "de" ? "Einstellungen öffnen" : next === "es" ? "Abrir ajustes" : next === "pt-BR" ? "Abrir ajustes" : "Open settings"
+      next === "ar" ? "فتح الإعدادات" : next === "uk" ? "Відкрити налаштування" : next === "de" ? "Einstellungen öffnen" : next === "es" ? "Abrir ajustes" : next === "pt-BR" ? "Abrir ajustes" : "Open settings"
     );
     settingsClose?.setAttribute(
       "aria-label",
-      next === "de" ? "Einstellungen schließen" : next === "es" ? "Cerrar ajustes" : next === "pt-BR" ? "Fechar ajustes" : "Close settings"
+      next === "ar" ? "إغلاق الإعدادات" : next === "uk" ? "Закрити налаштування" : next === "de" ? "Einstellungen schließen" : next === "es" ? "Cerrar ajustes" : next === "pt-BR" ? "Fechar ajustes" : "Close settings"
     );
     setPressed(languageOptions, "languageOption", next);
     setStored("language", next);
@@ -170,7 +175,7 @@
   if (blurRange) blurRange.value = getStored("blur", "18");
   applyGlass();
   applyTheme(getStored("theme", "day"));
-  applyLanguage(getStored("language", "en"));
+  applyLanguage(storage.getItem("diez42-lang") || getStored("language", "en"));
   initHeroPhotos();
   initReveal();
   updateStickyCta();

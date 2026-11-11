@@ -933,3 +933,13 @@ body.show-sticky-cta .sticky-cta {
 
 .about-video { margin-top: 32px; }
 .about-video video { display: block; width: 100%; max-width: 960px; height: auto; margin-inline: auto; border-radius: 12px; background: #10263e; }
+
+/* Arabic and Ukrainian use readable system fonts and logical text alignment. */
+html:lang(ar) { font-family: Tahoma, Arial, sans-serif; }
+html:lang(ar) h1, html:lang(ar) h2, html:lang(ar) h3 { font-family: Tahoma, Arial, sans-serif; line-height: 1.4; }
+html:lang(uk) h2, html:lang(uk) h3 { overflow-wrap: anywhere; }
+html[dir="rtl"] .hero-copy { text-align: right; }
+html[dir="rtl"] .card-copy { text-align: right; }
+html[dir="rtl"] [data-program-carousel] { direction: ltr; }
+html[dir="rtl"] [data-program-card] { direction: rtl; }
+html[dir="rtl"] .hero-actions { direction: rtl; }
