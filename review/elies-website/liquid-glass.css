@@ -869,3 +869,67 @@ body.show-sticky-cta .sticky-cta {
   .hero:has(.hero-slides) .hero-shade { display: none; }
   .hero:has(.hero-slides) .hero-copy { padding: 28px 0 88px; }
 }
+
+/* Limit the homepage photography to half the viewport height. */
+@media (min-width: 601px) {
+  .hero:has(.hero-slides) { height: 50svh; aspect-ratio: auto; }
+  .hero:has(.hero-slides) .hero-copy { padding: 20px 0 72px; }
+  .hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); }
+  .hero-line { font-size: clamp(1.25rem, 2.3vw, 2rem); }
+  .hero-summary { font-size: 1rem; margin-bottom: 16px; }
+}
+/* Let copy flow below the image when vertical space is limited. */
+@media (max-height: 760px), (max-width: 600px) {
+  .hero:has(.hero-slides) {
+    display: block;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    background: #355e8d;
+  }
+  .hero-slides { position: relative; width: 100%; height: min(50svh, 56.28vw); aspect-ratio: auto; }
+  .hero:has(.hero-slides) .hero-shade { display: none; }
+  .hero:has(.hero-slides) .hero-copy { padding: 28px 0 88px; }
+}
+
+/* Keep both button groups on a shared row, with photo controls at the right. */
+.hero:has(.hero-slides) .hero-copy {
+  width: calc(100% - 32px);
+  margin-inline: 16px;
+  padding-bottom: 28px;
+}
+.hero-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: stretch;
+  gap: 16px;
+}
+.hero-action-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-actions .hero-photo-controls {
+  position: static;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.hero-actions .hero-photo-controls[hidden] { display: none; }
+@media (max-width: 600px) {
+  .hero-actions { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+  .hero-action-links, .hero-actions .hero-photo-controls { flex-direction: column; }
+  .hero-actions .hero-photo-controls { width: 100%; }
+  .hero-actions .button, .hero-photo-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px 8px;
+    font-size: .8rem;
+  }
+}
+
+/* Only the primary homepage actions remain visible. */
+.hero-actions { display: flex; }
+.hero-action-links { width: 100%; }
+
+.about-video { margin-top: 32px; }
+.about-video video { display: block; width: 100%; max-width: 960px; height: auto; margin-inline: auto; border-radius: 12px; background: #10263e; }

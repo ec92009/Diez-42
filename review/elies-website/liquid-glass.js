@@ -121,10 +121,7 @@
 
   const initHeroPhotos = () => {
     const slides = Array.from(document.querySelectorAll(".hero-slide"));
-    const controls = document.querySelector("[data-hero-controls]");
-    const pauseButton = document.querySelector("[data-hero-pause]");
-    const nextButton = document.querySelector("[data-hero-next]");
-    if (slides.length < 2 || !controls || !pauseButton || !nextButton) return;
+    if (slides.length < 2) return;
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let active = 0;
     let paused = motion.matches;
@@ -138,14 +135,10 @@
     };
     const schedule = () => {
       window.clearInterval(timer);
-      pauseButton.setAttribute("aria-pressed", String(paused));
       if (!paused && !document.hidden) timer = window.setInterval(showNext, 7000);
     };
-    pauseButton.addEventListener("click", () => { paused = !paused; schedule(); });
-    nextButton.addEventListener("click", () => { showNext(); schedule(); });
     document.addEventListener("visibilitychange", schedule);
     motion.addEventListener("change", () => { paused = motion.matches; schedule(); });
-    controls.hidden = false;
     schedule();
   };
 
@@ -159,7 +152,7 @@
     if (event.target === settingsPanel) closeSettings();
   });
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !settingsPanel.hidden) closeSettings();
+    if (event.key === "Escape" && settingsPanel && !settingsPanel.hidden) closeSettings();
   });
 
   languageOptions.forEach((button) => {
@@ -177,7 +170,7 @@
   if (blurRange) blurRange.value = getStored("blur", "18");
   applyGlass();
   applyTheme(getStored("theme", "day"));
-  applyLanguage(getStored("language", "en"));
+  applyLanguage(getStored("language", "es"));
   initHeroPhotos();
   initReveal();
   updateStickyCta();

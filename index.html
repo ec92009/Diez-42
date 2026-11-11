@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-review-theme="day">
+<html lang="es" data-review-theme="day">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,68 +28,12 @@
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <title>Diez42 | Welcome and practical help in Málaga</title>
-  <link rel="stylesheet" href="review/elies-website/liquid-glass.css?v=314.11" />
-  <link rel="stylesheet" href="review/elies-website/liquid-glass-effects.css?v=314.11" />
-  <link rel="stylesheet" href="assets/program-carousel.css?v=314.11" />
-  <script defer src="assets/wst-beacon.js?v=314.11" data-wst-enabled="true" data-wst-endpoint="https://web-signals-collector.ec92009.workers.dev/v1/events" data-wst-site="diez42" data-wst-environment="production" data-wst-consent="not_required" data-wst-sessionless="true" data-wst-origin="https://diez42.org"></script>
-</head>
+  <link rel="stylesheet" href="review/elies-website/liquid-glass.css?v=315.1" />
+  <link rel="stylesheet" href="review/elies-website/liquid-glass-effects.css?v=315.1" />
+  <link rel="stylesheet" href="assets/program-carousel.css?v=315.1" />
+<link rel="stylesheet" href="assets/content.css?v=315.1"/></head>
 <body>
-  <a class="skip-link" href="#main-content" data-text-en="Skip to content" data-text-es="Saltar al contenido" data-text-pt-br="Pular para o conteúdo" data-text-de="Zum Inhalt springen">Skip to content</a>
-
-  <header class="glass-nav" data-glass-surface>
-    <a class="brand" href="index.html?v=314.11" aria-label="Diez42 home">
-      <img src="assets/logo-horizontal.png" alt="" />
-    </a>
-    <nav class="site-nav" aria-label="Primary">
-      <a href="#about" data-text-en="About" data-text-es="Sobre Diez42" data-text-pt-br="Sobre" data-text-de="Über uns">About</a>
-      <a href="#programs" data-text-en="Programs" data-text-es="Programas" data-text-pt-br="Programas" data-text-de="Programme">Programs</a>
-      <a href="#contact" data-text-en="Contact" data-text-es="Contacto" data-text-pt-br="Contato" data-text-de="Kontakt">Contact</a>
-    </nav>
-    <button class="settings-toggle" type="button" data-settings-toggle aria-label="Open settings">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M12 8.6a3.4 3.4 0 1 1 0 6.8 3.4 3.4 0 0 1 0-6.8Zm8.2 2.2-1.8-.3a7.2 7.2 0 0 0-.7-1.7l1-1.5-2-2-1.5 1a7.5 7.5 0 0 0-1.7-.7L13.2 4h-2.8l-.3 1.8c-.6.2-1.2.4-1.7.7l-1.5-1-2 2 1 1.5c-.3.5-.5 1.1-.7 1.7l-1.8.3v2.8l1.8.3c.2.6.4 1.2.7 1.7l-1 1.5 2 2 1.5-1c.5.3 1.1.5 1.7.7l.3 1.8h2.8l.3-1.8c.6-.2 1.2-.4 1.7-.7l1.5 1 2-2-1-1.5c.3-.5.5-1.1.7-1.7l1.8-.3v-2.8Z" />
-      </svg>
-    </button>
-  </header>
-
-  <div class="settings-panel" data-settings-panel hidden>
-    <div class="settings-card" data-glass-surface role="dialog" aria-modal="true" aria-labelledby="settings-title">
-      <div class="settings-head">
-        <h2 id="settings-title" data-text-en="Settings" data-text-es="Ajustes" data-text-pt-br="Ajustes" data-text-de="Einstellungen">Settings</h2>
-        <button class="settings-close" type="button" data-settings-close aria-label="Close settings">×</button>
-      </div>
-      <div class="setting-row">
-        <span data-text-en="About" data-text-es="Acerca de" data-text-pt-br="Sobre" data-text-de="Über uns">About</span>
-        <strong>v314.11</strong>
-      </div>
-      <fieldset>
-        <legend data-text-en="Language" data-text-es="Idioma" data-text-pt-br="Idioma" data-text-de="Sprache">Language</legend>
-        <div class="segmented-control" data-setting-group="language">
-          <button type="button" data-language-option="en">English</button>
-          <button type="button" data-language-option="es">Español (SP)</button>
-          <button type="button" data-language-option="pt-BR">Português (BR)</button>
-          <button type="button" data-language-option="de">Deutsch</button>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend data-text-en="Theme" data-text-es="Tema" data-text-pt-br="Tema" data-text-de="Darstellung">Theme</legend>
-        <div class="segmented-control" data-setting-group="theme">
-          <button type="button" data-theme-option="system" data-text-en="System" data-text-es="Sistema" data-text-pt-br="Sistema" data-text-de="System">System</button>
-          <button type="button" data-theme-option="day" data-text-en="Day" data-text-es="Dia" data-text-pt-br="Dia" data-text-de="Tag">Day</button>
-          <button type="button" data-theme-option="night" data-text-en="Night" data-text-es="Noche" data-text-pt-br="Noite" data-text-de="Nacht">Night</button>
-        </div>
-      </fieldset>
-      <label class="range-control">
-        <span data-text-de="Transparenz" data-text-en="Transparency" data-text-es="Transparencia" data-text-pt-br="Transparencia">Transparency</span>
-        <input type="range" min="64" max="94" value="82" data-transparency-range />
-      </label>
-      <label class="range-control">
-        <span data-text-de="Lichtdurchlässigkeit" data-text-en="Translucency" data-text-es="Translucidez" data-text-pt-br="Translucidez">Translucency</span>
-        <input type="range" min="8" max="28" value="18" data-blur-range />
-      </label>
-    </div>
-  </div>
-
+<a class="skip-link" href="#main-content">Saltar al contenido / Skip to content</a><header class="content-nav"><a class="content-brand" href="index.html"><img src="assets/favicon-192x192.png" width="48" height="48" alt="Diez42" />Diez42</a><nav aria-label="Principal"><a data-text-es="Programas" data-text-en="Programs" href="programas.html" class="nav-link">Programas</a><a data-text-es="Necesito ayuda" data-text-en="I need help" href="necesito-ayuda.html" class="nav-link">Necesito ayuda</a></nav><div class="language-switch" aria-label="Idioma / Language"><button type="button" data-language-option="es" aria-pressed="true">ES</button><button type="button" data-language-option="en" aria-pressed="false">EN</button></div><details class="site-menu"><summary data-text-es="Menú" data-text-en="Menu">Menú</summary><nav><a data-text-es="Inicio" data-text-en="Home" href="index.html" class="menu-link">Inicio</a><a data-text-es="Quiénes somos" data-text-en="About us" href="quienes-somos.html" class="menu-link">Quiénes somos</a><a data-text-es="Programas" data-text-en="Programs" href="programas.html" class="menu-link">Programas</a><a data-text-es="Horario semanal" data-text-en="Weekly schedule" href="horario.html" class="menu-link">Horario semanal</a><a data-text-es="Necesito ayuda" data-text-en="I need help" href="necesito-ayuda.html" class="menu-link">Necesito ayuda</a><a data-text-es="Historias" data-text-en="Stories" href="historias.html" class="menu-link">Historias</a><a data-text-es="Proyectos" data-text-en="Projects" href="proyectos.html" class="menu-link">Proyectos</a><a data-text-es="Colabora / Donar" data-text-en="Support / Give" href="colabora.html" class="menu-link">Colabora / Donar</a><a data-text-es="Voluntariado" data-text-en="Volunteer" href="voluntariado.html" class="menu-link">Voluntariado</a><a data-text-es="Equipos e iglesias" data-text-en="Teams and churches" href="equipos.html" class="menu-link">Equipos e iglesias</a><a data-text-es="Socios" data-text-en="Partners" href="socios.html" class="menu-link">Socios</a><a data-text-es="Contacto" data-text-en="Contact" href="contacto.html" class="menu-link">Contacto</a></nav></details></header>
   <main id="main-content">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-slides" aria-hidden="true">
@@ -101,19 +45,13 @@
       <div class="hero-copy">
         <p class="eyebrow" data-text-en="Asociación para el Desarrollo e Integración Diez42" data-text-es="Asociación para el Desarrollo e Integración Diez42" data-text-pt-br="Associação para Desenvolvimento e Integração Diez42">Asociación para el Desarrollo e Integración Diez42</p>
         <h1 id="hero-title">Diez42</h1>
-        <p class="hero-line" data-text-en="Welcome and practical help in Málaga." data-text-es="Acogida y ayuda práctica en Málaga." data-text-pt-br="Acolhimento e ajuda prática em Málaga." data-text-de="Willkommen und praktische Hilfe in Málaga.">Welcome and practical help in Málaga.</p>
+        <p data-text-es="Un lugar para empezar de nuevo" data-text-en="A place to start again" class="hero-line">Un lugar para empezar de nuevo</p>
         <p class="hero-summary" data-text-de="Ein Ort für Neuankömmlinge, Familien, Ehrenamtliche und Nachbarn: Lebensmittelhilfe, Kurse, Schulungen und Gemeinschaft." data-text-en="A local place for newcomers, families, volunteers, and neighbors to find food support, classes, training, and community connection." data-text-es="Un lugar local donde recién llegados, familias, voluntarios y vecinos encuentran apoyo alimentario, clases, formación y conexión comunitaria." data-text-pt-br="Um espaço local onde recém-chegados, famílias, voluntários e vizinhos encontram apoio alimentar, aulas, formação e conexão comunitária.">A local place for newcomers, families, volunteers, and neighbors to find food support, classes, training, and community connection.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://wa.me/34600339794" data-wst-cta="hero_whatsapp" data-text-en="WhatsApp Diez42" data-text-es="WhatsApp Diez42" data-text-pt-br="WhatsApp Diez42" data-text-de="WhatsApp Diez42">WhatsApp Diez42</a>
-          <a class="button ghost" href="#programs" data-wst-cta="hero_programs" data-text-en="See the work" data-text-es="Ver el trabajo" data-text-pt-br="Ver o trabalho" data-text-de="Unsere Arbeit">See the work</a>
-        </div>
-      </div>
-      <div class="hero-photo-controls" data-hero-controls hidden>
-        <button type="button" data-hero-pause aria-pressed="false" data-text-en="Pause photos" data-text-es="Pausar fotos" data-text-pt-br="Pausar fotos" data-text-de="Bilder pausieren">Pause photos</button>
-        <button type="button" data-hero-next data-text-en="Next photo" data-text-es="Siguiente foto" data-text-pt-br="Próxima foto" data-text-de="Nächstes Bild">Next photo</button>
+        <div class="hero-actions"><a data-text-es="Necesito ayuda" data-text-en="I need help" href="necesito-ayuda.html" class="button primary">Necesito ayuda</a><a data-text-es="Quiero ayudar" data-text-en="I want to help" href="colabora.html" class="button ghost">Quiero ayudar</a></div>
       </div>
     </section>
 
+<div class="welcome-languages home-welcome"><span lang="ar" dir="rtl">أهلاً وسهلاً بك</span><span lang="uk">Ласкаво просимо</span><span lang="fr">Bienvenue</span><span lang="en">You are welcome here</span></div>
     <section id="about" class="intro-section">
       <div class="section-shell two-column">
         <div>
@@ -124,188 +62,16 @@
           <p data-text-en="Diez42 serves immigrants, refugees, and other newcomers in Málaga through practical support, education, training, family activities, food support, and steady community presence." data-text-es="Diez42 sirve a inmigrantes, refugiados y otros recién llegados en Málaga mediante apoyo práctico, educación, formación, actividades familiares, apoyo alimentario y presencia comunitaria constante." data-text-pt-br="A Diez42 atende imigrantes, refugiados e outros recém-chegados em Málaga com apoio prático, educação, formação, atividades familiares, apoio alimentar e presença comunitária constante." data-text-de="Diez42 unterstützt Einwanderer, Geflüchtete und andere Neuankömmlinge in Málaga mit praktischer Hilfe, Bildung, Schulungen, Familienaktivitäten, Lebensmittelhilfe und Gemeinschaft.">Diez42 serves immigrants, refugees, and other newcomers in Málaga through practical support, education, training, family activities, food support, and steady community presence.</p>
         </div>
       </div>
-    </section>
-
-    <section id="programs" class="program-section">
-      <div class="section-shell">
-        <div class="section-heading">
-          <p class="eyebrow" data-text-es="Programas" data-text-en="Programs" data-text-pt-br="Programas" data-text-de="Programme">Programas</p>
-          <h2 data-text-es="Cuidado práctico, visible y cercano." data-text-en="Practical care, visible and close." data-text-pt-br="Cuidado prático, visível e próximo." data-text-de="Praktische Hilfe, persönlich und nah.">Cuidado práctico, visible y cercano.</h2>
-        </div>
-        <div class="program-carousel-controls" data-program-controls hidden>
-          <label class="program-jump-label" for="program-jump">
-            <span data-text-en="Go to program" data-text-es="Ir a un programa" data-text-pt-br="Ir para um programa" data-text-de="Programm auswählen">Go to program</span>
-            <select id="program-jump" data-program-jump aria-controls="program-carousel"></select>
-          </label>
-          <button class="program-playback" type="button" data-program-pause aria-pressed="false">
-            <span data-program-pause-label data-text-en="Pause" data-text-es="Pausar" data-text-pt-br="Pausar" data-text-de="Pause">Pause</span>
-            <span data-program-play-label data-text-en="Play" data-text-es="Reproducir" data-text-pt-br="Reproduzir" data-text-de="Wiedergabe" hidden>Play</span>
-          </button>
-          <button type="button" data-program-previous aria-controls="program-carousel" aria-label="Previous programs" data-aria-en="Previous programs" data-aria-es="Programas anteriores" data-aria-pt-br="Programas anteriores" data-aria-de="Vorherige Programme" disabled><span aria-hidden="true">←</span></button>
-          <span class="program-carousel-status" data-program-status aria-live="polite" aria-atomic="true">1–3 / 11</span>
-          <button type="button" data-program-next aria-controls="program-carousel" aria-label="Next programs" data-aria-en="Next programs" data-aria-es="Siguientes programas" data-aria-pt-br="Próximos programas" data-aria-de="Nächste Programme"><span aria-hidden="true">→</span></button>
-        </div>
-        <div class="program-grid" id="program-carousel" data-program-carousel role="region" tabindex="0" aria-label="Programs" data-aria-en="Programs" data-aria-es="Programas" data-aria-pt-br="Programas" data-aria-de="Programme">
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/futbol.jpg" data-src-pt-br="assets/programs/pt-br/futbol.jpg" data-src-de="assets/programs/de/futbol.jpg" data-src-es="assets/programs/futbol.jpg" src="assets/programs/futbol.jpg" alt="Fútbol con Propósito — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">01</span>
-              <h3 data-text-es="Fútbol con Propósito" data-text-en="Soccer with Purpose" data-text-pt-br="Futebol com Propósito" data-text-de="Fußball mit Sinn">Fútbol con Propósito</h3>
-              <p data-text-es="Deporte, trabajo en equipo y amistad para conectar con la comunidad." data-text-en="Sport, teamwork, and friendship to connect with the community." data-text-pt-br="Esporte, trabalho em equipe e amizade para se conectar com a comunidade." data-text-de="Sport, Teamgeist und Freundschaft verbinden Menschen in unserer Gemeinschaft.">Deporte, trabajo en equipo y amistad para conectar con la comunidad.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/juegos.jpg" data-src-pt-br="assets/programs/pt-br/juegos.jpg" data-src-de="assets/programs/de/juegos.jpg" data-src-es="assets/programs/juegos.jpg" src="assets/programs/juegos.jpg" alt="Tarde de Juegos — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">02</span>
-              <h3 data-text-es="Tarde de Juegos" data-text-en="Game Afternoon" data-text-pt-br="Tarde de Jogos" data-text-de="Spielenachmittag">Tarde de Juegos</h3>
-              <p data-text-es="Un espacio para compartir juegos, conocernos y disfrutar juntos." data-text-en="Share games, get to know each other, and enjoy time together." data-text-pt-br="Um espaço para compartilhar jogos, conhecer pessoas e desfrutar juntos." data-text-de="Gemeinsam spielen, einander kennenlernen und eine gute Zeit verbringen.">Un espacio para compartir juegos, conocernos y disfrutar juntos.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/manualidades.jpg" data-src-pt-br="assets/programs/pt-br/manualidades.jpg" data-src-de="assets/programs/de/manualidades.jpg" data-src-es="assets/programs/manualidades.jpg" src="assets/programs/manualidades.jpg" alt="Tarde de Manualidades — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">03</span>
-              <h3 data-text-es="Tarde de Manualidades" data-text-en="Craft Afternoon" data-text-pt-br="Tarde de Artesanato" data-text-de="Bastelnachmittag">Tarde de Manualidades</h3>
-              <p data-text-es="Actividades creativas para aprender, compartir ideas y crear juntos." data-text-en="Creative activities to learn, share ideas, and make things together." data-text-pt-br="Atividades criativas para aprender, compartilhar ideias e criar juntos." data-text-de="Kreative Aktivitäten zum Lernen, Ideenaustausch und gemeinsamen Gestalten.">Actividades creativas para aprender, compartir ideas y crear juntos.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/espanol.jpg" data-src-pt-br="assets/programs/pt-br/espanol.jpg" data-src-de="assets/programs/de/espanol.jpg" data-src-es="assets/programs/espanol.jpg" src="assets/programs/espanol.jpg" alt="Clases de Español — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">04</span>
-              <h3 data-text-es="Clases de Español" data-text-en="Spanish Classes" data-text-pt-br="Aulas de Espanhol" data-text-de="Spanischkurse">Clases de Español</h3>
-              <p data-text-es="Aprendizaje y práctica del español para la vida cotidiana." data-text-en="Learn and practice Spanish for everyday life." data-text-pt-br="Aprendizagem e prática do espanhol para a vida cotidiana." data-text-de="Spanisch lernen und für den Alltag üben.">Aprendizaje y práctica del español para la vida cotidiana.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/ingles.jpg" data-src-pt-br="assets/programs/pt-br/ingles.jpg" data-src-de="assets/programs/de/ingles.jpg" data-src-es="assets/programs/ingles.jpg" src="assets/programs/ingles.jpg" alt="Clases de Inglés — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">05</span>
-              <h3 data-text-es="Clases de Inglés" data-text-en="English Classes" data-text-pt-br="Aulas de Inglês" data-text-de="Englischkurse">Clases de Inglés</h3>
-              <p data-text-es="Un espacio para aprender inglés y practicar la conversación." data-text-en="A space to learn English and practice conversation." data-text-pt-br="Um espaço para aprender inglês e praticar a conversação." data-text-de="Ein Ort, um Englisch zu lernen und Gespräche zu üben.">Un espacio para aprender inglés y practicar la conversación.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/empleo.jpg" data-src-pt-br="assets/programs/pt-br/empleo.jpg" data-src-de="assets/programs/de/empleo.jpg" data-src-es="assets/programs/empleo.jpg" src="assets/programs/empleo.jpg" alt="Preparación para el Trabajo — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">06</span>
-              <h3 data-text-es="Preparación para el Trabajo" data-text-en="Job Readiness" data-text-pt-br="Preparação para o Trabalho" data-text-de="Berufsvorbereitung">Preparación para el Trabajo</h3>
-              <p data-text-es="Apoyo para preparar el currículum, las entrevistas y los próximos pasos laborales." data-text-en="Support with résumés, interviews, and next steps toward employment." data-text-pt-br="Apoio com currículos, entrevistas e os próximos passos profissionais." data-text-de="Unterstützung bei Lebensläufen, Vorstellungsgesprächen und nächsten beruflichen Schritten.">Apoyo para preparar el currículum, las entrevistas y los próximos pasos laborales.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/acompanamiento.jpg" data-src-pt-br="assets/programs/pt-br/acompanamiento.jpg" data-src-de="assets/programs/de/acompanamiento.jpg" data-src-es="assets/programs/acompanamiento.jpg" src="assets/programs/acompanamiento.jpg" alt="Escucha y Acompañamiento — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">07</span>
-              <h3 data-text-es="Escucha y Acompañamiento" data-text-en="Listening and Support" data-text-pt-br="Escuta e Acompanhamento" data-text-de="Zuhören und Begleiten">Escucha y Acompañamiento</h3>
-              <p data-text-es="Un espacio de escucha, orientación y apoyo cercano." data-text-en="A welcoming space for listening, guidance, and personal support." data-text-pt-br="Um espaço de escuta, orientação e apoio próximo." data-text-de="Ein offener Raum für Gespräche, Orientierung und persönliche Unterstützung.">Un espacio de escucha, orientación y apoyo cercano.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/estudio-biblico.jpg" data-src-pt-br="assets/programs/pt-br/estudio-biblico.jpg" data-src-de="assets/programs/de/estudio-biblico.jpg" data-src-es="assets/programs/estudio-biblico.jpg" src="assets/programs/estudio-biblico.jpg" alt="Estudio Bíblico — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">08</span>
-              <h3 data-text-es="Estudio Bíblico" data-text-en="Bible Study" data-text-pt-br="Estudo Bíblico" data-text-de="Bibelstudium">Estudio Bíblico</h3>
-              <p data-text-es="Encuentros para leer la Biblia, compartir preguntas y reflexionar juntos." data-text-en="Read the Bible, share questions, and reflect together." data-text-pt-br="Encontros para ler a Bíblia, compartilhar perguntas e refletir juntos." data-text-de="Gemeinsam die Bibel lesen, Fragen teilen und nachdenken.">Encuentros para leer la Biblia, compartir preguntas y reflexionar juntos.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/alimentos.jpg" data-src-pt-br="assets/programs/pt-br/alimentos.jpg" data-src-de="assets/programs/de/alimentos.jpg" data-src-es="assets/programs/alimentos.jpg" src="assets/programs/alimentos.jpg" alt="Cestas de Alimentos — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">09</span>
-              <h3 data-text-es="Cestas de Alimentos" data-text-en="Food Baskets" data-text-pt-br="Cestas de Alimentos" data-text-de="Lebensmittelkörbe">Cestas de Alimentos</h3>
-              <p data-text-es="Apoyo alimentario para acompañar a las familias en sus necesidades cotidianas." data-text-en="Food support to help families meet everyday needs." data-text-pt-br="Apoio alimentar para ajudar as famílias em suas necessidades cotidianas." data-text-de="Lebensmittelhilfe, die Familien im Alltag unterstützt.">Apoyo alimentario para acompañar a las familias en sus necesidades cotidianas.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/voluntariado.jpg" data-src-pt-br="assets/programs/pt-br/voluntariado.jpg" data-src-de="assets/programs/de/voluntariado.jpg" data-src-es="assets/programs/voluntariado.jpg" src="assets/programs/voluntariado.jpg" alt="Voluntariado y Mentoreo — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">10</span>
-              <h3 data-text-es="Voluntariado y Mentoreo" data-text-en="Volunteering and Mentoring" data-text-pt-br="Voluntariado e Mentoria" data-text-de="Ehrenamt und Mentoring">Voluntariado y Mentoreo</h3>
-              <p data-text-es="Oportunidades para servir, compartir experiencia y acompañar a otras personas." data-text-en="Opportunities to serve, share experience, and support others." data-text-pt-br="Oportunidades para servir, compartilhar experiências e acompanhar outras pessoas." data-text-de="Möglichkeiten, mitzuhelfen, Erfahrungen zu teilen und andere zu begleiten.">Oportunidades para servir, compartir experiencia y acompañar a otras personas.</p>
-            </div>
-          </article>
-          <article class="program-card program-poster reveal" data-glass-surface data-program-card lang="es">
-            <div class="program-artwork">
-              <img data-src-en="assets/programs/en/hospitalidad.jpg" data-src-pt-br="assets/programs/pt-br/hospitalidad.jpg" data-src-de="assets/programs/de/hospitalidad.jpg" data-src-es="assets/programs/hospitalidad.jpg" src="assets/programs/hospitalidad.jpg" alt="Hospitalidad — cartel de Diez42" loading="lazy" decoding="async" width="675" height="1200" />
-            </div>
-            <div class="card-copy">
-              <span class="card-index">11</span>
-              <h3 data-text-es="Hospitalidad" data-text-en="Hospitality" data-text-pt-br="Hospitalidade" data-text-de="Gastfreundschaft">Hospitalidad</h3>
-              <p data-text-es="Un lugar de acogida para conversar, compartir y sentirse parte de la comunidad." data-text-en="A welcoming place to talk, share, and feel part of the community." data-text-pt-br="Um lugar de acolhimento para conversar, compartilhar e fazer parte da comunidade." data-text-de="Ein einladender Ort für Begegnung, Austausch und Gemeinschaft.">Un lugar de acogida para conversar, compartir y sentirse parte de la comunidad.</p>
-            </div>
-          </article>
-        </div>
+      <div class="section-shell about-video">
+        <video controls playsinline preload="metadata" width="848" height="480" aria-label="Diez42 video">
+          <source src="assets/videos/about-diez42.mp4" type="video/mp4" />
+          <a href="https://u.pcloud.link/publink/show?code=XZH4aA5ZmhCMOps2Ja8FkIjE968Ig5YCO3SX">Ver vídeo · Watch video</a>
+        </video>
       </div>
     </section>
 
-    <section id="transparency" class="trust-section">
-      <div class="section-shell trust-single">
-        <div class="glass-panel reveal" data-glass-surface>
-          <p class="eyebrow" data-text-en="Known facts" data-text-es="Datos conocidos" data-text-pt-br="Dados conhecidos" data-text-de="Informationen">Known facts</p>
-          <ul>
-            <li data-text-en="Formal association name and CIF are recorded." data-text-es="El nombre formal de la asociacion y el CIF estan registrados." data-text-pt-br="O nome formal da associacao e o CIF estao registrados." data-text-de="Der offizielle Vereinsname und die Steuernummer sind registriert.">Formal association name and CIF are recorded.</li>
-            <li data-text-en="Public phone and WhatsApp use +34 600 33 97 94." data-text-es="El telefono publico y WhatsApp usan +34 600 33 97 94." data-text-pt-br="O telefone publico e o WhatsApp usam +34 600 33 97 94." data-text-de="Telefon und WhatsApp: +34 600 33 97 94.">Public phone and WhatsApp use +34 600 33 97 94.</li>
-            <li data-text-en="Mailing address is Avenida de Andalucía 27, 29006 Málaga." data-text-es="La dirección postal es Avenida de Andalucía 27, 29006 Málaga." data-text-pt-br="O endereço postal é Avenida de Andalucía 27, 29006 Málaga." data-text-de="Postanschrift: Avenida de Andalucía 27, 29006 Málaga.">Mailing address is Avenida de Andalucía 27, 29006 Málaga.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<section id="programs" class="program-section"><div class="section-shell"><h2 data-text-es="Programas" data-text-en="Programs" >Programas</h2><p data-text-es="Clases de español gratis en Málaga, curso de empleo para inmigrantes y ayuda a familias." data-text-en="Free Spanish classes in Málaga, employment training for migrants and support for families." >Clases de español gratis en Málaga, curso de empleo para inmigrantes y ayuda a familias.</p><div class="content-grid program-list"><article class="content-card category-espanol"><img src="assets/photos/hero-adult-education.jpg" alt="" width="1672" height="941" loading="lazy"/><div class="card-body"><h2 data-text-es="Español A1" data-text-en="Spanish A1" >Español A1</h2><p data-text-es="Clases de español para principiantes." data-text-en="Beginner Spanish in a small, friendly group: introductions, daily life, shopping, medical visits and getting around Málaga." >Clases de español para principiantes.</p><p data-text-es="Miércoles · 10:30–12:00 y 11:30–13:00" data-text-en="Wednesday · 10:30–12:00 and 11:30–13:00" class="schedule-label">Miércoles · 10:30–12:00 y 11:30–13:00</p><a data-text-es="Saber más" data-text-en="Learn more" href="programa-espanol-a1.html" class="button primary">Saber más</a></div></article><article class="content-card category-espanol"><img src="assets/photos/hero-adult-education.jpg" alt="" width="1672" height="941" loading="lazy"/><div class="card-body"><h2 data-text-es="Español A2" data-text-en="Spanish A2" >Español A2</h2><p data-text-es="Para quienes ya entienden lo básico y quieren hablar con más confianza: pasado, planes, trabajo, trámites y conversación real." data-text-en="For people who understand the basics and want to speak with more confidence: past events, plans, work, paperwork and real conversations." >Para quienes ya entienden lo básico y quieren hablar con más confianza: pasado, planes, trabajo, trámites y conversación real.</p><p data-text-es="Jueves · 10:30–12:00" data-text-en="Thursday · 10:30–12:00" class="schedule-label">Jueves · 10:30–12:00</p><a data-text-es="Saber más" data-text-en="Learn more" href="programa-espanol-a2.html" class="button primary">Saber más</a></div></article><article class="content-card category-espanol"><img src="assets/photos/hero-adult-education.jpg" alt="" width="1672" height="941" loading="lazy"/><div class="card-body"><h2 data-text-es="Español B1" data-text-en="Spanish B1" >Español B1</h2><p data-text-es="Nivel intermedio: conversación, comprensión, escritura y preparación para la vida laboral y los exámenes oficiales." data-text-en="Intermediate Spanish: conversation, comprehension, writing, and preparation for work and official exams." >Nivel intermedio: conversación, comprensión, escritura y preparación para la vida laboral y los exámenes oficiales.</p><p data-text-es="Viernes · 10:30–12:00" data-text-en="Friday · 10:30–12:00" class="schedule-label">Viernes · 10:30–12:00</p><a data-text-es="Saber más" data-text-en="Learn more" href="programa-espanol-b1.html" class="button primary">Saber más</a></div></article><article class="content-card category-ingles"><img src="assets/photos/hero-adult-education.jpg" alt="" width="1672" height="941" loading="lazy"/><div class="card-body"><h2 data-text-es="Inglés inicial e intermedio" data-text-en="Beginner and intermediate English" >Inglés inicial e intermedio</h2><p data-text-es="Clases de inglés para adultos que quieren mejorar sus oportunidades de trabajo y comunicarse con más gente." data-text-en="English classes for adults who want to improve their work opportunities and communicate with more people." >Clases de inglés para adultos que quieren mejorar sus oportunidades de trabajo y comunicarse con más gente.</p><p data-text-es="Viernes · Inicial 10:30–12:00 · Intermedio 12:00–13:00" data-text-en="Friday · Beginner 10:30–12:00 · Intermediate 12:00–13:00" class="schedule-label">Viernes · Inicial 10:30–12:00 · Intermedio 12:00–13:00</p><a data-text-es="Saber más" data-text-en="Learn more" href="programa-ingles.html" class="button primary">Saber más</a></div></article><article class="content-card category-empleo"><img src="assets/photos/hero-adult-education.jpg" alt="" width="1672" height="941" loading="lazy"/><div class="card-body"><h2 data-text-es="Capacítate para el empleo" data-text-en="Get ready for work" >Capacítate para el empleo</h2><p data-text-es="Formación y acompañamiento para buscar trabajo en España." data-text-en="Training and personal support to find work in Spain." >Formación y acompañamiento para buscar trabajo en España.</p><p data-text-es="Miércoles · 13:00–15:00" data-text-en="Wednesday · 13:00–15:00" class="schedule-label">Miércoles · 13:00–15:00</p><a data-text-es="Saber más" data-text-en="Learn more" href="programa-empleo.html" class="button primary">Saber más</a></div></article><article class="content-card category-juegos"><img src="assets/photos/hero-social-support-notes.jpg" alt="" width="1672" height="941" loading="lazy"/><div class="card-body"><h2 data-text-es="Tarde de Juegos" data-text-en="Games afternoon" >Tarde de Juegos</h2><p data-text-es="Juegos de mesa para divertirte, practicar idiomas y hacer amigos." data-text-en="Board games to have fun, practise languages and make friends." >Juegos de mesa para divertirte, practicar idiomas y hacer amigos.</p><p data-text-es="2.º y 4.º martes · 17:00–20:00" data-text-en="2nd and 4th Tuesday · 17:00–20:00" class="schedule-label">2.º y 4.º martes · 17:00–20:00</p><a data-text-es="Saber más" data-text-en="Learn more" href="programa-juegos.html" class="button primary">Saber más</a></div></article></div><a data-text-es="Ver los 14 programas" data-text-en="View all 14 programs" href="programas.html" class="button primary">Ver los 14 programas</a><a data-text-es="Ver horario semanal" data-text-en="View weekly schedule" href="horario.html" class="button primary">Ver horario semanal</a></div></section>
 
-    <section id="contact" class="contact-section">
-      <div class="section-shell contact-panel reveal" data-glass-surface>
-        <div>
-          <p class="eyebrow" data-text-en="Contact" data-text-es="Contacto" data-text-pt-br="Contato" data-text-de="Kontakt">Contact</p>
-          <h2 data-text-en="Contact us" data-text-es="Contacta con nosotros" data-text-pt-br="Entre em contato" data-text-de="Kontaktieren Sie uns">Contact us</h2>
-          <p data-text-en="Use WhatsApp for the quickest confirmed path, or follow Diez42 on Instagram and Facebook." data-text-es="Usa WhatsApp como el camino confirmado más rápido, o sigue a Diez42 en Instagram y Facebook." data-text-pt-br="Use o WhatsApp como o caminho confirmado mais rápido, ou acompanhe a Diez42 no Instagram e Facebook." data-text-de="Kontaktiere uns am besten über WhatsApp oder folge Diez42 auf Instagram und Facebook.">Use WhatsApp for the quickest confirmed path, or follow Diez42 on Instagram and Facebook.</p>
-          <p class="contact-detail">Avenida de Andalucía 27, 29006 Málaga · +34 600 33 97 94</p>
-        </div>
-        <div class="contact-actions">
-          <a class="button primary" href="https://wa.me/34600339794" data-wst-cta="contact_whatsapp">WhatsApp</a>
-          <a class="button ghost" href="https://www.instagram.com/diez42malaga?igsh=cXNmanN1dmV6Mndy" data-wst-cta="contact_instagram">Instagram</a>
-          <a class="button ghost" href="https://www.facebook.com/share/1XxCNeBHnF/?mibextid=wwXIfr" data-wst-cta="contact_facebook">Facebook</a>
-        </div>
-      </div>
-    </section>
-  </main>
+<section class="intro-section"><div class="section-shell"><h2 data-text-es="Nuestra misión" data-text-en="Our mission" >Nuestra misión</h2><p data-text-es="Diez42 existe para servir a refugiados y comunidades migrantes vulnerables en el sur de España, ofreciendo ayuda práctica, acompañamiento cercano y guía espiritual, arraigados en el amor de Cristo." data-text-en="Diez42 exists to serve refugees and vulnerable migrant communities in southern Spain, offering practical help, personal support and spiritual guidance, rooted in the love of Christ." >Diez42 existe para servir a refugiados y comunidades migrantes vulnerables en el sur de España, ofreciendo ayuda práctica, acompañamiento cercano y guía espiritual, arraigados en el amor de Cristo.</p><blockquote data-text-es="Todos nuestros servicios están abiertos a cualquier persona, sin importar su religión, origen o situación. Somos una comunidad cristiana y compartimos nuestra fe con respeto; nunca es una condición para recibir ayuda." data-text-en="All our services are open to everyone, regardless of religion, origin or circumstances. We are a Christian community and share our faith respectfully; it is never a condition for receiving help." >Todos nuestros servicios están abiertos a cualquier persona, sin importar su religión, origen o situación. Somos una comunidad cristiana y compartimos nuestra fe con respeto; nunca es una condición para recibir ayuda.</blockquote><a data-text-es="Conoce Diez42" data-text-en="About Diez42" href="quienes-somos.html" class="text-link">Conoce Diez42</a></div></section><section class="intro-section" id="community"><div class="section-shell"><h2 data-text-es="Nuestra comunidad" data-text-en="Our community" >Nuestra comunidad</h2><video controls muted playsinline preload="none" poster="assets/videos/Diez42-Futbol-Sala-poster.jpg" width="1280" height="720"><source src="assets/videos/Diez42-Futbol-Sala.mp4" type="video/mp4" /><a data-text-es="Ver vídeo" data-text-en="Watch video" href="https://u.pcloud.link/publink/show?code=XZXRaA5ZkU8XJxS8hKyw6picxNHKRYu1PWLX" class="text-link">Ver vídeo</a></video><a data-text-es="Conoce el fútbol sala" data-text-en="Discover futsal" href="programa-futbol.html" class="text-link">Conoce el fútbol sala</a></div></section><section class="intro-section"><div class="section-shell"><h2 data-text-es="Más de nuestra comunidad" data-text-en="More from our community">Más de nuestra comunidad</h2><div class="content-grid"><article class="content-card"><div class="card-body"><h3 data-text-es="Hospitalidad" data-text-en="Hospitality">Hospitalidad</h3><a class="button primary" href="quienes-somos.html#hospitalidad" data-text-es="Ver vídeo de hospitalidad" data-text-en="Watch hospitality video">Ver vídeo de hospitalidad</a></div></article><article class="content-card"><div class="card-body"><h3 data-text-es="Reparto de alimentos" data-text-en="Food distribution">Reparto de alimentos</h3><a class="button primary" href="programa-alimentos.html" data-text-es="Ver vídeo y horario" data-text-en="Watch video and see schedule">Ver vídeo y horario</a></div></article></div></div></section><section id="contact" class="intro-section"><div class="section-shell"><h2 data-text-es="Ven a conocernos" data-text-en="Come and meet us" >Ven a conocernos</h2><p>Avenida de Andalucía 27, local 7A, 29010 Málaga</p><a data-text-es="Cómo llegar" data-text-en="Get directions" href="https://maps.app.goo.gl/ucfKWfgrHRbfMXzJ8" class="button primary">Cómo llegar</a><a data-text-es="WhatsApp Diez42" data-text-en="WhatsApp Diez42" href="https://wa.me/34600339794" class="button whatsapp-join">WhatsApp Diez42</a></div></section>  </main>
 
-  <footer class="review-footer">
-    <span>Diez42</span>
-    <div>
-      <span class="measurement-notice" data-text-en="We count aggregate page views and button presses to improve and optimize this site. No form contents or visitor identifiers are collected." data-text-es="Contamos visitas agregadas y pulsaciones de botones para mejorar y optimizar este sitio. No recopilamos contenidos de formularios ni identificadores de visitantes." data-text-pt-br="Contamos visualizações agregadas e cliques em botões para melhorar e otimizar este site. Não coletamos conteúdo de formulários nem identificadores de visitantes." data-text-de="Wir zählen Seitenaufrufe und Klicks zusammengefasst, um diese Website zu verbessern. Formulareingaben und Besucherkennungen werden nicht erfasst.">We count aggregate page views and button presses to improve and optimize this site. No form contents or visitor identifiers are collected.</span>
-      <a href="privacy.html" data-text-en="Privacy" data-text-es="Privacidad" data-text-pt-br="Privacidade" data-text-de="Datenschutz">Privacy</a>
-      <a href="terms.html" data-text-en="Terms" data-text-es="Términos" data-text-pt-br="Termos" data-text-de="Nutzungsbedingungen">Terms</a>
-      <a href="data-deletion.html" data-text-en="Data deletion" data-text-es="Eliminación de datos" data-text-pt-br="Exclusão de dados" data-text-de="Datenlöschung">Data deletion</a>
-      <a class="site-credit" href="https://web-by-elie.com/" data-text-en="Site creation and maintenance by Web-By-Elie.com" data-text-es="Creación y mantenimiento del sitio por Web-By-Elie.com" data-text-pt-br="Criação e manutenção do site por Web-By-Elie.com" data-text-de="Website und Betreuung durch Web-By-Elie.com">Site creation and maintenance by Web-By-Elie.com</a>
-    </div>
-  </footer>
-
-  <a class="sticky-cta" href="https://wa.me/34600339794" data-sticky-cta data-wst-cta="sticky_whatsapp" data-text-en="WhatsApp Diez42" data-text-es="WhatsApp Diez42" data-text-pt-br="WhatsApp Diez42" data-text-de="WhatsApp Diez42">WhatsApp Diez42</a>
-  <span class="version-pill" data-version aria-label="Version v314.11">v314.11</span>
-
-  <script src="review/elies-website/liquid-glass.js?v=314.11"></script>
-  <script src="assets/site-version.js?v=314.11"></script>
-  <script src="assets/program-carousel.js?v=314.11"></script>
-</body>
-</html>
+<footer class="content-footer"><strong>Diez42</strong><p>Avenida de Andalucía 27, local 7A, 29010 Málaga</p><p>CIF G93613776</p><nav><a data-text-es="Inicio" data-text-en="Home" href="index.html" class="footer-link">Inicio</a><a data-text-es="Quiénes somos" data-text-en="About us" href="quienes-somos.html" class="footer-link">Quiénes somos</a><a data-text-es="Programas" data-text-en="Programs" href="programas.html" class="footer-link">Programas</a><a data-text-es="Horario semanal" data-text-en="Weekly schedule" href="horario.html" class="footer-link">Horario semanal</a><a data-text-es="Necesito ayuda" data-text-en="I need help" href="necesito-ayuda.html" class="footer-link">Necesito ayuda</a><a data-text-es="Historias" data-text-en="Stories" href="historias.html" class="footer-link">Historias</a><a data-text-es="Proyectos" data-text-en="Projects" href="proyectos.html" class="footer-link">Proyectos</a><a data-text-es="Colabora / Donar" data-text-en="Support / Give" href="colabora.html" class="footer-link">Colabora / Donar</a><a data-text-es="Voluntariado" data-text-en="Volunteer" href="voluntariado.html" class="footer-link">Voluntariado</a><a data-text-es="Equipos e iglesias" data-text-en="Teams and churches" href="equipos.html" class="footer-link">Equipos e iglesias</a><a data-text-es="Socios" data-text-en="Partners" href="socios.html" class="footer-link">Socios</a><a data-text-es="Contacto" data-text-en="Contact" href="contacto.html" class="footer-link">Contacto</a><a data-text-es="Aviso legal" data-text-en="Legal notice" href="aviso-legal.html" class="footer-link">Aviso legal</a><a data-text-es="Política de privacidad" data-text-en="Privacy policy" href="privacy.html" class="footer-link">Política de privacidad</a><a data-text-es="Política de cookies" data-text-en="Cookie policy" href="cookies.html" class="footer-link">Política de cookies</a></nav><p data-text-es="Email, Instagram y Facebook: [PENDIENTE]" data-text-en="Email, Instagram and Facebook: [PENDIENTE]" >Email, Instagram y Facebook: [PENDIENTE]</p></footer><a data-text-es="WhatsApp · ¿Hablamos?" data-text-en="WhatsApp · Let’s talk" href="https://wa.me/34600339794" class="floating-whatsapp">WhatsApp · ¿Hablamos?</a><span class="version-pill" data-version>v315.1</span><aside class="cookie-notice" data-cookie-notice hidden><p data-text-es="Usamos almacenamiento local para recordar tu idioma y tu elección sobre este aviso. No cargamos analítica ni servicios opcionales." data-text-en="We use local storage to remember your language and this notice preference. We do not load analytics or optional services." >Usamos almacenamiento local para recordar tu idioma y tu elección sobre este aviso. No cargamos analítica ni servicios opcionales.</p><a data-text-es="Ver política de cookies" data-text-en="Read cookie policy" href="cookies.html" class="text-link">Ver política de cookies</a><button data-text-es="Entendido" data-text-en="Understood" type="button" data-cookie-dismiss>Entendido</button></aside><script src="review/elies-website/liquid-glass.js?v=315.1"></script><script src="assets/content.js?v=315.1"></script><script src="assets/site-version.js?v=315.1"></script></body></html>

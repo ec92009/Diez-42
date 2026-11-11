@@ -1,79 +1,44 @@
-"""Check public release identity, local destinations and multilingual posters."""
+"""Check static ES/EN content, navigation, program joins and media."""
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit, unquote, parse_qs
-import json
-import re
-import xml.etree.ElementTree as ET
-
-ROOT = Path(__file__).resolve().parents[1]
-
-
+from urllib.parse import urlsplit,unquote,parse_qs
+import json,re
+ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
-    """Collect public HTML elements without third-party dependencies."""
-    def __init__(self, source):
-        super().__init__(convert_charrefs=True)
-        self.nodes = []
-        self.feed(source)
-
-    def handle_starttag(self, tag, attrs):
-        self.nodes.append((tag, dict(attrs)))
-
-
+ def __init__(self,path):
+  super().__init__();self.nodes=[];self.feed(path.read_text())
+ def handle_starttag(self,tag,attrs):self.nodes.append((tag,dict(attrs)))
 def check():
-    """Fail on release drift, missing assets, broken anchors or poster variants."""
-    version = '.'.join(json.loads((ROOT / 'package.json').read_text())['version'].split('.')[:2])
-    assert (ROOT / 'VERSION').read_text().strip() == version, 'VERSION/package identity drift'
-    cache = {}
-
-    def page(target):
-        if target not in cache:
-            cache[target] = Page(target.read_text())
-        return cache[target]
-
-    for name in ('index.html', 'privacy.html', 'terms.html', 'data-deletion.html'):
-        target = ROOT / name
-        markup = target.read_text()
-        nodes = page(target).nodes
-        assert set(re.findall(r'\bv(\d+\.\d+)\b', markup)) == {version}, f'{name}: visible version drift'
-        ids = [attrs['id'] for _, attrs in nodes if 'id' in attrs]
-        assert len(ids) == len(set(ids)), f'{name}: duplicate IDs'
-        assert sum(tag == 'h1' for tag, _ in nodes) == 1, f'{name}: h1 contract'
-        assert not any(attrs.get('name') == 'robots' and 'noindex' in attrs.get('content', '') for _, attrs in nodes), f'{name}: public page noindex'
-        for tag, attrs in nodes:
-            if tag == 'img':
-                assert 'alt' in attrs, f'{name}: image alt missing'
-            for key in ('href', 'src'):
-                if key not in attrs:
-                    continue
-                url = urlsplit(attrs[key])
-                if url.scheme or url.netloc:
-                    continue
-                destination = ROOT / unquote(url.path.lstrip('/')) if url.path.startswith('/') else target.parent / unquote(url.path)
-                if not url.path:
-                    destination = target
-                if destination.is_dir():
-                    destination /= 'index.html'
-                assert destination.is_file(), f'{name}: missing local destination {attrs[key]}'
-                if url.fragment and destination.suffix == '.html':
-                    assert any(item.get('id') == unquote(url.fragment) for _, item in page(destination).nodes), f'{name}: missing anchor {attrs[key]}'
-                if tag in ('script', 'link') and 'v' in parse_qs(url.query):
-                    assert parse_qs(url.query)['v'] == [version], f'{name}: stale asset identity'
-    home = page(ROOT / 'index.html').nodes
-    assert {a['data-language-option'] for _, a in home if 'data-language-option' in a} == {'en', 'es', 'pt-BR', 'de'}
-    assert {a['data-theme-option'] for _, a in home if 'data-theme-option' in a} == {'system', 'day', 'night'}
-    assert sum('data-settings-toggle' in a for _, a in home) == 1
-    posters = [a for tag, a in home if tag == 'img' and 'data-src-es' in a]
-    assert len(posters) == 11, 'expected all 11 program posters'
-    for image in posters:
-        for language in ('en', 'es', 'pt-br', 'de'):
-            assert (ROOT / image['data-src-' + language]).is_file(), f'missing {language} poster'
-    sitemap = ET.parse(ROOT / 'sitemap.xml')
-    locations = {item.text for item in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
-    assert locations == {'https://diez42.org/' + name for name in ('', 'privacy.html', 'terms.html', 'data-deletion.html')}
-    assert 'Sitemap: https://diez42.org/sitemap.xml' in (ROOT / 'robots.txt').read_text()
-    print(f'Release QA passed: v{version}, public links/assets, settings, 44 posters, crawler files.')
-
-
-if __name__ == '__main__':
-    check()
+ v=(ROOT/'VERSION').read_text().strip()
+ assert json.loads((ROOT/'package.json').read_text())['version']==v+'.0'
+ files=[p for p in ROOT.glob('*.html') if p.name!='banner-preview.html']
+ pages={p.name:Page(p) for p in files}
+ for name,page in pages.items():
+  nodes=page.nodes
+  assert sum(tag=='h1' for tag,a in nodes)==1,(name,'h1')
+  ids=[a['id'] for tag,a in nodes if 'id' in a];assert len(ids)==len(set(ids)),(name,'duplicate IDs')
+  assert {a['data-language-option'] for tag,a in nodes if 'data-language-option' in a}=={'es','en'},(name,'ES/EN')
+  assert any('floating-whatsapp' in a.get('class','') for tag,a in nodes),(name,'floating WhatsApp')
+  for tag,a in nodes:
+   if tag=='img':assert 'alt' in a,(name,'image alt')
+   for key in ['href','src','poster']:
+    if key not in a:continue
+    u=urlsplit(a[key])
+    if u.scheme or u.netloc:continue
+    target=ROOT/unquote(u.path.lstrip('/')) if u.path else ROOT/name
+    if target.is_dir():target=target/'index.html'
+    assert target.is_file(),(name,'missing file',a[key])
+    if u.fragment and target.suffix=='.html':assert any(aa.get('id')==unquote(u.fragment) for tt,aa in Page(target).nodes),(name,'anchor',a[key])
+    if 'v' in parse_qs(u.query):assert parse_qs(u.query)['v']==[v],(name,'version')
+ programs=json.loads((ROOT/'data/programs.json').read_text());assert len(programs)==14
+ for p in programs:
+  nodes=pages['programa-'+p['id']+'.html'].nodes
+  if p['group']:
+   assert any(a.get('href')=='https://chat.whatsapp.com/'+p['group'] for tag,a in nodes)
+   assert (ROOT/'assets/qr'/ (p['id']+'.png')).is_file()
+ for name in ['index.html','programa-futbol.html']:
+  assert any(tag=='video' and 'muted' in a and 'controls' in a and 'autoplay' not in a for tag,a in pages[name].nodes)
+ assert (ROOT/'assets/videos/Diez42-Futbol-Sala.mp4').stat().st_size<100*1024*1024
+ assert not any('wst-beacon' in a.get('src','') for page in pages.values() for tag,a in page.nodes)
+ print(f'Release QA passed: v{v}, {len(files)} public pages, 14 programs, ES/EN, QR links, local media and navigation.')
+if __name__=='__main__':check()

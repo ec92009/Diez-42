@@ -74,3 +74,7 @@ Later on June 26, 2026, the user approved the noindex Elie's Websites liquid-gla
 - Current hero scenes are AI-generated illustrations; previously selected real photographs remain in the repository as historical assets. Image rights remain part of ongoing site stewardship.
 - Ongoing editorial review of the four homepage languages remains appropriate as programs and contact details change.
 - GitHub Pages is serving from `main` at the custom domain `diez42.org` with HTTPS fully enabled and enforced.
+
+## 11 November 2026 — v315.0
+
+Expanded to a Spanish-first ES/EN static site with all 14 supplied programs, WhatsApp/QR joins, printable schedule, support and projects pages, donations, volunteer/team WhatsApp enquiry forms, partners and privacy/cookie pages. The corrected user-supplied address is Avenida de Andalucía 27, local 7A, 29010 Málaga. Unknown contact and content details remain `[PENDIENTE]`. Football video converted to web MP4 with a generated poster frame.

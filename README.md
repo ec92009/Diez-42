@@ -2,17 +2,17 @@
 
 Official static website for Diez42, published at https://diez42.org/.
 
-The current release contains the approved logo-blue design, three illustrative hero scenes, and 11 localized program posters in a responsive carousel. Donation and payment features remain deferred to V2.
+The current working release expands the existing site with 14 program pages, an ES/EN toggle, schedules, local videos, WhatsApp enquiries, project information and the user-supplied donation links and transfer details.
 
 Working content notes currently describe Diez42 as a Málaga social-action association serving immigrants, refugees, and other newcomers through practical support, education, training, family activities, food support, and community connection. Registry details should be maintained against the municipal record and the organization; the public-facing spelling should remain `Diez42`.
 
-Current visible version: `v314.11`.
-Default viewer language: English, with Spanish, Brazilian Portuguese, and German available in the settings panel.
-Current controls use a compact settings panel for language, System/Day/Night themes, glass transparency, glass blur, and the visible version.
+Current visible version: `v315.1`.
+Default viewer language: Spanish, with an ES/EN toggle on each public page.
+Public navigation uses a compact menu and visible ES/EN buttons. The archived design review retains its earlier controls.
 Review route: `review/elies-website/`, kept as a noindex mirror of the liquid-glass public homepage.
 Confirmed WhatsApp and phone: `+34 600 33 97 94`; the phone number is shown under the mailing address while WhatsApp remains a contact action.
-Confirmed social links: Instagram `https://www.instagram.com/diez42malaga?igsh=cXNmanN1dmV6Mndy`; Facebook `https://www.facebook.com/share/1XxCNeBHnF/?mibextid=wwXIfr`.
-Physical mailing address: `Avenida de Andalucía 27, 29006 Málaga`.
+Email, Instagram and Facebook: `[PENDIENTE]`, following the latest supplied brief.
+Physical mailing address: `Avenida de Andalucía 27, local 7A, 29010 Málaga`.
 
 Remote repository: `https://github.com/ec92009/Diez-42`.
 
@@ -27,7 +27,7 @@ python3 -m http.server 8042
 Open:
 
 ```text
-http://localhost:8042/?v=314.11
+http://localhost:8042/?v=314.15
 ```
 
 Noindex review mirror:
@@ -102,3 +102,19 @@ The interface uses the logo blue `#3F77B9` with `#355E8D` and pale blue surfaces
 The footer uses the same logo-blue background with white text and links.
 
 The program carousel supports previous/next controls, touch swiping, and Arrow/Home/End keys when focused. Cards advance left by one every six seconds while visible, with a pause/play button and a direct-access program menu. Autoplay pauses on hover, keyboard focus, touch interaction, and hidden tabs; reduced-motion preferences start playback paused. The last group resets to the first without animating backward. All 11 localized cards remain in the static HTML; without JavaScript they use the original grid.
+
+Homepage photos are capped at 50% of viewport height. On phones and short screens, the welcome copy flows below the image.
+
+Hero photo controls align right in the same action row as WhatsApp and the program link, with paired columns on phones.
+
+The homepage hero rotates automatically without visible photo controls. Reduced-motion preferences stop rotation.
+
+The About section includes the supplied 155-second video in a responsive native player (`assets/videos/about-diez42.mp4`, approximately 26 MB), with controls and no autoplay. Source: https://u.pcloud.link/publink/show?code=XZH4aA5ZmhCMOps2Ja8FkIjE968Ig5YCO3SX
+
+## Current content release: v315.0
+
+Spanish-first ES/EN public site with 14 programs, detail pages, weekly print schedule, WhatsApp joins and generated QR codes, mission/vision, support, projects, giving, volunteer/team forms, partners and legal pages. See [release notes](docs/releases/2026-11-11-v315.0.md) for the remaining `[PENDIENTE]` information and media provenance. Forms prepare a WhatsApp enquiry locally; no form backend is configured. Public analytics are disabled.
+
+Build content with `python3 scripts/build_content.py`; check with `python3 scripts/check_release.py`. The homepage template is `templates/home.html`; program data is `data/programs.json`.
+
+Hospitality video: `quienes-somos.html#hospitalidad`; food distribution video: `programa-alimentos.html`. Both use native controls, muted playback by default and no autoplay. Poster frames are extracted from the supplied videos.
