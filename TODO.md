@@ -16,11 +16,3 @@ Official release v314.11 was authorized on November 10, 2026; production is http
 12. `npm run check` now checks JavaScript syntax, public links/assets, release identity, settings controls, 44 poster variants and crawler files. Extend automated browser coverage when the interaction surface grows.
 13. Do real-device QA on mobile and desktop after final copy and real photos are inserted.
 14. Defer donation/payment design to V2 until legal, bank, tax-receipt, and Stripe-account ownership questions are settled.
-
-## v315.0 follow-up
-
-- Confirm Mariposa description, food requirements and unspecified participant details.
-- Supply email and official social links; current public values are `[PENDIENTE]`.
-- Confirm fundraising progress and expansion financial model before showing amounts.
-- Supply consented stories.
-- Complete legal registration details, retention/provider disclosures and privacy/legal review.

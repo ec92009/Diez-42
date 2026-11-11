@@ -170,7 +170,7 @@
   if (blurRange) blurRange.value = getStored("blur", "18");
   applyGlass();
   applyTheme(getStored("theme", "day"));
-  applyLanguage(getStored("language", "es"));
+  applyLanguage(getStored("language", "en"));
   initHeroPhotos();
   initReveal();
   updateStickyCta();
