@@ -971,7 +971,7 @@ html[dir="rtl"] .hero-actions { direction: rtl; }
 }
 .settings-card::after { display: none; }
 
-.contact-panel .association-name { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.18; }
+.contact-panel .association-name { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.18; text-align: justify; text-align-last: justify; }
 .contact-map { display: block; width: 100%; height: clamp(240px, 35vw, 360px); border: 0; border-radius: 8px; margin: 20px 0 10px; background: #e2e9ee; }
 
 .contact-social { align-self: center; min-width: 0; }
