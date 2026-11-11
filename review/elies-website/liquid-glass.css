@@ -952,3 +952,10 @@ html[dir="rtl"] .hero-actions { direction: rtl; }
 .settings-card .segmented-control { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .settings-card .segmented-control button { min-height: 44px; padding: 8px; font-size: .9rem; }
 .settings-card h2 { font-size: 1.35rem; }
+
+/* Half-width language menu, with no release information inside. */
+.settings-card { width: min(210px, calc(100vw - 24px)); padding: 12px; }
+.settings-card .segmented-control { grid-template-columns: 1fr; gap: 6px; }
+.settings-card .segmented-control button { padding: 6px 8px; }
+.settings-card h2 { font-size: 1.1rem; }
+.settings-head { gap: 8px; margin-bottom: 8px; }
