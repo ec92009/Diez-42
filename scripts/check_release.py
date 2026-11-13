@@ -64,7 +64,7 @@ def check():
     assert not any('data-theme-option' in a or 'data-transparency-range' in a or 'data-blur-range' in a for _, a in home)
     assert sum('data-settings-toggle' in a for _, a in home) == 1
     posters = [a for tag, a in home if tag == 'img' and 'data-src-es' in a]
-    assert len(posters) == 11, 'expected all 11 program posters'
+    assert len(posters) == 12, 'expected all 12 program posters'
     for image in posters:
         for language in ('en', 'es', 'pt-br', 'de'):
             assert (ROOT / image['data-src-' + language]).is_file(), f'missing {language} poster'
@@ -72,7 +72,7 @@ def check():
     locations = {item.text for item in sitemap.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
     assert locations == {'https://diez42.org/' + name for name in ('', 'privacy.html', 'terms.html', 'data-deletion.html')}
     assert 'Sitemap: https://diez42.org/sitemap.xml' in (ROOT / 'robots.txt').read_text()
-    print(f'Release QA passed: v{version}, public links/assets, settings, 44 posters, crawler files.')
+    print(f'Release QA passed: v{version}, public links/assets, settings, 48 poster references, crawler files.')
 
 
 if __name__ == '__main__':

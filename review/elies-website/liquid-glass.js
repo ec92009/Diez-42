@@ -55,7 +55,7 @@
     });
     settingsToggle?.setAttribute(
       "aria-label",
-      next === "ar" ? "فتح الإعدادات" : next === "uk" ? "Відкрити налаштування" : next === "de" ? "Einstellungen öffnen" : next === "es" ? "Abrir ajustes" : next === "pt-BR" ? "Abrir ajustes" : "Open settings"
+      next === "ar" ? "تغيير اللغة" : next === "uk" ? "Змінити мову" : next === "de" ? "Sprache ändern" : next === "es" ? "Cambiar idioma" : next === "pt-BR" ? "Alterar idioma" : "Change language"
     );
     settingsClose?.setAttribute(
       "aria-label",
@@ -176,6 +176,19 @@
   applyGlass();
   applyTheme("system");
   applyLanguage(storage.getItem("diez42-lang") || getStored("language", "en"));
+  const helpDropdown = document.querySelector(".help-dropdown");
+  document.addEventListener("click", (event) => {
+    if (helpDropdown && !helpDropdown.contains(event.target)) helpDropdown.open = false;
+  });
+  helpDropdown?.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      helpDropdown.open = false;
+      helpDropdown.querySelector("summary").focus();
+    }
+  });
+  helpDropdown?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => { helpDropdown.open = false; });
+  });
   initHeroPhotos();
   initReveal();
   updateStickyCta();
