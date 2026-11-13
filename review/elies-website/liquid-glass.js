@@ -97,7 +97,9 @@
   const updateStickyCta = () => {
     const hero = document.querySelector(".hero");
     const threshold = hero ? hero.offsetHeight - 120 : 420;
-    body.classList.toggle("show-sticky-cta", window.scrollY > threshold);
+    const footer = document.querySelector("footer");
+    const footerVisible = footer && footer.getBoundingClientRect().top < window.innerHeight;
+    body.classList.toggle("show-sticky-cta", window.scrollY > threshold && !footerVisible);
   };
 
   const initReveal = () => {
@@ -189,6 +191,10 @@
   helpDropdown?.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => { helpDropdown.open = false; });
   });
+  const footer = document.querySelector("footer");
+  if (footer) new IntersectionObserver(([entry]) => {
+    body.classList.toggle("footer-in-view", entry.isIntersecting);
+  }).observe(footer);
   initHeroPhotos();
   initReveal();
   updateStickyCta();

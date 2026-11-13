@@ -1619,3 +1619,10 @@ html[data-theme="night"] body.theme-table .section.alt {
 
 html:lang(ar) { font-family: Tahoma, Arial, sans-serif; }
 html:lang(ar) h1, html:lang(ar) h2, html:lang(ar) h3 { font-family: Tahoma, Arial, sans-serif; line-height: 1.4; }
+
+/* Version belongs to the footer rather than the viewport. */
+footer { position: relative; padding-bottom: 48px; }
+footer .version-pill { position: absolute; right: 16px; bottom: 12px; z-index: auto; min-height: 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: inherit; box-shadow: none; backdrop-filter: none; opacity: .8; font-size: .7rem; }
+.footer-credit { font-size: .7rem; line-height: 1.6; margin: 0; }
+.footer-credit .site-credit { font-size: inherit; font-weight: 500; }
+.footer-cif { font-size: .75rem; margin-inline-start: 10px; }

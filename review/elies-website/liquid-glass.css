@@ -1061,3 +1061,56 @@ html main h2, html main h3 {
 .values-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; list-style: none; padding: 0; margin: 0; }
 .values-list li { display: grid; place-items: center; min-height: 64px; padding: 16px; text-align: center; border: 1px solid var(--glass-border); border-radius: 10px; background: var(--glass-bg); color: var(--ink); font-weight: 700; }
 @media (max-width: 600px) { .values-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+
+/* Keep the association identity above the social actions beside the map. */
+.contact-social .contact-heading { margin-bottom: 24px; }
+.contact-panel .contact-social { align-self: center; }
+.contact-social .contact-heading .association-name { font-size: clamp(1.4rem, 2.5vw, 2rem); line-height: 1.2; }
+
+/* Keep the mobile participation action level with the primary links. */
+@media (max-width: 1100px) {
+  .glass-nav .site-nav { grid-column: 1; grid-row: 2; flex-wrap: wrap; overflow: visible; gap: 4px 12px; padding: 0; }
+  .glass-nav .nav-actions { grid-column: 2; grid-row: 2; align-self: center; }
+  .glass-nav .help-dropdown > summary { max-width: 145px; }
+}
+@media (max-width: 600px) {
+  .glass-nav { gap: 10px 8px; }
+  .glass-nav .site-nav { gap: 2px 8px; }
+  .glass-nav .site-nav a { font-size: .75rem; min-height: 40px; }
+  .glass-nav .help-dropdown > summary { max-width: 125px; font-size: .75rem; padding: 8px 10px; gap: 6px; }
+}
+
+/* Give the map a generous share and keep the legal name in two balanced lines. */
+.contact-social .association-name span { display: block; }
+.contact-social .contact-heading .association-name { font-size: clamp(1.1rem, 1.55vw, 1.4rem); line-height: 1.35; }
+@media (min-width: 981px) {
+  .contact-panel { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; }
+}
+
+/* Version belongs to the footer rather than the viewport. */
+footer { position: relative; padding-bottom: 48px; }
+footer .version-pill { position: absolute; right: 16px; bottom: 12px; z-index: auto; min-height: 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: inherit; box-shadow: none; backdrop-filter: none; opacity: .8; font-size: .7rem; }
+
+/* Footer hierarchy: identity and legal links, notice, then quiet credits. */
+.review-footer { display: flex; flex-direction: column; align-items: stretch; gap: 18px; padding: 28px 0 20px; }
+.review-footer .footer-top, .review-footer .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; width: 100%; }
+.review-footer .footer-identity { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 14px; }
+.review-footer .footer-identity strong { font-size: 1.1rem; }
+.review-footer .footer-cif { font-size: .75rem; opacity: .85; }
+.review-footer .footer-legal { display: flex; flex-wrap: wrap; gap: 10px 20px; }
+.review-footer .footer-legal a { font-size: .8rem; font-weight: 600; }
+.review-footer .measurement-notice { flex-basis: auto; max-width: 90ch; font-size: .73rem; color: #e6effa; }
+.review-footer .footer-bottom { padding-top: 16px; border-top: 1px solid #ffffff30; align-items: baseline; }
+.review-footer .footer-credit { display: block; margin: 0; font-size: .7rem; line-height: 1.6; color: #e6effa; }
+.review-footer .footer-credit .site-credit { font-size: inherit; font-weight: 500; }
+.review-footer .footer-credit > span[aria-hidden] { margin-inline: 5px; }
+.review-footer .version-pill { position: static; margin-left: auto; flex: 0 0 auto; }
+@media (max-width: 600px) { .review-footer { gap: 16px; padding-top: 24px; } .review-footer .footer-top { align-items: flex-start; flex-direction: column; } }
+
+body.footer-in-view .sticky-cta { display: none; }
+
+/* Newsletter invitation, ready for the confirmed subscription destination. */
+.contact-newsletter { margin-top: 24px; padding-top: 22px; border-top: 1px solid #ffffff40; }
+.contact-newsletter h3 { margin: 0 0 10px; font-size: 1.05rem; line-height: 1.35; color: #fff; }
+.contact-panel .contact-newsletter p { font-size: .9rem; line-height: 1.6; margin-bottom: 14px; }
+.newsletter-pending { min-height: 44px; padding: 10px 16px; border: 1px solid #ffffff70; border-radius: 8px; background: #ffffff18; color: #fff; font: inherit; font-size: .85rem; cursor: default; }
