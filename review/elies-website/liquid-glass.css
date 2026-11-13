@@ -984,3 +984,50 @@ html[dir="rtl"] .hero-actions { direction: rtl; }
 
 .contact-panel .contact-heading { grid-column: 1 / -1; width: 100%; }
 .contact-panel .contact-heading .association-name { max-width: none; margin-bottom: 0; }
+
+/* Mission and vision remain readable side by side, then stack on phones. */
+.about-purpose { margin-top: 28px; }
+.about-purpose-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.about-purpose h3 { font-size: 1.35rem; margin-bottom: 12px; }
+.about-purpose p { line-height: 1.7; }
+.about-welcome { margin: 22px 0 0; padding: 20px; border-inline-start: 4px solid var(--teal); background: #fff; color: #142b45; border-radius: 8px; }
+@media (max-width: 700px) { .about-purpose-grid { grid-template-columns: 1fr; gap: 12px; } }
+
+/* Center the introductory heading and description on the same horizontal axis. */
+#about > .two-column { align-items: center; }
+#about > .two-column > div > h2 { margin-bottom: 0; }
+
+/* A permanent multilingual welcome, independent of the selected site language. */
+.homepage-welcome { margin-block: 12px 18px; max-width: 100%; text-align: start; }
+.welcome-translations { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; width: 100%; direction: ltr; }
+.welcome-translations p { flex: 0 1 auto; max-width: 100%; margin: 0; font-size: .9rem; line-height: 1.6; overflow-wrap: anywhere; }
+.welcome-translations [lang="ar"] { font-family: Tahoma, Arial, sans-serif; unicode-bidi: isolate; }
+
+/* Primary links stay left; participation links sit on the right. */
+.glass-nav { grid-template-columns: auto minmax(0, 1fr) auto auto; }
+.glass-nav .site-nav { justify-content: flex-start; }
+.nav-actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 8px; }
+.nav-actions .nav-action { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 8px 12px; border: 1px solid rgba(255,255,255,.6); border-radius: 8px; color: #fff; background: #285d91; font-size: .85rem; font-weight: 700; text-decoration: none; }
+.nav-actions .nav-action:hover { background: #1e4770; }
+@media (max-width: 1100px) {
+ .glass-nav { grid-template-columns: minmax(0, 1fr) auto; }
+ .glass-nav .brand { grid-column: 1; grid-row: 1; }
+ .glass-nav .settings-toggle { grid-column: 2; grid-row: 1; }
+ .glass-nav .site-nav { grid-column: 1 / -1; grid-row: 2; }
+ .glass-nav .nav-actions { grid-column: 1 / -1; grid-row: 3; }
+}
+@media (max-width: 600px) { .nav-actions .nav-action { flex: 1 1 auto; padding: 8px; font-size: .8rem; } }
+
+/* The single help action stays at the physical right edge in every language. */
+.hero-actions.hero-help-action { display: flex; justify-content: flex-end; width: 100%; direction: ltr; }
+.hero-help-action .button { width: auto; flex: 0 0 auto; }
+
+/* Keep the settings trigger clear against every header background. */
+.settings-toggle { background: #fff; color: #142b45; }
+.settings-toggle:hover { background: #fff; color: #285d91; }
+
+/* Use the same bold sans-serif face for all content section and card titles. */
+html main h2, html main h3 {
+  font-family: "Arial Black", Arial, Tahoma, sans-serif;
+  font-weight: 900;
+}
